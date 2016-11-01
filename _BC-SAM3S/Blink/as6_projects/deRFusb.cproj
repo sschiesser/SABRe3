@@ -1,0 +1,1425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.C</ToolchainName>
+    <ProjectGuid>{9fc9c8af-8bc4-4a2d-8988-644a27e7e42c}</ProjectGuid>
+    <avrdevice>ATSAM3S4C</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>deRFusb</AssemblyName>
+    <Name>deRFusb</Name>
+    <RootNamespace>deRFusb</RootNamespace>
+    <ToolchainFlavour>yagarto_4_5_1</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue />
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>2</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.8.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGcc>
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+        <armgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </armgcc.linker.libraries.Libraries>
+        <armgcc.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>../cmsis/linkerScripts</Value>
+          </ListValues>
+        </armgcc.linker.libraries.LibrarySearchPaths>
+        <armgcc.linker.optimization.GarbageCollectUnusedSections>True</armgcc.linker.optimization.GarbageCollectUnusedSections>
+        <armgcc.linker.miscellaneous.LinkerFlags>-Tsam3s4c_flash.ld</armgcc.linker.miscellaneous.LinkerFlags>
+        <armgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.assembler.general.IncludePaths>
+        <armgcc.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.preprocessingassembler.general.IncludePaths>
+      </ArmGcc>
+    </ToolchainSettings>
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>..</OutputDirectory>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+    <ExternalMakeFilePath>..\Makefile</ExternalMakeFilePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGcc>
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+        <armgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </armgcc.linker.libraries.Libraries>
+        <armgcc.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>../cmsis/linkerScripts</Value>
+          </ListValues>
+        </armgcc.linker.libraries.LibrarySearchPaths>
+        <armgcc.linker.optimization.GarbageCollectUnusedSections>True</armgcc.linker.optimization.GarbageCollectUnusedSections>
+        <armgcc.linker.miscellaneous.LinkerFlags>-Tsam3s4c_flash.ld</armgcc.linker.miscellaneous.LinkerFlags>
+        <armgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.assembler.general.IncludePaths>
+        <armgcc.assembler.debugging.DebugLevel>Default (-g)</armgcc.assembler.debugging.DebugLevel>
+        <armgcc.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.preprocessingassembler.general.IncludePaths>
+        <armgcc.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcc.preprocessingassembler.debugging.DebugLevel>
+      </ArmGcc>
+    </ToolchainSettings>
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>..</OutputDirectory>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+    <ExternalMakeFilePath>..\Makefile</ExternalMakeFilePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\aps.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\aps.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsAIB.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsAIB.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsCommon.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsCommon.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsConfigServer.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsConfigServer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsCryptoKeys.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsCryptoKeys.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsdeData.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsdeData.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsdeEndpoint.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsdeEndpoint.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsmeAuthenticate.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsmeAuthenticate.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsmeBind.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsmeBind.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsmeEstablishKey.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsmeEstablishKey.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsmeGroup.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsmeGroup.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsmeRemoveDevice.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsmeRemoveDevice.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsmeRequestKey.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsmeRequestKey.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsmeSwitchKey.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsmeSwitchKey.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsmeTransportKey.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsmeTransportKey.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsmeUpdateDevice.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsmeUpdateDevice.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\apsTcSwapOut.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\apsTcSwapOut.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\intrpData.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\intrpData.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsAuthenticate.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsAuthenticate.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsBinding.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsBinding.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsCommand.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsCommand.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsConfig.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsConfig.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsDataManager.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsDataManager.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsDbg.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsEndpoint.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsEndpoint.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsFrames.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsFrames.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsGroup.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsGroup.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsKeyPairSet.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsKeyPairSet.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsMemoryManager.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsMemoryManager.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsRejectDuplicate.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsRejectDuplicate.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsRemoveDevice.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsRemoveDevice.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsRequestKey.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsRequestKey.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsSkke.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsSkke.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsSkkeInitiator.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsSkkeInitiator.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsSkkeResponder.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsSkkeResponder.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsSmSsp.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsSmSsp.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsState.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsState.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsSwitchKey.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsSwitchKey.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsTaskManager.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsTaskManager.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsTransportAppKey.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsTransportAppKey.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsTransportKey.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsTransportKey.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsTransportNwkKey.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsTransportNwkKey.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsTransportTrustKey.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsTransportTrustKey.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\APS\include\private\apsUpdateDevice.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\APS\include\private\apsUpdateDevice.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\BSP\DERFUSB23E06\include\bspLeds.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\BSP\DERFUSB23E06\include\bspLeds.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\BSP\DERFUSB23E06\include\bspTaskManager.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\BSP\DERFUSB23E06\include\bspTaskManager.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\BSP\DERFUSB23E06\src\bspTaskManager.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\BSP\DERFUSB23E06\src\bspTaskManager.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\BSP\DERFUSB23E06\src\fakeBSP.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\BSP\DERFUSB23E06\src\fakeBSP.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\BSP\DERFUSB23E06\src\leds.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\BSP\DERFUSB23E06\src\leds.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ConfigServer\include\configServer.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ConfigServer\include\configServer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ConfigServer\include\csDefaults.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ConfigServer\include\csDefaults.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ConfigServer\include\private\csBuffers.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ConfigServer\include\private\csBuffers.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ConfigServer\include\private\csDbg.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ConfigServer\include\private\csDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ConfigServer\include\private\csParamTable.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ConfigServer\include\private\csParamTable.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ConfigServer\include\private\csSIB.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ConfigServer\include\private\csSIB.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ConfigServer\include\stackVersion.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ConfigServer\include\stackVersion.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ConfigServer\src\configServer.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ConfigServer\src\configServer.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ConfigServer\src\csMem.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ConfigServer\src\csMem.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ConfigServer\src\csPersistentMem.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ConfigServer\src\csPersistentMem.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\AT91SAM3S4.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\AT91SAM3S4.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\core_cm3.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\core_cm3.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\gpio.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\gpio.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halAppClock.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halAppClock.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halAssert.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halAssert.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halClkCtrl.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halClkCtrl.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halDbg.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halDiagnostic.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halDiagnostic.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halFlash.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halFlash.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halFreqSelector.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halFreqSelector.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halHsmci.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halHsmci.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halInterrupt.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halInterrupt.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halIrq.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halIrq.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halReset.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halReset.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halSleep.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halSleep.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halSleepTimerClock.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halSleepTimerClock.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halUart.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halUart.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halUsart.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halUsart.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halUsb.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\halUsb.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\nv_basic.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include\nv_basic.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\deRFusb23e06\include\halMacIsr.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\deRFusb23e06\include\halMacIsr.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\deRFusb23e06\include\halRfCtrl.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\deRFusb23e06\include\halRfCtrl.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\deRFusb23e06\include\halRfPio.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\deRFusb23e06\include\halRfPio.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\cortexm3\at91sam3s4c\deRFusb23e06\include\halRfSpi.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\cortexm3\at91sam3s4c\deRFusb23e06\include\halRfSpi.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\include\isdImageStorage.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\include\isdImageStorage.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\include\massStorageDevice.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\include\massStorageDevice.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\include\ofdExtMemory.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\include\ofdExtMemory.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\include\usbFifoUsart.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\include\usbFifoUsart.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\include\vcpVirtualUsart.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\include\vcpVirtualUsart.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\USBClasses\common\include\usbDescriptors.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\USBClasses\common\include\usbDescriptors.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\USBClasses\common\include\usbEnumeration.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\USBClasses\common\include\usbEnumeration.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\USBClasses\common\include\usbSetupProcess.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\USBClasses\common\include\usbSetupProcess.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\USBClasses\common\src\usbDescriptors.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\USBClasses\common\src\usbDescriptors.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\USBClasses\common\src\usbEnumeration.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\USBClasses\common\src\usbEnumeration.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\USBClasses\common\src\usbSetupProcess.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\USBClasses\common\src\usbSetupProcess.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\USBClasses\VCP\include\vcpCdcProtocol.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\USBClasses\VCP\include\vcpCdcProtocol.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\USBClasses\VCP\src\vcpCdcProtocol.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\USBClasses\VCP\src\vcpCdcProtocol.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\HAL\drivers\USBClasses\VCP\src\vcpVirtualUsart.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\HAL\drivers\USBClasses\VCP\src\vcpVirtualUsart.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\mac.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\mac.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macAddr.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macAddr.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macAffix.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macAffix.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macAssociate.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macAssociate.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macBanNode.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macBanNode.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macBeacon.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macBeacon.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macBuffers.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macBuffers.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macCommon.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macCommon.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macCommStatus.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macCommStatus.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macData.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macData.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macDbg.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macDisassociate.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macDisassociate.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macEnvironment.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macEnvironment.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macFrame.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macFrame.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macMem.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macMem.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macOrphan.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macOrphan.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macphyPib.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macphyPib.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macPoll.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macPoll.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macPurge.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macPurge.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macReset.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macReset.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macRxEnable.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macRxEnable.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macScan.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macScan.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macSetGet.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macSetGet.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macStart.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macStart.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macSuperframe.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macSuperframe.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\macSync.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\macSync.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\phy.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\phy.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\rfBattery.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\rfBattery.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\rfCalibration.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\rfCalibration.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\rfEncrypt.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\rfEncrypt.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\rfInit.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\rfInit.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\rfRandom.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\rfRandom.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\include\rfRegAccess.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\include\rfRegAccess.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_ENV\include\macenvMem.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_ENV\include\macenvMem.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_ENV\include\macenvPib.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_ENV\include\macenvPib.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwd.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwd.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdBatMon.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdBatMon.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdCalibration.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdCalibration.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdData.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdData.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdEd.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdEd.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdEncrypt.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdEncrypt.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdRegAccess.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdRegAccess.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdReset.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdReset.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdRnd.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdRnd.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdService.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdService.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdSet.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdSet.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdSetTrx.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include\machwdSetTrx.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiAssociateHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiAssociateHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiBeaconHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiBeaconHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiDataHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiDataHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiDisassociateHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiDisassociateHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiHwdReqMemPool.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiHwdReqMemPool.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiManager.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiManager.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiMem.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiMem.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiMemAccess.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiMemAccess.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiOrphanHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiOrphanHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiPanIdConflictHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiPanIdConflictHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiPanServer.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiPanServer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiPollHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiPollHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiPurgeHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiPurgeHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiResetHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiResetHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiRxEnableHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiRxEnableHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiScanHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiScanHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiSetGetHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiSetGetHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiStartHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiStartHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiSwitchRxCtrl.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiSwitchRxCtrl.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiTransactionHandler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiTransactionHandler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiTransactionHash.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiTransactionHash.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiTransactionQueue.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\MAC_PHY\MAC_HWI\include\machwiTransactionQueue.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nldeData.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nldeData.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeDirectJoin.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeDirectJoin.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeEdScan.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeEdScan.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeJoin.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeJoin.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeLeave.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeLeave.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeNetworkDiscovery.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeNetworkDiscovery.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeNetworkFormation.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeNetworkFormation.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeNwkStatus.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeNwkStatus.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmePermitJoining.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmePermitJoining.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeReset.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeReset.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeRouteDiscovery.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeRouteDiscovery.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeSetGet.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeSetGet.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeStartRouter.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeStartRouter.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeSync.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeSync.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nlmeSyncLoss.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nlmeSyncLoss.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nwk.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nwk.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nwkAddressResolv.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nwkAddressResolv.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nwkAttributes.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nwkAttributes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nwkCommon.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nwkCommon.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nwkConfigServer.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nwkConfigServer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nwkGroup.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nwkGroup.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nwkNeighbor.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nwkNeighbor.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nwkProfiler.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nwkProfiler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nwkRouteInfo.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nwkRouteInfo.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\nwkSecurity.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\nwkSecurity.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkAddress.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkAddress.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkAddressConflict.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkAddressConflict.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkAddressMap.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkAddressMap.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkBTT.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkBTT.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkCommands.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkCommands.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkConcentrator.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkConcentrator.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkConfig.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkConfig.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkDataReq.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkDataReq.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkDbg.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkDirectJoin.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkDirectJoin.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkDiscovery.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkDiscovery.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkEDScan.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkEDScan.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkFormation.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkFormation.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkFrame.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkFrame.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkIB.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkIB.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkJoinInd.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkJoinInd.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkJoinReq.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkJoinReq.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkLeave.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkLeave.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkLinkStatus.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkLinkStatus.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkLoopback.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkLoopback.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkManager.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkManager.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkManyToOne.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkManyToOne.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkMem.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkMem.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkNeighborTable.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkNeighborTable.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkOrphan.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkOrphan.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkPacket.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkPacket.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkPassiveAck.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkPassiveAck.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkPermitJoining.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkPermitJoining.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkReportCommand.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkReportCommand.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkReset.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkReset.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkRouteCache.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkRouteCache.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkRouteDiscovery.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkRouteDiscovery.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkRouteDiscoveryTable.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkRouteDiscoveryTable.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkRouteRecord.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkRouteRecord.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkRouteReply.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkRouteReply.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkRouteRequest.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkRouteRequest.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkRouting.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkRouting.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkRoutingTable.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkRoutingTable.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkRx.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkRx.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkRxSecurity.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkRxSecurity.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkSilentJoin.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkSilentJoin.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkSourceRouting.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkSourceRouting.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkStartRouter.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkStartRouter.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkStateMachine.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkStateMachine.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkStatusInd.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkStatusInd.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkStatusReq.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkStatusReq.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkSync.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkSync.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkSyncLoss.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkSyncLoss.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkSystem.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkSystem.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkTaskManager.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkTaskManager.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkTx.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkTx.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkTxDelay.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkTxDelay.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkTxSecurity.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkTxSecurity.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\NWK\include\private\nwkUpdateCommand.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\NWK\include\private\nwkUpdateCommand.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\include\pdsDataServer.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\include\pdsDataServer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\include\pdsMemIds.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\include\pdsMemIds.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsCrcService.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\include\private\pdsCrcService.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsDbg.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\include\private\pdsDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsMem.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\include\private\pdsMem.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsMemAbstract.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\include\private\pdsMemAbstract.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsMemAccess.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\include\private\pdsMemAccess.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsTimer.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\include\private\pdsTimer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsWriteData.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\include\private\pdsWriteData.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\src\pdsCrcService.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\src\pdsCrcService.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\src\pdsDataServer.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\src\pdsDataServer.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\src\pdsEvents.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\src\pdsEvents.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\src\pdsInit.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\src\pdsInit.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\src\pdsMem.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\src\pdsMem.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\src\pdsMemAccess.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\src\pdsMemAccess.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\src\pdsTimer.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\src\pdsTimer.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\PersistDataServer\src\pdsWriteData.c">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\PersistDataServer\src\pdsWriteData.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\ServiceProvider\include\sspAuthentic.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\ServiceProvider\include\sspAuthentic.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\ServiceProvider\include\sspChallengeGen.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\ServiceProvider\include\sspChallengeGen.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\ServiceProvider\include\sspCommon.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\ServiceProvider\include\sspCommon.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\ServiceProvider\include\sspDbg.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\ServiceProvider\include\sspDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\ServiceProvider\include\sspHash.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\ServiceProvider\include\sspHash.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\ServiceProvider\include\sspReset.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\ServiceProvider\include\sspReset.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\ServiceProvider\include\sspSfp.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\ServiceProvider\include\sspSfp.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\ServiceProvider\include\sspSkke.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\ServiceProvider\include\sspSkke.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\TrustCentre\include\tc.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\TrustCentre\include\tc.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\TrustCentre\include\tcAuthentic.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\TrustCentre\include\tcAuthentic.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\TrustCentre\include\tcCommon.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\TrustCentre\include\tcCommon.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\TrustCentre\include\tcDbg.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\TrustCentre\include\tcDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\TrustCentre\include\tcDeviceTableCtrl.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\TrustCentre\include\tcDeviceTableCtrl.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\TrustCentre\include\tcKeyEstablish.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\TrustCentre\include\tcKeyEstablish.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\TrustCentre\include\tcKeyUpdate.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\TrustCentre\include\tcKeyUpdate.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\TrustCentre\include\tcPromiscuousMode.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\TrustCentre\include\tcPromiscuousMode.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\TrustCentre\include\tcRemove.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\TrustCentre\include\tcRemove.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\Security\TrustCentre\include\tcReset.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\Security\TrustCentre\include\tcReset.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\bcEndian.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\bcEndian.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\bcSysSleep.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\bcSysSleep.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\dbg.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\dbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\mnUtils.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\mnUtils.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\queue.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\queue.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\sysDbg.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\sysDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\sysDuplicateTable.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\sysDuplicateTable.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\sysEvents.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\sysEvents.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\sysStat.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\sysStat.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\sysTimer.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\sysTimer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\taskManager.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\taskManager.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\SystemEnvironment\include\types.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\SystemEnvironment\include\types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ZDO\include\appFramework.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ZDO\include\appFramework.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ZDO\include\bcEvents.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ZDO\include\bcEvents.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ZDO\include\zdo.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ZDO\include\zdo.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ZDO\include\zdoNotify.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ZDO\include\zdoNotify.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_SAM3S_EK_1_14_0\BitCloud\Components\ZDO\include\zdoSecurityManager.h">
+      <SubType>compile</SubType>
+      <Link>BitCloud\Components\ZDO\include\zdoSecurityManager.h</Link>
+    </Compile>
+    <Compile Include="..\configuration.h">
+      <SubType>compile</SubType>
+      <Link>configuration.h</Link>
+    </Compile>
+    <Compile Include="..\src\blink.c">
+      <SubType>compile</SubType>
+      <Link>src\blink.c</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\makefiles\DERFUSB23E06\Makefile_All_deRFusb23e06_At91sam3s4c_Rf231_Gcc">
+      <SubType>compile</SubType>
+      <Link>Makefile_All_deRFusb23e06_At91sam3s4c_Rf231_Gcc</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BitCloud" />
+    <Folder Include="BitCloud\Components\APS\include" />
+    <Folder Include="BitCloud\Components\APS\include\private" />
+    <Folder Include="BitCloud\Components\BSP" />
+    <Folder Include="BitCloud\Components\BSP\DERFUSB23E06" />
+    <Folder Include="BitCloud\Components\BSP\DERFUSB23E06\include" />
+    <Folder Include="BitCloud\Components\BSP\DERFUSB23E06\src" />
+    <Folder Include="BitCloud\Components\ConfigServer\include" />
+    <Folder Include="BitCloud\Components\ConfigServer\include\private" />
+    <Folder Include="BitCloud\Components\ConfigServer\src" />
+    <Folder Include="BitCloud\Components\HAL" />
+    <Folder Include="BitCloud\Components\APS" />
+    <Folder Include="BitCloud\Components\HAL\cortexm3\at91sam3s4c" />
+    <Folder Include="BitCloud\Components\HAL\cortexm3\at91sam3s4c\common" />
+    <Folder Include="BitCloud\Components\HAL\cortexm3\at91sam3s4c\common\include" />
+    <Folder Include="BitCloud\Components\HAL\cortexm3\at91sam3s4c\deRFusb23e06" />
+    <Folder Include="BitCloud\Components\HAL\cortexm3\at91sam3s4c\deRFusb23e06\include" />
+    <Folder Include="BitCloud\Components\HAL\drivers" />
+    <Folder Include="BitCloud\Components\HAL\drivers\include" />
+    <Folder Include="BitCloud\Components\HAL\drivers\USBClasses" />
+    <Folder Include="BitCloud\Components\HAL\drivers\USBClasses\common" />
+    <Folder Include="BitCloud\Components\HAL\drivers\USBClasses\common\include" />
+    <Folder Include="BitCloud\Components\HAL\drivers\USBClasses\common\src" />
+    <Folder Include="BitCloud\Components\HAL\drivers\USBClasses\VCP" />
+    <Folder Include="BitCloud\Components\ConfigServer" />
+    <Folder Include="BitCloud\Components\HAL\drivers\USBClasses\VCP\include" />
+    <Folder Include="BitCloud\Components\HAL\drivers\USBClasses\VCP\src" />
+    <Folder Include="BitCloud\Components\HAL\cortexm3" />
+    <Folder Include="BitCloud\Components\MAC_PHY" />
+    <Folder Include="BitCloud\Components\MAC_PHY\MAC_ENV" />
+    <Folder Include="BitCloud\Components\MAC_PHY\MAC_ENV\include" />
+    <Folder Include="BitCloud\Components\MAC_PHY\MAC_HWD_PHY\include" />
+    <Folder Include="BitCloud\Components\MAC_PHY\MAC_HWI" />
+    <Folder Include="BitCloud\Components\MAC_PHY\MAC_HWD_PHY" />
+    <Folder Include="BitCloud\Components\MAC_PHY\MAC_HWI\include" />
+    <Folder Include="BitCloud\Components\MAC_PHY\include" />
+    <Folder Include="BitCloud\Components\NWK\include" />
+    <Folder Include="BitCloud\Components\NWK\include\private" />
+    <Folder Include="BitCloud\Components\Security" />
+    <Folder Include="BitCloud\Components\PersistDataServer" />
+    <Folder Include="BitCloud\Components\PersistDataServer\include" />
+    <Folder Include="BitCloud\Components\PersistDataServer\include\private" />
+    <Folder Include="BitCloud\Components\PersistDataServer\src" />
+    <Folder Include="BitCloud\Components\Security\ServiceProvider" />
+    <Folder Include="BitCloud\Components\Security\ServiceProvider\include" />
+    <Folder Include="BitCloud\Components\Security\TrustCentre" />
+    <Folder Include="BitCloud\Components\Security\TrustCentre\include" />
+    <Folder Include="BitCloud\Components\SystemEnvironment" />
+    <Folder Include="BitCloud\Components\SystemEnvironment\include" />
+    <Folder Include="BitCloud\Components\ZDO" />
+    <Folder Include="BitCloud\Components\NWK" />
+    <Folder Include="BitCloud\Components" />
+    <Folder Include="BitCloud\Components\ZDO\include" />
+    <Folder Include="src" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

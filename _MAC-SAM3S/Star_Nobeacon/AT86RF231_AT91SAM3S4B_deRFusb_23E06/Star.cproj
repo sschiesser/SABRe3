@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.C</ToolchainName>
+    <ProjectGuid>{a17d0f77-35b2-45c4-b74a-148d8e1331d5}</ProjectGuid>
+    <avrdevice>ATSAM3S4C</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Star</AssemblyName>
+    <Name>Star</Name>
+    <RootNamespace>Star</RootNamespace>
+    <ToolchainFlavour>YAGARTO_4_5_1</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue />
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>2</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.8.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGcc>
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+        <armgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </armgcc.linker.libraries.Libraries>
+        <armgcc.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>../cmsis/linkerScripts</Value>
+          </ListValues>
+        </armgcc.linker.libraries.LibrarySearchPaths>
+        <armgcc.linker.optimization.GarbageCollectUnusedSections>True</armgcc.linker.optimization.GarbageCollectUnusedSections>
+        <armgcc.linker.miscellaneous.LinkerFlags>-Tsam3s4c_flash.ld</armgcc.linker.miscellaneous.LinkerFlags>
+        <armgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.assembler.general.IncludePaths>
+        <armgcc.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.preprocessingassembler.general.IncludePaths>
+      </ArmGcc>
+    </ToolchainSettings>
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>.</OutputDirectory>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+    <ExternalMakeFilePath>.\Makefile</ExternalMakeFilePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGcc>
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+        <armgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </armgcc.linker.libraries.Libraries>
+        <armgcc.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>../cmsis/linkerScripts</Value>
+          </ListValues>
+        </armgcc.linker.libraries.LibrarySearchPaths>
+        <armgcc.linker.optimization.GarbageCollectUnusedSections>True</armgcc.linker.optimization.GarbageCollectUnusedSections>
+        <armgcc.linker.miscellaneous.LinkerFlags>-Tsam3s4c_flash.ld</armgcc.linker.miscellaneous.LinkerFlags>
+        <armgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.assembler.general.IncludePaths>
+        <armgcc.assembler.debugging.DebugLevel>Default (-g)</armgcc.assembler.debugging.DebugLevel>
+        <armgcc.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\CMSIS\Include</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL</Value>
+            <Value>%24(ToolchainDir)\..\..\CMSIS_Atmel\Device\ATMEL\sam3s\include</Value>
+          </ListValues>
+        </armgcc.preprocessingassembler.general.IncludePaths>
+        <armgcc.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcc.preprocessingassembler.debugging.DebugLevel>
+      </ArmGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Makefile">
+      <SubType>compile</SubType>
+      <Link>Makefile</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Inc" />
+    <Folder Include="MAC_v_2_6_1" />
+    <Folder Include="MAC_v_2_6_1\Applications\Helper_Files" />
+    <Folder Include="MAC_v_2_6_1\Applications\Helper_Files\SIO_Support" />
+    <Folder Include="MAC_v_2_6_1\Applications\Helper_Files\SIO_Support\Inc" />
+    <Folder Include="MAC_v_2_6_1\Applications\Helper_Files\SIO_Support\Src" />
+    <Folder Include="MAC_v_2_6_1\Include" />
+    <Folder Include="MAC_v_2_6_1\MAC" />
+    <Folder Include="MAC_v_2_6_1\MAC\Inc" />
+    <Folder Include="MAC_v_2_6_1\MAC\Src" />
+    <Folder Include="MAC_v_2_6_1\Applications" />
+    <Folder Include="MAC_v_2_6_1\PAL\Inc" />
+    <Folder Include="MAC_v_2_6_1\PAL\SAM3S" />
+    <Folder Include="MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Boards" />
+    <Folder Include="MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Boards\deRFusb_23E06" />
+    <Folder Include="MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Inc" />
+    <Folder Include="MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Src" />
+    <Folder Include="MAC_v_2_6_1\PAL\SAM3S\Generic" />
+    <Folder Include="MAC_v_2_6_1\PAL\SAM3S\Generic\Inc" />
+    <Folder Include="MAC_v_2_6_1\PAL\SAM3S\Generic\Src" />
+    <Folder Include="MAC_v_2_6_1\PAL\SAM3S\Libraries" />
+    <Folder Include="MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B" />
+    <Folder Include="MAC_v_2_6_1\Resources" />
+    <Folder Include="MAC_v_2_6_1\Resources\Buffer_Management" />
+    <Folder Include="MAC_v_2_6_1\Resources\Buffer_Management\Inc" />
+    <Folder Include="MAC_v_2_6_1\Resources\Buffer_Management\Src" />
+    <Folder Include="MAC_v_2_6_1\Resources\Queue_Management" />
+    <Folder Include="MAC_v_2_6_1\Resources\Queue_Management\Inc" />
+    <Folder Include="MAC_v_2_6_1\Resources\Queue_Management\Src" />
+    <Folder Include="MAC_v_2_6_1\TAL" />
+    <Folder Include="MAC_v_2_6_1\PAL" />
+    <Folder Include="MAC_v_2_6_1\TAL\AT86RF231" />
+    <Folder Include="MAC_v_2_6_1\TAL\AT86RF231\Inc" />
+    <Folder Include="MAC_v_2_6_1\TAL\AT86RF231\Src" />
+    <Folder Include="MAC_v_2_6_1\TAL\Inc" />
+    <Folder Include="MAC_v_2_6_1\TAL\Src" />
+    <Folder Include="Src" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Applications\Helper_Files\SIO_Support\Inc\sio_handler.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Applications\Helper_Files\SIO_Support\Inc\sio_handler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Applications\Helper_Files\SIO_Support\Src\sio_handler.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Applications\Helper_Files\SIO_Support\Src\sio_handler.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Include\ieee_const.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Include\ieee_const.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Include\mac_build_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Include\mac_build_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Include\return_val.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Include\return_val.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Include\stack_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Include\stack_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Include\vendor_nwk_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Include\vendor_nwk_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Include\vendor_stack_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Include\vendor_stack_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Inc\mac.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Inc\mac.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Inc\mac_api.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Inc\mac_api.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Inc\mac_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Inc\mac_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Inc\mac_data_structures.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Inc\mac_data_structures.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Inc\mac_internal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Inc\mac_internal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Inc\mac_msg_const.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Inc\mac_msg_const.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Inc\mac_msg_types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Inc\mac_msg_types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_api.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_api.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_associate.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_associate.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_beacon.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_beacon.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_callback_wrapper.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_callback_wrapper.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_data_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_data_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_data_req.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_data_req.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_disassociate.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_disassociate.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_dispatcher.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_dispatcher.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_mcps_data.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_mcps_data.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_misc.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_misc.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_orphan.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_orphan.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_pib.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_pib.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_poll.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_poll.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_process_beacon_frame.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_process_beacon_frame.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_process_tal_tx_frame_status.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_process_tal_tx_frame_status.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_rx_enable.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_rx_enable.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_scan.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_scan.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_security.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_security.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_start.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_start.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_sync.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_sync.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\mac_tx_coord_realignment_command.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\mac_tx_coord_realignment_command.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mcps_data_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mcps_data_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mcps_data_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mcps_data_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mcps_purge_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mcps_purge_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_associate_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_associate_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_associate_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_associate_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_beacon_notify_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_beacon_notify_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_comm_status_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_comm_status_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_disassociate_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_disassociate_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_disassociate_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_disassociate_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_get_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_get_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_orphan_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_orphan_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_poll_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_poll_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_reset_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_reset_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_rx_enable_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_rx_enable_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_scan_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_scan_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_set_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_set_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_start_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_start_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\MAC\Src\usr_mlme_sync_loss_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\MAC\Src\usr_mlme_sync_loss_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\Inc\armtypes.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\Inc\armtypes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\Inc\avr32types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\Inc\avr32types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\Inc\avrtypes.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\Inc\avrtypes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\Inc\mcu_types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\Inc\mcu_types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\Inc\pal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\Inc\pal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\Inc\pal_types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\Inc\pal_types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Boards\deRFusb_23E06\board.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Boards\deRFusb_23E06\board.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Boards\deRFusb_23E06\board_cstartup_gnu.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Boards\deRFusb_23E06\board_cstartup_gnu.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Boards\deRFusb_23E06\pal_board.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Boards\deRFusb_23E06\pal_board.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Boards\deRFusb_23E06\pal_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Boards\deRFusb_23E06\pal_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Boards\deRFusb_23E06\pal_irq.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Boards\deRFusb_23E06\pal_irq.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Boards\deRFusb_23E06\pal_usbd_callbacks.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Boards\deRFusb_23E06\pal_usbd_callbacks.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Boards\pal_boardtypes.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Boards\pal_boardtypes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Boards\vendor_boardtypes.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Boards\vendor_boardtypes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Inc\AT91SAM3S4.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Inc\AT91SAM3S4.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Src\pal_sio_hub.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Src\pal_sio_hub.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\AT91SAM3S4B\Src\syscalls.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\AT91SAM3S4B\Src\syscalls.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Inc\exceptions.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Inc\exceptions.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Inc\pal_flash.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Inc\pal_flash.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Inc\pal_internal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Inc\pal_internal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Inc\pal_timer.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Inc\pal_timer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Inc\pal_trx_access.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Inc\pal_trx_access.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Inc\pal_uart.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Inc\pal_uart.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Inc\pal_usb.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Inc\pal_usb.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Src\exceptions.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Src\exceptions.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Src\pal.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Src\pal.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Src\pal_flash.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Src\pal_flash.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Src\pal_timer.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Src\pal_timer.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Src\pal_trx_access.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Src\pal_trx_access.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Src\pal_uart.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Src\pal_uart.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Src\pal_usb.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Src\pal_usb.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\PAL\SAM3\Generic\Src\pal_utils.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\PAL\SAM3S\Generic\Src\pal_utils.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Resources\Buffer_Management\Inc\bmm.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Resources\Buffer_Management\Inc\bmm.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Resources\Buffer_Management\Src\bmm.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Resources\Buffer_Management\Src\bmm.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Resources\Queue_Management\Inc\qmm.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Resources\Queue_Management\Inc\qmm.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\Resources\Queue_Management\Src\qmm.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\Resources\Queue_Management\Src\qmm.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Inc\at86rf231.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Inc\at86rf231.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_constants.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_constants.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_internal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_internal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_irq_handler.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_irq_handler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_pib.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_pib.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_rx.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_rx.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_slotted_csma.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_slotted_csma.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_tx.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Inc\tal_tx.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Src\tal.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Src\tal.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Src\tal_ed.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Src\tal_ed.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Src\tal_init.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Src\tal_init.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Src\tal_irq_handler.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Src\tal_irq_handler.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Src\tal_pib.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Src\tal_pib.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Src\tal_pwr_mgmt.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Src\tal_pwr_mgmt.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Src\tal_rx.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Src\tal_rx.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Src\tal_rx_enable.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Src\tal_rx_enable.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Src\tal_slotted_csma.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Src\tal_slotted_csma.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\AT86RF231\Src\tal_tx.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\AT86RF231\Src\tal_tx.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\Inc\tal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\Inc\tal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\Inc\tal_types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\Inc\tal_types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\Src\tal_ed_end_cb.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\Src\tal_ed_end_cb.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\Src\tal_rx_frame_cb.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\Src\tal_rx_frame_cb.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_6_1\TAL\Src\tal_tx_frame_done_cb.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_6_1\TAL\Src\tal_tx_frame_done_cb.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Inc\fifo.h">
+      <SubType>compile</SubType>
+      <Link>Inc\fifo.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Inc\sabre_config.h">
+      <SubType>compile</SubType>
+      <Link>Inc\sabre_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Src\fifo.c">
+      <SubType>compile</SubType>
+      <Link>Src\fifo.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Src\sabre_tasks.c">
+      <SubType>compile</SubType>
+      <Link>Src\sabre_tasks.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\_MAC-megaRF\Star_Nobeacon\Inc\app_config.h">
+      <SubType>compile</SubType>
+      <Link>Inc\app_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\_MAC-megaRF\Star_Nobeacon\Src\main.c">
+      <SubType>compile</SubType>
+      <Link>Src\main.c</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

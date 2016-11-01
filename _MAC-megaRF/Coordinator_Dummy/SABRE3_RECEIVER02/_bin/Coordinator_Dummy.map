@@ -1,0 +1,1952 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+                              ./GCC/tal_ed.o (__udivmodhi4)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+                              ./GCC/main.o (__divmodhi4)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+                              ./GCC/pal_uart.o (__udivmodsi4)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm128rfa1.o (exit)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+                              ./GCC/tal.o (__tablejump2__)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+                              ./GCC/main.o (__do_copy_data)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+                              ./GCC/main.o (__do_clear_bss)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+                              ./GCC/tal_slotted_csma.o (__muluhisi3)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+                              ./GCC/tal_init.o (__adddi3_s8)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+                              ./GCC/main.o (__cmpdi2)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+                              ./GCC/tal_init.o (__cmpdi2_s8)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o) (__umulhisi3)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3.o)
+                              ./GCC/tal_rx.o (__addsf3)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3.o) (__addsf3x)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+                              ./GCC/tal_rx.o (__fixunssfsi)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+                              ./GCC/tal_rx.o (__floatsisf)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_inf)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_nan)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_pscA)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_pscB)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_round.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3.o) (__fp_round)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_split3)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o) (__fp_zero)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                              ./GCC/tal_rx.o (__mulsf3)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3.o) (__mulsf3x)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o)
+                              ./GCC/main.o (rand)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memcpy.o)
+                              ./GCC/tal_rx.o (memcpy)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fdevopen.o)
+                              ./GCC/main.o (fdevopen)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fputc.o)
+                              ./GCC/main.o (fputc)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
+                              ./GCC/main.o (__iob)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_byte_atmega128rfa1.o)
+                              ./GCC/pal.o (__eerd_byte_m128rfa1)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_byte_atmega128rfa1.o)
+                              ./GCC/pal.o (__eewr_byte_m128rfa1)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(calloc.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fdevopen.o) (calloc)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(malloc.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(calloc.o) (malloc)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(calloc.o) (memset)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o) (__divmodsi4)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o) (__negsi2)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o) (__mulohisi3)
+
+Allocating common symbols
+Common symbol       size              file
+
+mac_last_dsn        0x1               ./GCC/mac.o
+mac_nhle_q          0x5               ./GCC/mac_api.o
+indirect_data_q     0x5               ./GCC/mac.o
+mac_last_src_addr   0x8               ./GCC/mac.o
+tal_rx_on_required  0x1               ./GCC/tal.o
+mac_scan_orig_page  0x1               ./GCC/mac.o
+mac_poll_state      0x1               ./GCC/mac.o
+transaction_duration_periods
+                    0x1               ./GCC/tal_slotted_csma.o
+broadcast_q         0x5               ./GCC/mac.o
+nhle_mac_q          0x5               ./GCC/mac.o
+tal_incoming_frame_queue
+                    0x5               ./GCC/tal.o
+__brkval            0x2               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(malloc.o)
+mac_scan_state      0x1               ./GCC/mac.o
+timer_array         0x87              ./GCC/pal_timer.o
+tal_beacon_transmission
+                    0x1               ./GCC/tal.o
+mac_sync_state      0x1               ./GCC/mac.o
+mac_final_cap_slot  0x1               ./GCC/mac.o
+mac_frame_ptr       0x2               ./GCC/tal.o
+uart_0_buffer       0x1a              ./GCC/pal_uart.o
+mac_scan_orig_channel
+                    0x1               ./GCC/mac.o
+mac_conf_buf_ptr    0x2               ./GCC/mac.o
+mac_beacon_payload  0x34              ./GCC/mac.o
+tal_csma_state      0x2               ./GCC/tal.o
+mac_pib             0x19              ./GCC/mac.o
+tal_rx_timestamp    0x4               ./GCC/tal.o
+mac_bc_data_indicated
+                    0x1               ./GCC/mac.o
+mac_rx_enabled      0x1               ./GCC/mac.o
+mac_scan_orig_panid
+                    0x2               ./GCC/mac.o
+tal_mac_q           0x5               ./GCC/mac.o
+mac_scan_cmd_buf_ptr
+                    0x2               ./GCC/mac.o
+tal_pib             0x24              ./GCC/tal.o
+mac_parse_data      0x2b              ./GCC/mac.o
+tal_trx_status      0x1               ./GCC/tal.o
+last_frame_length   0x1               ./GCC/tal.o
+tal_frame_to_tx     0x2               ./GCC/tal.o
+mac_state           0x1               ./GCC/mac.o
+__flp               0x2               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(malloc.o)
+mac_busy            0x1               ./GCC/mac.o
+tal_awake_end_flag  0x1               ./GCC/tal.o
+__iob               0x6               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
+mac_radio_sleep_state
+                    0x1               ./GCC/mac.o
+timer_trigger       0x1               ./GCC/pal_timer.o
+tal_state           0x1               ./GCC/tal.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800100         0x0000ff00         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800200
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm128rfa1.o
+Address of section .data set to 0x800200
+LOAD ./GCC/main.o
+LOAD ./GCC/sio_handler.o
+LOAD ./GCC/pal_uart.o
+LOAD ./GCC/pal_usb_ftdi.o
+LOAD ./GCC/pal_sio_hub.o
+LOAD ./GCC/pal_irq.o
+LOAD ./GCC/pal.o
+LOAD ./GCC/pal_mcu_generic.o
+LOAD ./GCC/pal_timer.o
+LOAD ./GCC/pal_board.o
+LOAD ./GCC/pal_utils.o
+LOAD ./GCC/bmm.o
+LOAD ./GCC/qmm.o
+LOAD ./GCC/tal.o
+LOAD ./GCC/tal_rx.o
+LOAD ./GCC/tal_tx.o
+LOAD ./GCC/tal_ed.o
+LOAD ./GCC/tal_slotted_csma.o
+LOAD ./GCC/tal_pib.o
+LOAD ./GCC/tal_init.o
+LOAD ./GCC/tal_irq_handler.o
+LOAD ./GCC/tal_pwr_mgmt.o
+LOAD ./GCC/tal_rx_enable.o
+LOAD ./GCC/mac_associate.o
+LOAD ./GCC/mac_beacon.o
+LOAD ./GCC/mac_callback_wrapper.o
+LOAD ./GCC/mac_data_ind.o
+LOAD ./GCC/mac_data_req.o
+LOAD ./GCC/mac_data_extract_mhr.o
+LOAD ./GCC/mac_disassociate.o
+LOAD ./GCC/mac_dispatcher.o
+LOAD ./GCC/mac.o
+LOAD ./GCC/mac_mcps_data.o
+LOAD ./GCC/mac_misc.o
+LOAD ./GCC/mac_orphan.o
+LOAD ./GCC/mac_pib.o
+LOAD ./GCC/mac_poll.o
+LOAD ./GCC/mac_process_beacon_frame.o
+LOAD ./GCC/mac_process_tal_tx_frame_status.o
+LOAD ./GCC/mac_rx_enable.o
+LOAD ./GCC/mac_scan.o
+LOAD ./GCC/mac_start.o
+LOAD ./GCC/mac_sync.o
+LOAD ./GCC/mac_tx_coord_realignment_command.o
+LOAD ./GCC/mac_api.o
+LOAD ./GCC/usr_mcps_purge_conf.o
+LOAD ./GCC/usr_mlme_beacon_notify_ind.o
+LOAD ./GCC/usr_mlme_disassociate_conf.o
+LOAD ./GCC/usr_mlme_disassociate_ind.o
+LOAD ./GCC/usr_mlme_get_conf.o
+LOAD ./GCC/usr_mlme_orphan_ind.o
+LOAD ./GCC/usr_mlme_poll_conf.o
+LOAD ./GCC/usr_mlme_rx_enable_conf.o
+LOAD ./GCC/usr_mlme_sync_loss_ind.o
+START GROUP
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x90bc
+ *(.vectors)
+ .vectors       0x00000000      0x120 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm128rfa1.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x00000120       0x2e ./GCC/tal.o
+ .progmem.gcc_sw_table
+                0x0000014e       0x1a ./GCC/mac_process_tal_tx_frame_status.o
+                0x00000168                . = ALIGN (0x2)
+                0x00000168                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000168        0x0 linker stubs
+ *(.trampolines*)
+                0x00000168                __trampolines_end = .
+ *(.progmem*)
+ .progmem.data  0x00000168       0x10 ./GCC/tal_pib.o
+                0x00000168                tx_pwr_table
+ .progmem.data  0x00000178       0x48 ./GCC/mac_dispatcher.o
+ .progmem.data  0x000001c0       0x29 ./GCC/mac_pib.o
+                0x000001ea                . = ALIGN (0x2)
+ *fill*         0x000001e9        0x1 
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000001ea                __ctors_start = .
+ *(.ctors)
+                0x000001ea                __ctors_end = .
+                0x000001ea                __dtors_start = .
+ *(.dtors)
+                0x000001ea                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000001ea        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm128rfa1.o
+                0x000001ea                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000001ea        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm128rfa1.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000001f6       0x1a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+                0x000001f6                __do_copy_data
+ .init4         0x00000210       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+                0x00000210                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000220        0x8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm128rfa1.o
+ *(.init9)
+ *(.text)
+ .text          0x00000228        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm128rfa1.o
+                0x00000228                __vector_38
+                0x00000228                __vector_22
+                0x00000228                __vector_28
+                0x00000228                __vector_67
+                0x00000228                __vector_1
+                0x00000228                __vector_32
+                0x00000228                __vector_34
+                0x00000228                __vector_24
+                0x00000228                __vector_12
+                0x00000228                __vector_55
+                0x00000228                __vector_69
+                0x00000228                __vector_46
+                0x00000228                __bad_interrupt
+                0x00000228                __vector_31
+                0x00000228                __vector_35
+                0x00000228                __vector_39
+                0x00000228                __vector_3
+                0x00000228                __vector_23
+                0x00000228                __vector_68
+                0x00000228                __vector_30
+                0x00000228                __vector_45
+                0x00000228                __vector_11
+                0x00000228                __vector_54
+                0x00000228                __vector_13
+                0x00000228                __vector_17
+                0x00000228                __vector_19
+                0x00000228                __vector_56
+                0x00000228                __vector_7
+                0x00000228                __vector_49
+                0x00000228                __vector_41
+                0x00000228                __vector_43
+                0x00000228                __vector_5
+                0x00000228                __vector_33
+                0x00000228                __vector_47
+                0x00000228                __vector_52
+                0x00000228                __vector_37
+                0x00000228                __vector_4
+                0x00000228                __vector_44
+                0x00000228                __vector_51
+                0x00000228                __vector_9
+                0x00000228                __vector_2
+                0x00000228                __vector_21
+                0x00000228                __vector_15
+                0x00000228                __vector_36
+                0x00000228                __vector_29
+                0x00000228                __vector_40
+                0x00000228                __vector_8
+                0x00000228                __vector_26
+                0x00000228                __vector_48
+                0x00000228                __vector_14
+                0x00000228                __vector_53
+                0x00000228                __vector_10
+                0x00000228                __vector_50
+                0x00000228                __vector_16
+                0x00000228                __vector_18
+                0x00000228                __vector_20
+                0x00000228                __vector_42
+ .text          0x0000022c      0x8b2 ./GCC/main.o
+                0x00000296                dummy_init_values
+                0x000002f8                dummy_generate_values
+                0x000004e4                dummy_pack_values
+                0x00000800                dummy_send_data
+                0x00000858                usr_mlme_reset_conf
+                0x00000888                usr_mlme_set_conf
+                0x00000912                usr_mlme_scan_conf
+                0x0000093c                usr_mlme_start_conf
+                0x00000962                usr_mlme_associate_ind
+                0x00000a86                usr_mlme_comm_status_ind
+                0x00000a88                usr_mcps_data_ind
+                0x00000ada                usr_mlme_associate_conf
+                0x00000adc                usr_mcps_data_conf
+ .text          0x00000ade       0xce ./GCC/sio_handler.o
+                0x00000ade                _sio_putchar
+                0x00000b24                _sio_getchar
+                0x00000b4c                _sio_getchar_nowait
+                0x00000b7a                sio_binarywrite
+ .text          0x00000bac      0x1fe ./GCC/pal_uart.o
+                0x00000bac                sio_uart_0_init
+                0x00000c02                sio_uart_0_tx
+                0x00000c7e                sio_uart_0_rx
+                0x00000cf8                __vector_25
+                0x00000d50                __vector_27
+ .text          0x00000daa        0x0 ./GCC/pal_usb_ftdi.o
+ .text          0x00000daa       0x3c ./GCC/pal_sio_hub.o
+                0x00000daa                pal_sio_init
+                0x00000dc2                pal_sio_tx
+                0x00000dd4                pal_sio_rx
+ .text          0x00000de6      0x244 ./GCC/pal_irq.o
+                0x00000de6                pal_trx_irq_init_tx_end
+                0x00000df0                pal_trx_irq_init_rx_end
+                0x00000dfa                pal_trx_irq_init_cca_ed
+                0x00000e04                pal_trx_irq_init_tstamp
+                0x00000e0e                pal_trx_irq_init_awake
+                0x00000e18                __vector_63
+                0x00000e6e                __vector_60
+                0x00000ec4                __vector_61
+                0x00000f1a                __vector_64
+                0x00000f70                __vector_59
+                0x00000fc6                __vector_57
+                0x00000fda                __vector_58
+                0x00000fee                __vector_62
+                0x00001002                __vector_71
+                0x00001016                __vector_70
+ .text          0x0000102a       0xea ./GCC/pal.o
+                0x0000102a                pal_init
+                0x00001050                pal_task
+                0x00001054                pal_ps_get
+                0x000010aa                pal_ps_set
+                0x000010fe                pal_alert
+ .text          0x00001114       0x44 ./GCC/pal_mcu_generic.o
+                0x00001114                mcu_init
+ .text          0x00001158      0x716 ./GCC/pal_timer.o
+                0x00001216                timer_init
+                0x00001278                pal_timer_source_select
+                0x0000127a                pal_get_current_time
+                0x000012b4                pal_trx_read_timestamp
+                0x000012e6                pal_timer_delay
+                0x00001338                pal_is_timer_running
+                0x00001352                internal_timer_handler
+                0x000013d2                timer_service
+                0x00001440                pal_timer_start
+                0x000016ba                pal_timer_stop
+                0x0000181e                __vector_65
+                0x00001844                __vector_66
+ .text          0x0000186e       0xb4 ./GCC/pal_board.o
+                0x0000186e                pal_calibrate_rc_osc
+                0x00001872                pal_led_init
+                0x00001880                pal_led
+                0x000018dc                pal_button_init
+                0x000018e2                pal_button_read
+                0x000018ec                gpio_init
+                0x000018ee                pal_sleep_mode
+                0x0000190c                __vector_6
+ .text          0x00001922        0x0 ./GCC/pal_utils.o
+ .text          0x00001922       0x5e ./GCC/bmm.o
+                0x00001922                bmm_buffer_init
+                0x00001964                bmm_buffer_alloc
+                0x00001970                bmm_buffer_free
+ .text          0x00001980      0x160 ./GCC/qmm.o
+                0x00001a5e                qmm_queue_init
+                0x00001a6c                qmm_queue_append
+                0x00001aa2                qmm_queue_remove
+                0x00001aac                qmm_queue_read
+                0x00001ab6                qmm_queue_flush
+ .text          0x00001ae0      0x2d4 ./GCC/tal.o
+                0x00001b12                set_trx_state
+                0x00001d3a                tal_task
+ .text          0x00001db4      0x196 ./GCC/tal_rx.o
+                0x00001db4                handle_received_frame_irq
+                0x00001e90                process_incoming_frame
+ .text          0x00001f4a      0x3c0 ./GCC/tal_tx.o
+                0x00001f4a                tx_done_handling
+                0x00001fb2                send_frame
+                0x000020a0                tal_tx_frame
+                0x00002202                handle_tx_end_irq
+                0x000022b2                tal_tx_beacon
+ .text          0x0000230a      0x148 ./GCC/tal_ed.o
+                0x00002358                tal_ed_start
+                0x0000240c                ed_scan_done
+ .text          0x00002452      0x7a8 ./GCC/tal_slotted_csma.o
+                0x00002982                calculate_transaction_duration
+                0x000029dc                slotted_csma_start
+                0x00002b3c                slotted_csma_state_handling
+ .text          0x00002bfa      0x3fa ./GCC/tal_pib.o
+                0x00002c70                init_tal_pib
+                0x00002cf8                write_all_tal_pib_to_trx
+                0x00002daa                tal_pib_set
+ .text          0x00002ff4      0x2d4 ./GCC/tal_init.o
+                0x0000304a                tal_generate_rand_seed
+                0x00003130                tal_init
+                0x00003250                tal_reset
+ .text          0x000032c8       0x30 ./GCC/tal_irq_handler.o
+                0x000032c8                trx_rx_end_handler_cb
+                0x000032d8                trx_tx_end_handler_cb
+                0x000032e8                trx_irq_timestamp_handler_cb
+                0x000032f0                trx_awake_handler_cb
+ .text          0x000032f8       0x5a ./GCC/tal_pwr_mgmt.o
+                0x000032f8                tal_trx_sleep
+                0x00003334                tal_trx_wakeup
+ .text          0x00003352       0x3e ./GCC/tal_rx_enable.o
+                0x00003352                tal_rx_enable
+ .text          0x00003390      0x56e ./GCC/mac_associate.o
+                0x00003390                mac_gen_mlme_associate_conf
+                0x000033aa                mac_t_assocresponsetime_cb
+                0x00003410                mlme_associate_request
+                0x0000361a                mac_process_associate_request
+                0x00003670                mlme_associate_response
+                0x0000377e                mac_process_associate_response
+                0x0000386c                mac_t_response_wait_cb
+ .text          0x000038fe      0x4e4 ./GCC/mac_beacon.o
+                0x0000398a                mac_build_and_tx_beacon
+                0x00003b8a                mac_process_beacon_request
+                0x00003b9e                mac_tx_pending_bc_data
+                0x00003d54                mac_start_beacon_timer
+ .text          0x00003de2      0x3f8 ./GCC/mac_callback_wrapper.o
+                0x00003de2                mcps_data_ind
+                0x00003eae                mcps_data_conf
+                0x00003ed2                mcps_purge_conf
+                0x00003eee                mlme_associate_conf
+                0x00003f0c                mlme_associate_ind
+                0x00003f3a                mlme_beacon_notify_ind
+                0x00003f72                mlme_comm_status_ind
+                0x00004012                mlme_disassociate_conf
+                0x00004086                mlme_disassociate_ind
+                0x000040b4                mlme_get_conf
+                0x000040d6                mlme_orphan_ind
+                0x000040fe                mlme_poll_conf
+                0x00004118                mlme_reset_conf
+                0x00004132                mlme_rx_enable_conf
+                0x0000414c                mlme_scan_conf
+                0x00004190                mlme_set_conf
+                0x000041ac                mlme_start_conf
+                0x000041c6                mlme_sync_loss_ind
+ .text          0x000041da      0x862 ./GCC/mac_data_ind.o
+                0x00004422                mac_process_tal_data_ind
+                0x00004a24                tal_rx_frame_cb
+ .text          0x00004a3c      0x52c ./GCC/mac_data_req.o
+                0x00004afc                mac_build_and_tx_data_req
+                0x00004d08                mac_handle_tx_null_data_frame
+                0x00004e8c                mac_process_data_request
+ .text          0x00004f68      0x162 ./GCC/mac_data_extract_mhr.o
+                0x00004f68                mac_extract_mhr_addr_info
+ .text          0x000050ca      0x4be ./GCC/mac_disassociate.o
+                0x00005152                mlme_disassociate_request
+                0x000053ac                mac_process_disassociate_notification
+                0x00005432                mac_prep_disassoc_conf
+ .text          0x00005588       0x2a ./GCC/mac_dispatcher.o
+                0x00005588                dispatch_event
+ .text          0x000055b2       0x86 ./GCC/mac.o
+                0x000055b2                mac_task
+                0x00005602                mac_ready_to_sleep
+ .text          0x00005638      0x818 ./GCC/mac_mcps_data.o
+                0x00005676                mac_gen_mcps_data_conf
+                0x0000569e                mac_process_data_frame
+                0x0000595c                mac_start_persistence_timer
+                0x000059b2                mcps_data_request
+                0x00005dd4                mcps_purge_request
+ .text          0x00005e50      0x330 ./GCC/mac_misc.o
+                0x00005f4c                mac_mlme_comm_status
+                0x0000600a                mac_trx_init_sleep
+                0x00006030                mac_sleep_trans
+                0x00006058                mac_init
+                0x0000609a                mac_trx_wakeup
+                0x000060b6                mac_idle_trans
+                0x00006102                mlme_reset_request
+ .text          0x00006180       0x98 ./GCC/mac_orphan.o
+                0x00006180                mac_process_orphan_notification
+                0x000061de                mlme_orphan_response
+ .text          0x00006218      0x5a2 ./GCC/mac_pib.o
+                0x00006218                mlme_get_request
+                0x0000646a                mlme_set
+                0x000066f8                mlme_set_request
+                0x00006732                set_tal_pib_internal
+                0x0000677c                mac_get_pib_attribute_size
+ .text          0x000067ba      0x13c ./GCC/mac_poll.o
+                0x000067de                mlme_poll_request
+                0x00006894                mac_t_poll_wait_time_cb
+                0x000068b4                mac_process_data_response
+ .text          0x000068f6      0x4b6 ./GCC/mac_process_beacon_frame.o
+                0x00006918                mac_process_beacon_frame
+ .text          0x00006dac      0x25c ./GCC/mac_process_tal_tx_frame_status.o
+                0x00006df4                tal_tx_frame_done_cb
+ .text          0x00007008      0x34e ./GCC/mac_rx_enable.o
+                0x00007130                mlme_rx_enable_request
+ .text          0x00007356      0x7dc ./GCC/mac_scan.o
+                0x0000738c                send_scan_cmd
+                0x0000779c                mac_scan_send_complete
+                0x00007852                mlme_scan_request
+                0x00007a18                tal_ed_end_cb
+                0x00007a88                mac_process_orphan_realign
+ .text          0x00007b32      0x204 ./GCC/mac_start.o
+                0x00007b48                mlme_start_request
+                0x00007c98                mac_coord_realignment_command_tx_success
+ .text          0x00007d36      0x214 ./GCC/mac_sync.o
+                0x00007d36                mac_t_tracking_beacons_cb
+                0x00007d40                mac_t_start_inactive_device_cb
+                0x00007d44                mac_sync_loss
+                0x00007dce                mac_start_missed_beacon_timer
+                0x00007e42                mlme_sync_request
+                0x00007ee4                mac_process_coord_realign
+ .text          0x00007f4a      0x1b0 ./GCC/mac_tx_coord_realignment_command.o
+                0x00007f4a                mac_tx_coord_realignment_command
+ .text          0x000080fa      0x61a ./GCC/mac_api.o
+                0x000080fa                wpan_init
+                0x00008106                wpan_task
+                0x00008132                wpan_mcps_data_req
+                0x000081f6                wpan_mcps_purge_req
+                0x00008224                wpan_mlme_associate_req
+                0x000082ac                wpan_mlme_associate_resp
+                0x00008338                wpan_mlme_disassociate_req
+                0x000083b8                wpan_mlme_orphan_resp
+                0x00008444                wpan_mlme_reset_req
+                0x00008472                wpan_mlme_get_req
+                0x000084a0                wpan_mlme_set_req
+                0x000084f4                wpan_mlme_rx_enable_req
+                0x00008578                wpan_mlme_scan_req
+                0x000085e8                wpan_mlme_start_req
+                0x0000865e                wpan_mlme_sync_req
+                0x000086ac                wpan_mlme_poll_req
+ .text          0x00008714        0x2 ./GCC/usr_mcps_purge_conf.o
+                0x00008714                usr_mcps_purge_conf
+ .text          0x00008716        0x2 ./GCC/usr_mlme_beacon_notify_ind.o
+                0x00008716                usr_mlme_beacon_notify_ind
+ .text          0x00008718        0x2 ./GCC/usr_mlme_disassociate_conf.o
+                0x00008718                usr_mlme_disassociate_conf
+ .text          0x0000871a        0x2 ./GCC/usr_mlme_disassociate_ind.o
+                0x0000871a                usr_mlme_disassociate_ind
+ .text          0x0000871c        0x2 ./GCC/usr_mlme_get_conf.o
+                0x0000871c                usr_mlme_get_conf
+ .text          0x0000871e        0x2 ./GCC/usr_mlme_orphan_ind.o
+                0x0000871e                usr_mlme_orphan_ind
+ .text          0x00008720        0x2 ./GCC/usr_mlme_poll_conf.o
+                0x00008720                usr_mlme_poll_conf
+ .text          0x00008722        0x2 ./GCC/usr_mlme_rx_enable_conf.o
+                0x00008722                usr_mlme_rx_enable_conf
+ .text          0x00008724        0x2 ./GCC/usr_mlme_sync_loss_ind.o
+                0x00008724                usr_mlme_sync_loss_ind
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_round.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memcpy.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fdevopen.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fputc.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_byte_atmega128rfa1.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_byte_atmega128rfa1.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(calloc.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(malloc.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+ .text          0x00008726        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+                0x00008726                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x00008726       0xa6 ./GCC/main.o
+                0x00008726                main
+ .text.libgcc.mul
+                0x000087cc        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x000087cc       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+                0x000087cc                __udivmodhi4
+ .text.libgcc   0x000087f4        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x000087f4        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x000087f4        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x000087f4        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x000087f4        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x000087f4        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.div
+                0x000087f4       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+                0x000087f4                _div
+                0x000087f4                __divmodhi4
+ .text.libgcc   0x0000881c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x0000881c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x0000881c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x0000881c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x0000881c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x0000881c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x0000881c       0x44 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+                0x0000881c                __udivmodsi4
+ .text.libgcc   0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .text.libgcc   0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+ .text.libgcc.div
+                0x00008860        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+ .text.libgcc   0x00008860        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+                0x00008860                __tablejump2__
+                0x00008864                __tablejump__
+ .text.libgcc.prologue
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+ .text.libgcc.builtins
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+ .text.libgcc.fmul
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+ .text.libgcc.fixed
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+ .text.libgcc.mul
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000886c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000886c       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+                0x0000886c                __muluhisi3
+ .text.libgcc.div
+                0x00008882        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x00008882        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x00008882        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x00008882        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x00008882        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x00008882        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x00008882        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.div
+                0x00008882        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+ .text.libgcc   0x00008882       0x18 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+                0x00008882                __adddi3_s8
+ .text.libgcc.prologue
+                0x0000889a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.builtins
+                0x0000889a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fmul
+                0x0000889a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fixed
+                0x0000889a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.mul
+                0x0000889a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+ .text.libgcc.div
+                0x0000889a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+ .text.libgcc   0x0000889a       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+                0x0000889a                __cmpdi2
+ .text.libgcc.prologue
+                0x000088ac        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+ .text.libgcc.builtins
+                0x000088ac        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+ .text.libgcc.fmul
+                0x000088ac        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+ .text.libgcc.fixed
+                0x000088ac        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+ .text.libgcc.mul
+                0x000088ac        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc.div
+                0x000088ac        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc   0x000088ac       0x18 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+                0x000088ac                __cmpdi2_s8
+ .text.libgcc.prologue
+                0x000088c4        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc.builtins
+                0x000088c4        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc.fmul
+                0x000088c4        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc.fixed
+                0x000088c4        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc.mul
+                0x000088c4       0x1e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+                0x000088c4                __umulhisi3
+ .text.libgcc.div
+                0x000088e2        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x000088e2        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x000088e2        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x000088e2        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x000088e2        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x000088e2        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+ .text.avr-libc.fplib
+                0x000088e2        0xa c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3.o)
+                0x000088e2                __subsf3
+                0x000088e4                __addsf3
+ .text.avr-libc.fplib
+                0x000088ec       0xc0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+                0x00008906                __addsf3x
+ .text.avr-libc.fplib
+                0x000089ac       0x58 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+                0x000089ac                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00008a04       0x7a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+                0x00008a04                __floatunsisf
+                0x00008a08                __floatsisf
+ .text.avr-libc.fplib
+                0x00008a7e        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+                0x00008a7e                __fp_inf
+ .text.avr-libc.fplib
+                0x00008a8a        0x6 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+                0x00008a8a                __fp_nan
+ .text.avr-libc.fplib
+                0x00008a90        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+                0x00008a90                __fp_pscA
+ .text.avr-libc.fplib
+                0x00008a9e        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+                0x00008a9e                __fp_pscB
+ .text.avr-libc.fplib
+                0x00008aac       0x22 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_round.o)
+                0x00008aac                __fp_round
+ .text.avr-libc.fplib
+                0x00008ace       0x44 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+                0x00008ace                __fp_split3
+                0x00008ade                __fp_splitA
+ .text.avr-libc.fplib
+                0x00008b12        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+                0x00008b12                __fp_zero
+                0x00008b14                __fp_szero
+ .text.avr-libc.fplib
+                0x00008b20        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+                0x00008b20                __mulsf3
+ .text.avr-libc.fplib
+                0x00008b24       0xc2 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+                0x00008b38                __mulsf3x
+                0x00008b3c                __mulsf3_pse
+ .text.avr-libc
+                0x00008be6       0xb8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o)
+                0x00008c7c                rand_r
+                0x00008c80                rand
+                0x00008c88                srand
+ .text.avr-libc
+                0x00008c9e       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memcpy.o)
+                0x00008c9e                memcpy
+ .text.avr-libc
+                0x00008cb0       0x96 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fdevopen.o)
+                0x00008cb0                fdevopen
+ .text.avr-libc
+                0x00008d46       0x64 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fputc.o)
+                0x00008d46                fputc
+ .text.avr-libc
+                0x00008daa       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_byte_atmega128rfa1.o)
+                0x00008daa                __eerd_byte_m128rfa1
+ .text.avr-libc
+                0x00008dba       0x1c c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_byte_atmega128rfa1.o)
+                0x00008dba                __eewr_byte_m128rfa1
+                0x00008dbc                __eewr_r18_m128rfa1
+ .text.avr-libc
+                0x00008dd6       0x38 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(calloc.o)
+                0x00008dd6                calloc
+ .text.avr-libc
+                0x00008e0e      0x24e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(malloc.o)
+                0x00008e0e                malloc
+                0x00008f3e                free
+ .text.avr-libc
+                0x0000905c        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
+                0x0000905c                memset
+ .text.libgcc.mul
+                0x0000906a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.div
+                0x0000906a       0x2e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+                0x0000906a                __divmodsi4
+ .text.libgcc   0x00009098        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x00009098        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x00009098        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x00009098        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x00009098        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x00009098        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.div
+                0x00009098       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+                0x00009098                __negsi2
+ .text.libgcc   0x000090a8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x000090a8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x000090a8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x000090a8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x000090a8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x000090a8       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+                0x000090a8                __mulshisi3
+                0x000090ae                __mulohisi3
+ .text.libgcc.div
+                0x000090b8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+ .text.libgcc   0x000090b8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+ .text.libgcc.prologue
+                0x000090b8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+ .text.libgcc.builtins
+                0x000090b8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+ .text.libgcc.fmul
+                0x000090b8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+ .text.libgcc.fixed
+                0x000090b8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+                0x000090b8                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000090b8        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+                0x000090b8                _exit
+                0x000090b8                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000090b8        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000090bc                _etext = .
+
+.data           0x00800200       0x18 load address 0x000090bc
+                0x00800200                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800200        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm128rfa1.o
+ .data          0x00800200        0x6 ./GCC/main.o
+ .data          0x00800206        0x0 ./GCC/sio_handler.o
+ .data          0x00800206        0x0 ./GCC/pal_uart.o
+ .data          0x00800206        0x0 ./GCC/pal_usb_ftdi.o
+ .data          0x00800206        0x0 ./GCC/pal_sio_hub.o
+ .data          0x00800206        0x0 ./GCC/pal_irq.o
+ .data          0x00800206        0x0 ./GCC/pal.o
+ .data          0x00800206        0x0 ./GCC/pal_mcu_generic.o
+ .data          0x00800206        0x0 ./GCC/pal_timer.o
+ .data          0x00800206        0x0 ./GCC/pal_board.o
+ .data          0x00800206        0x0 ./GCC/pal_utils.o
+ .data          0x00800206        0x0 ./GCC/bmm.o
+ .data          0x00800206        0x0 ./GCC/qmm.o
+ .data          0x00800206        0x0 ./GCC/tal.o
+ .data          0x00800206        0x0 ./GCC/tal_rx.o
+ .data          0x00800206        0x0 ./GCC/tal_tx.o
+ .data          0x00800206        0x0 ./GCC/tal_ed.o
+ .data          0x00800206        0x0 ./GCC/tal_slotted_csma.o
+ .data          0x00800206        0x0 ./GCC/tal_pib.o
+ .data          0x00800206        0x0 ./GCC/tal_init.o
+ .data          0x00800206        0x0 ./GCC/tal_irq_handler.o
+ .data          0x00800206        0x0 ./GCC/tal_pwr_mgmt.o
+ .data          0x00800206        0x0 ./GCC/tal_rx_enable.o
+ .data          0x00800206        0x0 ./GCC/mac_associate.o
+ .data          0x00800206        0x0 ./GCC/mac_beacon.o
+ .data          0x00800206        0x0 ./GCC/mac_callback_wrapper.o
+ .data          0x00800206        0x0 ./GCC/mac_data_ind.o
+ .data          0x00800206        0x0 ./GCC/mac_data_req.o
+ .data          0x00800206        0x0 ./GCC/mac_data_extract_mhr.o
+ .data          0x00800206        0x0 ./GCC/mac_disassociate.o
+ .data          0x00800206        0x0 ./GCC/mac_dispatcher.o
+ .data          0x00800206        0x0 ./GCC/mac.o
+ .data          0x00800206        0x0 ./GCC/mac_mcps_data.o
+ .data          0x00800206        0x0 ./GCC/mac_misc.o
+ .data          0x00800206        0x0 ./GCC/mac_orphan.o
+ .data          0x00800206        0x0 ./GCC/mac_pib.o
+ .data          0x00800206        0x0 ./GCC/mac_poll.o
+ .data          0x00800206        0x0 ./GCC/mac_process_beacon_frame.o
+ .data          0x00800206        0x0 ./GCC/mac_process_tal_tx_frame_status.o
+ .data          0x00800206        0x0 ./GCC/mac_rx_enable.o
+ .data          0x00800206        0x0 ./GCC/mac_scan.o
+ .data          0x00800206        0x0 ./GCC/mac_start.o
+ .data          0x00800206        0x0 ./GCC/mac_sync.o
+ .data          0x00800206        0x0 ./GCC/mac_tx_coord_realignment_command.o
+ .data          0x00800206        0x0 ./GCC/mac_api.o
+ .data          0x00800206        0x0 ./GCC/usr_mcps_purge_conf.o
+ .data          0x00800206        0x0 ./GCC/usr_mlme_beacon_notify_ind.o
+ .data          0x00800206        0x0 ./GCC/usr_mlme_disassociate_conf.o
+ .data          0x00800206        0x0 ./GCC/usr_mlme_disassociate_ind.o
+ .data          0x00800206        0x0 ./GCC/usr_mlme_get_conf.o
+ .data          0x00800206        0x0 ./GCC/usr_mlme_orphan_ind.o
+ .data          0x00800206        0x0 ./GCC/usr_mlme_poll_conf.o
+ .data          0x00800206        0x0 ./GCC/usr_mlme_rx_enable_conf.o
+ .data          0x00800206        0x0 ./GCC/usr_mlme_sync_loss_ind.o
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_round.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+ .data          0x00800206        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+ .data          0x00800206        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o)
+ .data          0x0080020a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memcpy.o)
+ .data          0x0080020a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fdevopen.o)
+ .data          0x0080020a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fputc.o)
+ .data          0x0080020a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
+ .data          0x0080020a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_byte_atmega128rfa1.o)
+ .data          0x0080020a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_byte_atmega128rfa1.o)
+ .data          0x0080020a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(calloc.o)
+ .data          0x0080020a        0x6 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(malloc.o)
+                0x0080020a                __malloc_heap_end
+                0x0080020c                __malloc_heap_start
+                0x0080020e                __malloc_margin
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+ *(.data*)
+ *(.rodata)
+ .rodata        0x00800210        0x8 ./GCC/tal_tx.o
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800218                . = ALIGN (0x2)
+                0x00800218                _edata = .
+                0x00800218                PROVIDE (__data_end, .)
+
+.bss            0x00800218      0xa80
+                0x00800218                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800218        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm128rfa1.o
+ .bss           0x00800218      0x45a ./GCC/main.o
+ .bss           0x00800672        0x0 ./GCC/sio_handler.o
+ .bss           0x00800672        0x0 ./GCC/pal_uart.o
+ .bss           0x00800672        0x0 ./GCC/pal_usb_ftdi.o
+ .bss           0x00800672        0x0 ./GCC/pal_sio_hub.o
+ .bss           0x00800672        0xa ./GCC/pal_irq.o
+ .bss           0x0080067c        0x0 ./GCC/pal.o
+ .bss           0x0080067c        0x0 ./GCC/pal_mcu_generic.o
+ .bss           0x0080067c        0x4 ./GCC/pal_timer.o
+ .bss           0x00800680        0x0 ./GCC/pal_board.o
+ .bss           0x00800680        0x0 ./GCC/pal_utils.o
+ .bss           0x00800680      0x3b9 ./GCC/bmm.o
+ .bss           0x00800a39        0x0 ./GCC/qmm.o
+ .bss           0x00800a39        0x2 ./GCC/tal.o
+                0x00800a39                tal_rx_buffer
+ .bss           0x00800a3b        0x0 ./GCC/tal_rx.o
+ .bss           0x00800a3b        0x1 ./GCC/tal_tx.o
+ .bss           0x00800a3c        0x5 ./GCC/tal_ed.o
+ .bss           0x00800a41        0x8 ./GCC/tal_slotted_csma.o
+ .bss           0x00800a49        0x0 ./GCC/tal_pib.o
+ .bss           0x00800a49        0x0 ./GCC/tal_init.o
+ .bss           0x00800a49        0x0 ./GCC/tal_irq_handler.o
+ .bss           0x00800a49        0x0 ./GCC/tal_pwr_mgmt.o
+ .bss           0x00800a49        0x0 ./GCC/tal_rx_enable.o
+ .bss           0x00800a49        0x0 ./GCC/mac_associate.o
+ .bss           0x00800a49       0x9d ./GCC/mac_beacon.o
+ .bss           0x00800ae6        0x0 ./GCC/mac_callback_wrapper.o
+ .bss           0x00800ae6        0x0 ./GCC/mac_data_ind.o
+ .bss           0x00800ae6        0x0 ./GCC/mac_data_req.o
+ .bss           0x00800ae6        0x0 ./GCC/mac_data_extract_mhr.o
+ .bss           0x00800ae6        0x0 ./GCC/mac_disassociate.o
+ .bss           0x00800ae6        0x0 ./GCC/mac_dispatcher.o
+ .bss           0x00800ae6        0x0 ./GCC/mac.o
+ .bss           0x00800ae6        0x0 ./GCC/mac_mcps_data.o
+ .bss           0x00800ae6        0x0 ./GCC/mac_misc.o
+ .bss           0x00800ae6        0x0 ./GCC/mac_orphan.o
+ .bss           0x00800ae6        0x1 ./GCC/mac_pib.o
+ .bss           0x00800ae7        0x0 ./GCC/mac_poll.o
+ .bss           0x00800ae7        0x0 ./GCC/mac_process_beacon_frame.o
+ .bss           0x00800ae7        0x0 ./GCC/mac_process_tal_tx_frame_status.o
+ .bss           0x00800ae7        0x4 ./GCC/mac_rx_enable.o
+ .bss           0x00800aeb        0x8 ./GCC/mac_scan.o
+ .bss           0x00800af3        0xa ./GCC/mac_start.o
+ .bss           0x00800afd        0xa ./GCC/mac_sync.o
+ .bss           0x00800b07        0x0 ./GCC/mac_tx_coord_realignment_command.o
+ .bss           0x00800b07        0x0 ./GCC/mac_api.o
+ .bss           0x00800b07        0x0 ./GCC/usr_mcps_purge_conf.o
+ .bss           0x00800b07        0x0 ./GCC/usr_mlme_beacon_notify_ind.o
+ .bss           0x00800b07        0x0 ./GCC/usr_mlme_disassociate_conf.o
+ .bss           0x00800b07        0x0 ./GCC/usr_mlme_disassociate_ind.o
+ .bss           0x00800b07        0x0 ./GCC/usr_mlme_get_conf.o
+ .bss           0x00800b07        0x0 ./GCC/usr_mlme_orphan_ind.o
+ .bss           0x00800b07        0x0 ./GCC/usr_mlme_poll_conf.o
+ .bss           0x00800b07        0x0 ./GCC/usr_mlme_rx_enable_conf.o
+ .bss           0x00800b07        0x0 ./GCC/usr_mlme_sync_loss_ind.o
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodhi4.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_muluhisi3.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_adddi3_s8.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_cmpdi2_s8.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_umulhisi3.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(addsf3x.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fixunssfsi.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(floatsisf.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_inf.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_nan.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_pscA.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_pscB.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_round.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_split3.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(fp_zero.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libm.a(mulsf3x.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memcpy.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fdevopen.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fputc.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eerd_byte_atmega128rfa1.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(eewr_byte_atmega128rfa1.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(calloc.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(malloc.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(memset.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_divmodsi4.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_negsi2.o)
+ .bss           0x00800b07        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_mulshisi3.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800b07       0x1a ./GCC/pal_uart.o
+                0x00800b07                uart_0_buffer
+ COMMON         0x00800b21       0x88 ./GCC/pal_timer.o
+                0x00800b21                timer_array
+                0x00800ba8                timer_trigger
+ COMMON         0x00800ba9       0x39 ./GCC/tal.o
+                0x00800ba9                tal_rx_on_required
+                0x00800baa                tal_incoming_frame_queue
+                0x00800baf                tal_beacon_transmission
+                0x00800bb0                mac_frame_ptr
+                0x00800bb2                tal_csma_state
+                0x00800bb4                tal_rx_timestamp
+                0x00800bb8                tal_pib
+                0x00800bdc                tal_trx_status
+                0x00800bdd                last_frame_length
+                0x00800bde                tal_frame_to_tx
+                0x00800be0                tal_awake_end_flag
+                0x00800be1                tal_state
+ COMMON         0x00800be2        0x1 ./GCC/tal_slotted_csma.o
+                0x00800be2                transaction_duration_periods
+ COMMON         0x00800be3       0xa6 ./GCC/mac.o
+                0x00800be3                mac_last_dsn
+                0x00800be4                indirect_data_q
+                0x00800be9                mac_last_src_addr
+                0x00800bf1                mac_scan_orig_page
+                0x00800bf2                mac_poll_state
+                0x00800bf3                broadcast_q
+                0x00800bf8                nhle_mac_q
+                0x00800bfd                mac_scan_state
+                0x00800bfe                mac_sync_state
+                0x00800bff                mac_final_cap_slot
+                0x00800c00                mac_scan_orig_channel
+                0x00800c01                mac_conf_buf_ptr
+                0x00800c03                mac_beacon_payload
+                0x00800c37                mac_pib
+                0x00800c50                mac_bc_data_indicated
+                0x00800c51                mac_rx_enabled
+                0x00800c52                mac_scan_orig_panid
+                0x00800c54                tal_mac_q
+                0x00800c59                mac_scan_cmd_buf_ptr
+                0x00800c5b                mac_parse_data
+                0x00800c86                mac_state
+                0x00800c87                mac_busy
+                0x00800c88                mac_radio_sleep_state
+ COMMON         0x00800c89        0x5 ./GCC/mac_api.o
+                0x00800c89                mac_nhle_q
+ COMMON         0x00800c8e        0x6 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
+                0x00800c8e                __iob
+ COMMON         0x00800c94        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(malloc.o)
+                0x00800c94                __brkval
+                0x00800c96                __flp
+                0x00800c98                PROVIDE (__bss_end, .)
+                0x000090bc                __data_load_start = LOADADDR (.data)
+                0x000090d4                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800c98        0x0
+                0x00800c98                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800c98                PROVIDE (__noinit_end, .)
+                0x00800c98                _end = .
+                0x00800c98                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 ./GCC/main.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000000       0x31 ./GCC/sio_handler.o
+ .comment       0x00000000       0x31 ./GCC/pal_uart.o
+ .comment       0x00000000       0x31 ./GCC/pal_usb_ftdi.o
+ .comment       0x00000000       0x31 ./GCC/pal_sio_hub.o
+ .comment       0x00000000       0x31 ./GCC/pal_irq.o
+ .comment       0x00000000       0x31 ./GCC/pal.o
+ .comment       0x00000000       0x31 ./GCC/pal_mcu_generic.o
+ .comment       0x00000000       0x31 ./GCC/pal_timer.o
+ .comment       0x00000000       0x31 ./GCC/pal_board.o
+ .comment       0x00000000       0x31 ./GCC/pal_utils.o
+ .comment       0x00000000       0x31 ./GCC/bmm.o
+ .comment       0x00000000       0x31 ./GCC/qmm.o
+ .comment       0x00000000       0x31 ./GCC/tal.o
+ .comment       0x00000000       0x31 ./GCC/tal_rx.o
+ .comment       0x00000000       0x31 ./GCC/tal_tx.o
+ .comment       0x00000000       0x31 ./GCC/tal_ed.o
+ .comment       0x00000000       0x31 ./GCC/tal_slotted_csma.o
+ .comment       0x00000000       0x31 ./GCC/tal_pib.o
+ .comment       0x00000000       0x31 ./GCC/tal_init.o
+ .comment       0x00000000       0x31 ./GCC/tal_irq_handler.o
+ .comment       0x00000000       0x31 ./GCC/tal_pwr_mgmt.o
+ .comment       0x00000000       0x31 ./GCC/tal_rx_enable.o
+ .comment       0x00000000       0x31 ./GCC/mac_associate.o
+ .comment       0x00000000       0x31 ./GCC/mac_beacon.o
+ .comment       0x00000000       0x31 ./GCC/mac_callback_wrapper.o
+ .comment       0x00000000       0x31 ./GCC/mac_data_ind.o
+ .comment       0x00000000       0x31 ./GCC/mac_data_req.o
+ .comment       0x00000000       0x31 ./GCC/mac_data_extract_mhr.o
+ .comment       0x00000000       0x31 ./GCC/mac_disassociate.o
+ .comment       0x00000000       0x31 ./GCC/mac_dispatcher.o
+ .comment       0x00000000       0x31 ./GCC/mac.o
+ .comment       0x00000000       0x31 ./GCC/mac_mcps_data.o
+ .comment       0x00000000       0x31 ./GCC/mac_misc.o
+ .comment       0x00000000       0x31 ./GCC/mac_orphan.o
+ .comment       0x00000000       0x31 ./GCC/mac_pib.o
+ .comment       0x00000000       0x31 ./GCC/mac_poll.o
+ .comment       0x00000000       0x31 ./GCC/mac_process_beacon_frame.o
+ .comment       0x00000000       0x31 ./GCC/mac_process_tal_tx_frame_status.o
+ .comment       0x00000000       0x31 ./GCC/mac_rx_enable.o
+ .comment       0x00000000       0x31 ./GCC/mac_scan.o
+ .comment       0x00000000       0x31 ./GCC/mac_start.o
+ .comment       0x00000000       0x31 ./GCC/mac_sync.o
+ .comment       0x00000000       0x31 ./GCC/mac_tx_coord_realignment_command.o
+ .comment       0x00000000       0x31 ./GCC/mac_api.o
+ .comment       0x00000000       0x31 ./GCC/usr_mcps_purge_conf.o
+ .comment       0x00000000       0x31 ./GCC/usr_mlme_beacon_notify_ind.o
+ .comment       0x00000000       0x31 ./GCC/usr_mlme_disassociate_conf.o
+ .comment       0x00000000       0x31 ./GCC/usr_mlme_disassociate_ind.o
+ .comment       0x00000000       0x31 ./GCC/usr_mlme_get_conf.o
+ .comment       0x00000000       0x31 ./GCC/usr_mlme_orphan_ind.o
+ .comment       0x00000000       0x31 ./GCC/usr_mlme_poll_conf.o
+ .comment       0x00000000       0x31 ./GCC/usr_mlme_rx_enable_conf.o
+ .comment       0x00000000       0x31 ./GCC/usr_mlme_sync_loss_ind.o
+ .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(rand.o)
+ .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fdevopen.o)
+ .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(fputc.o)
+ .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(iob.o)
+ .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(calloc.o)
+ .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1056/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51\libc.a(malloc.o)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x688
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 ./GCC/main.o
+ .debug_aranges
+                0x00000028       0x20 ./GCC/sio_handler.o
+ .debug_aranges
+                0x00000048       0x20 ./GCC/pal_uart.o
+ .debug_aranges
+                0x00000068       0x20 ./GCC/pal_sio_hub.o
+ .debug_aranges
+                0x00000088       0x20 ./GCC/pal_irq.o
+ .debug_aranges
+                0x000000a8       0x20 ./GCC/pal.o
+ .debug_aranges
+                0x000000c8       0x20 ./GCC/pal_mcu_generic.o
+ .debug_aranges
+                0x000000e8       0x20 ./GCC/pal_timer.o
+ .debug_aranges
+                0x00000108       0x20 ./GCC/pal_board.o
+ .debug_aranges
+                0x00000128       0x20 ./GCC/bmm.o
+ .debug_aranges
+                0x00000148       0x20 ./GCC/qmm.o
+ .debug_aranges
+                0x00000168       0x20 ./GCC/tal.o
+ .debug_aranges
+                0x00000188       0x20 ./GCC/tal_rx.o
+ .debug_aranges
+                0x000001a8       0x20 ./GCC/tal_tx.o
+ .debug_aranges
+                0x000001c8       0x20 ./GCC/tal_ed.o
+ .debug_aranges
+                0x000001e8       0x20 ./GCC/tal_slotted_csma.o
+ .debug_aranges
+                0x00000208       0x20 ./GCC/tal_pib.o
+ .debug_aranges
+                0x00000228       0x20 ./GCC/tal_init.o
+ .debug_aranges
+                0x00000248       0x20 ./GCC/tal_irq_handler.o
+ .debug_aranges
+                0x00000268       0x20 ./GCC/tal_pwr_mgmt.o
+ .debug_aranges
+                0x00000288       0x20 ./GCC/tal_rx_enable.o
+ .debug_aranges
+                0x000002a8       0x20 ./GCC/mac_associate.o
+ .debug_aranges
+                0x000002c8       0x20 ./GCC/mac_beacon.o
+ .debug_aranges
+                0x000002e8       0x20 ./GCC/mac_callback_wrapper.o
+ .debug_aranges
+                0x00000308       0x20 ./GCC/mac_data_ind.o
+ .debug_aranges
+                0x00000328       0x20 ./GCC/mac_data_req.o
+ .debug_aranges
+                0x00000348       0x20 ./GCC/mac_data_extract_mhr.o
+ .debug_aranges
+                0x00000368       0x20 ./GCC/mac_disassociate.o
+ .debug_aranges
+                0x00000388       0x20 ./GCC/mac_dispatcher.o
+ .debug_aranges
+                0x000003a8       0x20 ./GCC/mac.o
+ .debug_aranges
+                0x000003c8       0x20 ./GCC/mac_mcps_data.o
+ .debug_aranges
+                0x000003e8       0x20 ./GCC/mac_misc.o
+ .debug_aranges
+                0x00000408       0x20 ./GCC/mac_orphan.o
+ .debug_aranges
+                0x00000428       0x20 ./GCC/mac_pib.o
+ .debug_aranges
+                0x00000448       0x20 ./GCC/mac_poll.o
+ .debug_aranges
+                0x00000468       0x20 ./GCC/mac_process_beacon_frame.o
+ .debug_aranges
+                0x00000488       0x20 ./GCC/mac_process_tal_tx_frame_status.o
+ .debug_aranges
+                0x000004a8       0x20 ./GCC/mac_rx_enable.o
+ .debug_aranges
+                0x000004c8       0x20 ./GCC/mac_scan.o
+ .debug_aranges
+                0x000004e8       0x20 ./GCC/mac_start.o
+ .debug_aranges
+                0x00000508       0x20 ./GCC/mac_sync.o
+ .debug_aranges
+                0x00000528       0x20 ./GCC/mac_tx_coord_realignment_command.o
+ .debug_aranges
+                0x00000548       0x20 ./GCC/mac_api.o
+ .debug_aranges
+                0x00000568       0x20 ./GCC/usr_mcps_purge_conf.o
+ .debug_aranges
+                0x00000588       0x20 ./GCC/usr_mlme_beacon_notify_ind.o
+ .debug_aranges
+                0x000005a8       0x20 ./GCC/usr_mlme_disassociate_conf.o
+ .debug_aranges
+                0x000005c8       0x20 ./GCC/usr_mlme_disassociate_ind.o
+ .debug_aranges
+                0x000005e8       0x20 ./GCC/usr_mlme_get_conf.o
+ .debug_aranges
+                0x00000608       0x20 ./GCC/usr_mlme_orphan_ind.o
+ .debug_aranges
+                0x00000628       0x20 ./GCC/usr_mlme_poll_conf.o
+ .debug_aranges
+                0x00000648       0x20 ./GCC/usr_mlme_rx_enable_conf.o
+ .debug_aranges
+                0x00000668       0x20 ./GCC/usr_mlme_sync_loss_ind.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000    0x1bd3e
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x10b2 ./GCC/main.o
+ .debug_info    0x000010b2      0x35e ./GCC/sio_handler.o
+ .debug_info    0x00001410      0x287 ./GCC/pal_uart.o
+ .debug_info    0x00001697      0x380 ./GCC/pal_sio_hub.o
+ .debug_info    0x00001a17      0x28f ./GCC/pal_irq.o
+ .debug_info    0x00001ca6      0x433 ./GCC/pal.o
+ .debug_info    0x000020d9      0x1c2 ./GCC/pal_mcu_generic.o
+ .debug_info    0x0000229b      0xaa7 ./GCC/pal_timer.o
+ .debug_info    0x00002d42      0x20d ./GCC/pal_board.o
+ .debug_info    0x00002f4f      0x30f ./GCC/bmm.o
+ .debug_info    0x0000325e      0x3cf ./GCC/qmm.o
+ .debug_info    0x0000362d      0x8a0 ./GCC/tal.o
+ .debug_info    0x00003ecd      0x6e0 ./GCC/tal_rx.o
+ .debug_info    0x000045ad      0xa71 ./GCC/tal_tx.o
+ .debug_info    0x0000501e      0x45e ./GCC/tal_ed.o
+ .debug_info    0x0000547c     0x1014 ./GCC/tal_slotted_csma.o
+ .debug_info    0x00006490      0x7e8 ./GCC/tal_pib.o
+ .debug_info    0x00006c78      0xc50 ./GCC/tal_init.o
+ .debug_info    0x000078c8      0x17e ./GCC/tal_irq_handler.o
+ .debug_info    0x00007a46      0x3a6 ./GCC/tal_pwr_mgmt.o
+ .debug_info    0x00007dec      0x3cc ./GCC/tal_rx_enable.o
+ .debug_info    0x000081b8     0x1319 ./GCC/mac_associate.o
+ .debug_info    0x000094d1      0xffe ./GCC/mac_beacon.o
+ .debug_info    0x0000a4cf     0x1317 ./GCC/mac_callback_wrapper.o
+ .debug_info    0x0000b7e6     0x14db ./GCC/mac_data_ind.o
+ .debug_info    0x0000ccc1      0xdfe ./GCC/mac_data_req.o
+ .debug_info    0x0000dabf      0x3f0 ./GCC/mac_data_extract_mhr.o
+ .debug_info    0x0000deaf      0xefc ./GCC/mac_disassociate.o
+ .debug_info    0x0000edab      0x290 ./GCC/mac_dispatcher.o
+ .debug_info    0x0000f03b      0x8de ./GCC/mac.o
+ .debug_info    0x0000f919     0x1605 ./GCC/mac_mcps_data.o
+ .debug_info    0x00010f1e     0x103f ./GCC/mac_misc.o
+ .debug_info    0x00011f5d      0x928 ./GCC/mac_orphan.o
+ .debug_info    0x00012885      0xc8b ./GCC/mac_pib.o
+ .debug_info    0x00013510      0xa0c ./GCC/mac_poll.o
+ .debug_info    0x00013f1c      0xf66 ./GCC/mac_process_beacon_frame.o
+ .debug_info    0x00014e82      0xc00 ./GCC/mac_process_tal_tx_frame_status.o
+ .debug_info    0x00015a82      0xe01 ./GCC/mac_rx_enable.o
+ .debug_info    0x00016883     0x1598 ./GCC/mac_scan.o
+ .debug_info    0x00017e1b      0xbc6 ./GCC/mac_start.o
+ .debug_info    0x000189e1      0xf88 ./GCC/mac_sync.o
+ .debug_info    0x00019969      0x81d ./GCC/mac_tx_coord_realignment_command.o
+ .debug_info    0x0001a186     0x13d4 ./GCC/mac_api.o
+ .debug_info    0x0001b55a       0xa1 ./GCC/usr_mcps_purge_conf.o
+ .debug_info    0x0001b5fb      0x1fb ./GCC/usr_mlme_beacon_notify_ind.o
+ .debug_info    0x0001b7f6      0x132 ./GCC/usr_mlme_disassociate_conf.o
+ .debug_info    0x0001b928       0xc3 ./GCC/usr_mlme_disassociate_ind.o
+ .debug_info    0x0001b9eb       0xb5 ./GCC/usr_mlme_get_conf.o
+ .debug_info    0x0001baa0       0xab ./GCC/usr_mlme_orphan_ind.o
+ .debug_info    0x0001bb4b       0x94 ./GCC/usr_mlme_poll_conf.o
+ .debug_info    0x0001bbdf       0x94 ./GCC/usr_mlme_rx_enable_conf.o
+ .debug_info    0x0001bc73       0xcb ./GCC/usr_mlme_sync_loss_ind.o
+
+.debug_abbrev   0x00000000     0x638a
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x3d0 ./GCC/main.o
+ .debug_abbrev  0x000003d0      0x189 ./GCC/sio_handler.o
+ .debug_abbrev  0x00000559      0x15f ./GCC/pal_uart.o
+ .debug_abbrev  0x000006b8      0x108 ./GCC/pal_sio_hub.o
+ .debug_abbrev  0x000007c0       0xb6 ./GCC/pal_irq.o
+ .debug_abbrev  0x00000876      0x189 ./GCC/pal.o
+ .debug_abbrev  0x000009ff       0xfe ./GCC/pal_mcu_generic.o
+ .debug_abbrev  0x00000afd      0x30e ./GCC/pal_timer.o
+ .debug_abbrev  0x00000e0b      0x12e ./GCC/pal_board.o
+ .debug_abbrev  0x00000f39      0x178 ./GCC/bmm.o
+ .debug_abbrev  0x000010b1      0x1c4 ./GCC/qmm.o
+ .debug_abbrev  0x00001275      0x22c ./GCC/tal.o
+ .debug_abbrev  0x000014a1      0x1fa ./GCC/tal_rx.o
+ .debug_abbrev  0x0000169b      0x293 ./GCC/tal_tx.o
+ .debug_abbrev  0x0000192e      0x170 ./GCC/tal_ed.o
+ .debug_abbrev  0x00001a9e      0x39c ./GCC/tal_slotted_csma.o
+ .debug_abbrev  0x00001e3a      0x204 ./GCC/tal_pib.o
+ .debug_abbrev  0x0000203e      0x2fe ./GCC/tal_init.o
+ .debug_abbrev  0x0000233c      0x100 ./GCC/tal_irq_handler.o
+ .debug_abbrev  0x0000243c       0xf4 ./GCC/tal_pwr_mgmt.o
+ .debug_abbrev  0x00002530      0x10a ./GCC/tal_rx_enable.o
+ .debug_abbrev  0x0000263a      0x30f ./GCC/mac_associate.o
+ .debug_abbrev  0x00002949      0x3d4 ./GCC/mac_beacon.o
+ .debug_abbrev  0x00002d1d      0x23d ./GCC/mac_callback_wrapper.o
+ .debug_abbrev  0x00002f5a      0x33f ./GCC/mac_data_ind.o
+ .debug_abbrev  0x00003299      0x2be ./GCC/mac_data_req.o
+ .debug_abbrev  0x00003557       0xfd ./GCC/mac_data_extract_mhr.o
+ .debug_abbrev  0x00003654      0x2e3 ./GCC/mac_disassociate.o
+ .debug_abbrev  0x00003937      0x142 ./GCC/mac_dispatcher.o
+ .debug_abbrev  0x00003a79      0x1ad ./GCC/mac.o
+ .debug_abbrev  0x00003c26      0x3a9 ./GCC/mac_mcps_data.o
+ .debug_abbrev  0x00003fcf      0x381 ./GCC/mac_misc.o
+ .debug_abbrev  0x00004350      0x1a7 ./GCC/mac_orphan.o
+ .debug_abbrev  0x000044f7      0x338 ./GCC/mac_pib.o
+ .debug_abbrev  0x0000482f      0x232 ./GCC/mac_poll.o
+ .debug_abbrev  0x00004a61      0x286 ./GCC/mac_process_beacon_frame.o
+ .debug_abbrev  0x00004ce7      0x2e7 ./GCC/mac_process_tal_tx_frame_status.o
+ .debug_abbrev  0x00004fce      0x304 ./GCC/mac_rx_enable.o
+ .debug_abbrev  0x000052d2      0x37b ./GCC/mac_scan.o
+ .debug_abbrev  0x0000564d      0x2b6 ./GCC/mac_start.o
+ .debug_abbrev  0x00005903      0x2b4 ./GCC/mac_sync.o
+ .debug_abbrev  0x00005bb7      0x171 ./GCC/mac_tx_coord_realignment_command.o
+ .debug_abbrev  0x00005d28      0x278 ./GCC/mac_api.o
+ .debug_abbrev  0x00005fa0       0x5e ./GCC/usr_mcps_purge_conf.o
+ .debug_abbrev  0x00005ffe       0xb0 ./GCC/usr_mlme_beacon_notify_ind.o
+ .debug_abbrev  0x000060ae       0xa1 ./GCC/usr_mlme_disassociate_conf.o
+ .debug_abbrev  0x0000614f       0x5e ./GCC/usr_mlme_disassociate_ind.o
+ .debug_abbrev  0x000061ad       0x65 ./GCC/usr_mlme_get_conf.o
+ .debug_abbrev  0x00006212       0x5e ./GCC/usr_mlme_orphan_ind.o
+ .debug_abbrev  0x00006270       0x5e ./GCC/usr_mlme_poll_conf.o
+ .debug_abbrev  0x000062ce       0x5e ./GCC/usr_mlme_rx_enable_conf.o
+ .debug_abbrev  0x0000632c       0x5e ./GCC/usr_mlme_sync_loss_ind.o
+
+.debug_line     0x00000000     0x860c
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x540 ./GCC/main.o
+ .debug_line    0x00000540      0x181 ./GCC/sio_handler.o
+ .debug_line    0x000006c1      0x1a1 ./GCC/pal_uart.o
+ .debug_line    0x00000862        0x0 ./GCC/pal_usb_ftdi.o
+ .debug_line    0x00000862      0x1e6 ./GCC/pal_sio_hub.o
+ .debug_line    0x00000a48       0xf7 ./GCC/pal_irq.o
+ .debug_line    0x00000b3f      0x28d ./GCC/pal.o
+ .debug_line    0x00000dcc      0x184 ./GCC/pal_mcu_generic.o
+ .debug_line    0x00000f50      0x386 ./GCC/pal_timer.o
+ .debug_line    0x000012d6      0x1e9 ./GCC/pal_board.o
+ .debug_line    0x000014bf        0x0 ./GCC/pal_utils.o
+ .debug_line    0x000014bf      0x1be ./GCC/bmm.o
+ .debug_line    0x0000167d      0x1e2 ./GCC/qmm.o
+ .debug_line    0x0000185f      0x341 ./GCC/tal.o
+ .debug_line    0x00001ba0      0x2c6 ./GCC/tal_rx.o
+ .debug_line    0x00001e66      0x33f ./GCC/tal_tx.o
+ .debug_line    0x000021a5      0x23c ./GCC/tal_ed.o
+ .debug_line    0x000023e1      0x43d ./GCC/tal_slotted_csma.o
+ .debug_line    0x0000281e      0x2da ./GCC/tal_pib.o
+ .debug_line    0x00002af8      0x3c0 ./GCC/tal_init.o
+ .debug_line    0x00002eb8      0x1a8 ./GCC/tal_irq_handler.o
+ .debug_line    0x00003060      0x18c ./GCC/tal_pwr_mgmt.o
+ .debug_line    0x000031ec      0x211 ./GCC/tal_rx_enable.o
+ .debug_line    0x000033fd      0x3cd ./GCC/mac_associate.o
+ .debug_line    0x000037ca      0x38c ./GCC/mac_beacon.o
+ .debug_line    0x00003b56      0x29f ./GCC/mac_callback_wrapper.o
+ .debug_line    0x00003df5      0x442 ./GCC/mac_data_ind.o
+ .debug_line    0x00004237      0x375 ./GCC/mac_data_req.o
+ .debug_line    0x000045ac      0x17d ./GCC/mac_data_extract_mhr.o
+ .debug_line    0x00004729      0x3a0 ./GCC/mac_disassociate.o
+ .debug_line    0x00004ac9      0x199 ./GCC/mac_dispatcher.o
+ .debug_line    0x00004c62      0x26a ./GCC/mac.o
+ .debug_line    0x00004ecc      0x486 ./GCC/mac_mcps_data.o
+ .debug_line    0x00005352      0x3a8 ./GCC/mac_misc.o
+ .debug_line    0x000056fa      0x2b7 ./GCC/mac_orphan.o
+ .debug_line    0x000059b1      0x397 ./GCC/mac_pib.o
+ .debug_line    0x00005d48      0x2f1 ./GCC/mac_poll.o
+ .debug_line    0x00006039      0x3d8 ./GCC/mac_process_beacon_frame.o
+ .debug_line    0x00006411      0x371 ./GCC/mac_process_tal_tx_frame_status.o
+ .debug_line    0x00006782      0x387 ./GCC/mac_rx_enable.o
+ .debug_line    0x00006b09      0x468 ./GCC/mac_scan.o
+ .debug_line    0x00006f71      0x314 ./GCC/mac_start.o
+ .debug_line    0x00007285      0x377 ./GCC/mac_sync.o
+ .debug_line    0x000075fc      0x2d7 ./GCC/mac_tx_coord_realignment_command.o
+ .debug_line    0x000078d3      0x475 ./GCC/mac_api.o
+ .debug_line    0x00007d48       0xe6 ./GCC/usr_mcps_purge_conf.o
+ .debug_line    0x00007e2e      0x138 ./GCC/usr_mlme_beacon_notify_ind.o
+ .debug_line    0x00007f66      0x138 ./GCC/usr_mlme_disassociate_conf.o
+ .debug_line    0x0000809e       0xec ./GCC/usr_mlme_disassociate_ind.o
+ .debug_line    0x0000818a       0xe4 ./GCC/usr_mlme_get_conf.o
+ .debug_line    0x0000826e       0xe6 ./GCC/usr_mlme_orphan_ind.o
+ .debug_line    0x00008354       0xe5 ./GCC/usr_mlme_poll_conf.o
+ .debug_line    0x00008439       0xea ./GCC/usr_mlme_rx_enable_conf.o
+ .debug_line    0x00008523       0xe9 ./GCC/usr_mlme_sync_loss_ind.o
+
+.debug_frame    0x00000000     0x2560
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x234 ./GCC/main.o
+ .debug_frame   0x00000234       0x98 ./GCC/sio_handler.o
+ .debug_frame   0x000002cc       0xac ./GCC/pal_uart.o
+ .debug_frame   0x00000378       0x44 ./GCC/pal_sio_hub.o
+ .debug_frame   0x000003bc      0x2a8 ./GCC/pal_irq.o
+ .debug_frame   0x00000664       0xa4 ./GCC/pal.o
+ .debug_frame   0x00000708       0x24 ./GCC/pal_mcu_generic.o
+ .debug_frame   0x0000072c      0x1a0 ./GCC/pal_timer.o
+ .debug_frame   0x000008cc       0xa0 ./GCC/pal_board.o
+ .debug_frame   0x0000096c       0x58 ./GCC/bmm.o
+ .debug_frame   0x000009c4       0xb8 ./GCC/qmm.o
+ .debug_frame   0x00000a7c       0x54 ./GCC/tal.o
+ .debug_frame   0x00000ad0       0x7c ./GCC/tal_rx.o
+ .debug_frame   0x00000b4c       0xcc ./GCC/tal_tx.o
+ .debug_frame   0x00000c18       0x50 ./GCC/tal_ed.o
+ .debug_frame   0x00000c68      0x160 ./GCC/tal_slotted_csma.o
+ .debug_frame   0x00000dc8       0x70 ./GCC/tal_pib.o
+ .debug_frame   0x00000e38       0x9c ./GCC/tal_init.o
+ .debug_frame   0x00000ed4       0x64 ./GCC/tal_irq_handler.o
+ .debug_frame   0x00000f38       0x34 ./GCC/tal_pwr_mgmt.o
+ .debug_frame   0x00000f6c       0x24 ./GCC/tal_rx_enable.o
+ .debug_frame   0x00000f90      0x12c ./GCC/mac_associate.o
+ .debug_frame   0x000010bc      0x130 ./GCC/mac_beacon.o
+ .debug_frame   0x000011ec      0x27c ./GCC/mac_callback_wrapper.o
+ .debug_frame   0x00001468       0xe0 ./GCC/mac_data_ind.o
+ .debug_frame   0x00001548      0x11c ./GCC/mac_data_req.o
+ .debug_frame   0x00001664       0x38 ./GCC/mac_data_extract_mhr.o
+ .debug_frame   0x0000169c      0x10c ./GCC/mac_disassociate.o
+ .debug_frame   0x000017a8       0x24 ./GCC/mac_dispatcher.o
+ .debug_frame   0x000017cc       0x3c ./GCC/mac.o
+ .debug_frame   0x00001808      0x1b8 ./GCC/mac_mcps_data.o
+ .debug_frame   0x000019c0       0xe8 ./GCC/mac_misc.o
+ .debug_frame   0x00001aa8       0x50 ./GCC/mac_orphan.o
+ .debug_frame   0x00001af8       0xc0 ./GCC/mac_pib.o
+ .debug_frame   0x00001bb8       0x84 ./GCC/mac_poll.o
+ .debug_frame   0x00001c3c       0x94 ./GCC/mac_process_beacon_frame.o
+ .debug_frame   0x00001cd0       0x74 ./GCC/mac_process_tal_tx_frame_status.o
+ .debug_frame   0x00001d44      0x108 ./GCC/mac_rx_enable.o
+ .debug_frame   0x00001e4c      0x16c ./GCC/mac_scan.o
+ .debug_frame   0x00001fb8       0x70 ./GCC/mac_start.o
+ .debug_frame   0x00002028       0xb8 ./GCC/mac_sync.o
+ .debug_frame   0x000020e0       0x60 ./GCC/mac_tx_coord_realignment_command.o
+ .debug_frame   0x00002140      0x2dc ./GCC/mac_api.o
+ .debug_frame   0x0000241c       0x24 ./GCC/usr_mcps_purge_conf.o
+ .debug_frame   0x00002440       0x24 ./GCC/usr_mlme_beacon_notify_ind.o
+ .debug_frame   0x00002464       0x24 ./GCC/usr_mlme_disassociate_conf.o
+ .debug_frame   0x00002488       0x24 ./GCC/usr_mlme_disassociate_ind.o
+ .debug_frame   0x000024ac       0x24 ./GCC/usr_mlme_get_conf.o
+ .debug_frame   0x000024d0       0x24 ./GCC/usr_mlme_orphan_ind.o
+ .debug_frame   0x000024f4       0x24 ./GCC/usr_mlme_poll_conf.o
+ .debug_frame   0x00002518       0x24 ./GCC/usr_mlme_rx_enable_conf.o
+ .debug_frame   0x0000253c       0x24 ./GCC/usr_mlme_sync_loss_ind.o
+
+.debug_str      0x00000000     0x580e
+ *(.debug_str)
+ .debug_str     0x00000000      0xa8d ./GCC/main.o
+                                0xb32 (size before relaxing)
+ .debug_str     0x00000a8d       0xbd ./GCC/sio_handler.o
+                                0x221 (size before relaxing)
+ .debug_str     0x00000b4a      0x16f ./GCC/pal_uart.o
+                                0x2ac (size before relaxing)
+ .debug_str     0x00000cb9        0x0 ./GCC/pal_usb_ftdi.o
+ .debug_str     0x00000cb9       0x95 ./GCC/pal_sio_hub.o
+                                0x56e (size before relaxing)
+ .debug_str     0x00000d4e      0x1b9 ./GCC/pal_irq.o
+                                0x2b3 (size before relaxing)
+ .debug_str     0x00000f07      0x134 ./GCC/pal.o
+                                0x587 (size before relaxing)
+ .debug_str     0x0000103b      0x12c ./GCC/pal_mcu_generic.o
+                                0x246 (size before relaxing)
+ .debug_str     0x00001167      0x318 ./GCC/pal_timer.o
+                                0x83e (size before relaxing)
+ .debug_str     0x0000147f      0x134 ./GCC/pal_board.o
+                                0x2c2 (size before relaxing)
+ .debug_str     0x000015b3        0x0 ./GCC/pal_utils.o
+ .debug_str     0x000015b3      0x129 ./GCC/bmm.o
+                                0x26f (size before relaxing)
+ .debug_str     0x000016dc       0xf0 ./GCC/qmm.o
+                                0x2a5 (size before relaxing)
+ .debug_str     0x000017cc      0x722 ./GCC/tal.o
+                                0x98f (size before relaxing)
+ .debug_str     0x00001eee       0xbc ./GCC/tal_rx.o
+                                0x7ec (size before relaxing)
+ .debug_str     0x00001faa      0x291 ./GCC/tal_tx.o
+                                0xd63 (size before relaxing)
+ .debug_str     0x0000223b       0xa3 ./GCC/tal_ed.o
+                                0x7b0 (size before relaxing)
+ .debug_str     0x000022de      0x3df ./GCC/tal_slotted_csma.o
+                                0xff1 (size before relaxing)
+ .debug_str     0x000026bd      0x1db ./GCC/tal_pib.o
+                                0x975 (size before relaxing)
+ .debug_str     0x00002898      0x10d ./GCC/tal_init.o
+                                0xc4e (size before relaxing)
+ .debug_str     0x000029a5       0xae ./GCC/tal_irq_handler.o
+                                0x22b (size before relaxing)
+ .debug_str     0x00002a53       0x4d ./GCC/tal_pwr_mgmt.o
+                                0x6db (size before relaxing)
+ .debug_str     0x00002aa0       0x5c ./GCC/tal_rx_enable.o
+                                0x769 (size before relaxing)
+ .debug_str     0x00002afc      0xb97 ./GCC/mac_associate.o
+                               0x1531 (size before relaxing)
+ .debug_str     0x00003693      0x2c5 ./GCC/mac_beacon.o
+                                0xe92 (size before relaxing)
+ .debug_str     0x00003958      0x504 ./GCC/mac_callback_wrapper.o
+                                0xd26 (size before relaxing)
+ .debug_str     0x00003e5c      0x396 ./GCC/mac_data_ind.o
+                               0x169b (size before relaxing)
+ .debug_str     0x000041f2      0x109 ./GCC/mac_data_req.o
+                                0xee4 (size before relaxing)
+ .debug_str     0x000042fb       0x63 ./GCC/mac_data_extract_mhr.o
+                                0x4ee (size before relaxing)
+ .debug_str     0x0000435e      0x144 ./GCC/mac_disassociate.o
+                               0x12ce (size before relaxing)
+ .debug_str     0x000044a2       0x6e ./GCC/mac_dispatcher.o
+                                0x4a5 (size before relaxing)
+ .debug_str     0x00004510      0x125 ./GCC/mac.o
+                                0x9ae (size before relaxing)
+ .debug_str     0x00004635      0x214 ./GCC/mac_mcps_data.o
+                               0x15b7 (size before relaxing)
+ .debug_str     0x00004849      0x126 ./GCC/mac_misc.o
+                               0x12cf (size before relaxing)
+ .debug_str     0x0000496f       0x76 ./GCC/mac_orphan.o
+                                0xdc1 (size before relaxing)
+ .debug_str     0x000049e5      0x14f ./GCC/mac_pib.o
+                                0xdb8 (size before relaxing)
+ .debug_str     0x00004b34       0xbb ./GCC/mac_poll.o
+                                0xe27 (size before relaxing)
+ .debug_str     0x00004bef       0xf7 ./GCC/mac_process_beacon_frame.o
+                               0x136a (size before relaxing)
+ .debug_str     0x00004ce6       0xed ./GCC/mac_process_tal_tx_frame_status.o
+                                0xede (size before relaxing)
+ .debug_str     0x00004dd3      0x192 ./GCC/mac_rx_enable.o
+                                0xf2e (size before relaxing)
+ .debug_str     0x00004f65      0x15d ./GCC/mac_scan.o
+                               0x1601 (size before relaxing)
+ .debug_str     0x000050c2      0x16f ./GCC/mac_start.o
+                                0xd91 (size before relaxing)
+ .debug_str     0x00005231      0x107 ./GCC/mac_sync.o
+                               0x132d (size before relaxing)
+ .debug_str     0x00005338       0xcf ./GCC/mac_tx_coord_realignment_command.o
+                                0xd08 (size before relaxing)
+ .debug_str     0x00005407      0x15e ./GCC/mac_api.o
+                                0xfe6 (size before relaxing)
+ .debug_str     0x00005565       0x49 ./GCC/usr_mcps_purge_conf.o
+                                0x177 (size before relaxing)
+ .debug_str     0x000055ae       0x50 ./GCC/usr_mlme_beacon_notify_ind.o
+                                0x2a3 (size before relaxing)
+ .debug_str     0x000055fe       0x50 ./GCC/usr_mlme_disassociate_conf.o
+                                0x1fe (size before relaxing)
+ .debug_str     0x0000564e       0x4f ./GCC/usr_mlme_disassociate_ind.o
+                                0x19b (size before relaxing)
+ .debug_str     0x0000569d       0x47 ./GCC/usr_mlme_get_conf.o
+                                0x187 (size before relaxing)
+ .debug_str     0x000056e4       0x49 ./GCC/usr_mlme_orphan_ind.o
+                                0x174 (size before relaxing)
+ .debug_str     0x0000572d       0x48 ./GCC/usr_mlme_poll_conf.o
+                                0x16a (size before relaxing)
+ .debug_str     0x00005775       0x4d ./GCC/usr_mlme_rx_enable_conf.o
+                                0x174 (size before relaxing)
+ .debug_str     0x000057c2       0x4c ./GCC/usr_mlme_sync_loss_ind.o
+                                0x1a0 (size before relaxing)
+
+.debug_loc      0x00000000     0xd6b0
+ *(.debug_loc)
+ .debug_loc     0x00000000      0xb8b ./GCC/main.o
+ .debug_loc     0x00000b8b      0x244 ./GCC/sio_handler.o
+ .debug_loc     0x00000dcf      0x287 ./GCC/pal_uart.o
+ .debug_loc     0x00001056      0x1b1 ./GCC/pal_sio_hub.o
+ .debug_loc     0x00001207      0x4e2 ./GCC/pal_irq.o
+ .debug_loc     0x000016e9      0x32d ./GCC/pal.o
+ .debug_loc     0x00001a16       0x74 ./GCC/pal_mcu_generic.o
+ .debug_loc     0x00001a8a      0xbf1 ./GCC/pal_timer.o
+ .debug_loc     0x0000267b       0xd8 ./GCC/pal_board.o
+ .debug_loc     0x00002753       0xc4 ./GCC/bmm.o
+ .debug_loc     0x00002817      0x399 ./GCC/qmm.o
+ .debug_loc     0x00002bb0      0x1c2 ./GCC/tal.o
+ .debug_loc     0x00002d72      0x292 ./GCC/tal_rx.o
+ .debug_loc     0x00003004      0x415 ./GCC/tal_tx.o
+ .debug_loc     0x00003419       0x6e ./GCC/tal_ed.o
+ .debug_loc     0x00003487      0x8cb ./GCC/tal_slotted_csma.o
+ .debug_loc     0x00003d52      0x57f ./GCC/tal_pib.o
+ .debug_loc     0x000042d1      0x3c0 ./GCC/tal_init.o
+ .debug_loc     0x00004691       0x82 ./GCC/tal_irq_handler.o
+ .debug_loc     0x00004713       0x76 ./GCC/tal_pwr_mgmt.o
+ .debug_loc     0x00004789       0x53 ./GCC/tal_rx_enable.o
+ .debug_loc     0x000047dc      0xb53 ./GCC/mac_associate.o
+ .debug_loc     0x0000532f      0x756 ./GCC/mac_beacon.o
+ .debug_loc     0x00005a85      0xb2a ./GCC/mac_callback_wrapper.o
+ .debug_loc     0x000065af      0x8ed ./GCC/mac_data_ind.o
+ .debug_loc     0x00006e9c      0x968 ./GCC/mac_data_req.o
+ .debug_loc     0x00007804      0x18c ./GCC/mac_data_extract_mhr.o
+ .debug_loc     0x00007990      0x6ca ./GCC/mac_disassociate.o
+ .debug_loc     0x0000805a       0xc0 ./GCC/mac_dispatcher.o
+ .debug_loc     0x0000811a       0xaf ./GCC/mac.o
+ .debug_loc     0x000081c9     0x1069 ./GCC/mac_mcps_data.o
+ .debug_loc     0x00009232      0x426 ./GCC/mac_misc.o
+ .debug_loc     0x00009658      0x14b ./GCC/mac_orphan.o
+ .debug_loc     0x000097a3      0x57c ./GCC/mac_pib.o
+ .debug_loc     0x00009d1f      0x1fb ./GCC/mac_poll.o
+ .debug_loc     0x00009f1a      0x521 ./GCC/mac_process_beacon_frame.o
+ .debug_loc     0x0000a43b      0x582 ./GCC/mac_process_tal_tx_frame_status.o
+ .debug_loc     0x0000a9bd      0x6ac ./GCC/mac_rx_enable.o
+ .debug_loc     0x0000b069      0x8ed ./GCC/mac_scan.o
+ .debug_loc     0x0000b956      0x350 ./GCC/mac_start.o
+ .debug_loc     0x0000bca6      0x28a ./GCC/mac_sync.o
+ .debug_loc     0x0000bf30      0x5b8 ./GCC/mac_tx_coord_realignment_command.o
+ .debug_loc     0x0000c4e8     0x11c8 ./GCC/mac_api.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x2b0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x18 ./GCC/main.o
+ .debug_ranges  0x00000018       0x20 ./GCC/pal.o
+ .debug_ranges  0x00000038       0xa0 ./GCC/pal_timer.o
+ .debug_ranges  0x000000d8       0x18 ./GCC/qmm.o
+ .debug_ranges  0x000000f0       0x18 ./GCC/tal_slotted_csma.o
+ .debug_ranges  0x00000108       0x18 ./GCC/tal_pib.o
+ .debug_ranges  0x00000120       0x18 ./GCC/tal_init.o
+ .debug_ranges  0x00000138       0x18 ./GCC/mac_associate.o
+ .debug_ranges  0x00000150       0x18 ./GCC/mac_beacon.o
+ .debug_ranges  0x00000168       0x48 ./GCC/mac_data_ind.o
+ .debug_ranges  0x000001b0       0x18 ./GCC/mac_disassociate.o
+ .debug_ranges  0x000001c8       0x30 ./GCC/mac_mcps_data.o
+ .debug_ranges  0x000001f8       0x18 ./GCC/mac_misc.o
+ .debug_ranges  0x00000210       0x18 ./GCC/mac_process_beacon_frame.o
+ .debug_ranges  0x00000228       0x58 ./GCC/mac_process_tal_tx_frame_status.o
+ .debug_ranges  0x00000280       0x18 ./GCC/mac_rx_enable.o
+ .debug_ranges  0x00000298       0x18 ./GCC/mac_start.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(./_bin/Coordinator_Dummy.elf elf32-avr)
+LOAD linker stubs

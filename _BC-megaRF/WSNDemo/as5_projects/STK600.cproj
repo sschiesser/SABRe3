@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ProjectGuid>{16507e69-7bb7-427f-a249-f7ab12444fd0}</ProjectGuid>
+    <avrdevice>Atmega128rfa1</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <avrtoolinterface />
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ToolchainFlavour>AVRGCC_3_3_1</ToolchainFlavour>
+    <avrtool />
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.8.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <Name>STK600</Name>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue />
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>2</BootSegment>
+  </PropertyGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\Vs\AvrGCC.targets" />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\All_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_All_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Coordinator_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\Coordinator_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_Coordinator_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Router_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\Router_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_Router_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\EndDevice_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_EndDevice_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\All_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_All_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Router_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\Router_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_Router_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\..\makefiles\STK600\EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\STK600\Makefile_EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</ExternalMakeFilePath>
+    <PostBuildEvent>cp -fu $(OutputDirectory)\WSNDemo.elf $(OutputDirectory)\$(Name).elf</PostBuildEvent>
+    <OutputFileName>WSNDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+      </AvrGcc>
+    </ToolchainSettings>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\BSP\ATML_STK600\src\bspTaskManager.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\ATML_STK600\src\bspTaskManager.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\BSP\ATML_STK600\src\buttons.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\ATML_STK600\src\buttons.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\BSP\ATML_STK600\src\fakeBSP.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\ATML_STK600\src\fakeBSP.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\BSP\ATML_STK600\src\leds.c">
+      <SubType>compile</SubType>
+      <Link>Components\BSP\ATML_STK600\src\leds.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\ConfigServer\include\configServer.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\configServer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\ConfigServer\include\csDefaults.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\csDefaults.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\ConfigServer\include\private\csBuffers.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csBuffers.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\ConfigServer\include\private\csDbg.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\ConfigServer\include\private\csParamTable.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csParamTable.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\ConfigServer\include\private\csSIB.h">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\include\private\csSIB.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\ConfigServer\src\configServer.c">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\src\configServer.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\ConfigServer\src\csMem.c">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\src\csMem.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\ConfigServer\src\csPersistentMem.c">
+      <SubType>compile</SubType>
+      <Link>Components\ConfigServer\src\csPersistentMem.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\HAL\include\appTimer.h">
+      <SubType>compile</SubType>
+      <Link>Components\HAL\include\appTimer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\include\pdsDataServer.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\pdsDataServer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsCrcService.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsCrcService.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsDbg.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsDbg.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsMem.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsMem.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsMemAbstract.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsMemAbstract.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsMemAccess.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsMemAccess.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsTimer.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsTimer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\include\private\pdsWriteData.h">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\include\private\pdsWriteData.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\src\pdsCrcService.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsCrcService.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\src\pdsDataServer.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsDataServer.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\src\pdsEvents.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsEvents.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\src\pdsInit.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsInit.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\src\pdsMem.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsMem.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\src\pdsMemAccess.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsMemAccess.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\src\pdsTimer.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsTimer.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\BitCloud_MEGARF_1_14_0\BitCloud\Components\PersistDataServer\src\pdsWriteData.c">
+      <SubType>compile</SubType>
+      <Link>Components\PersistDataServer\src\pdsWriteData.c</Link>
+    </Compile>
+    <Compile Include=".\..\src\WSNSensorManager.c">
+      <SubType>compile</SubType>
+      <Link>src\WSNSensorManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\src\WSNVisualizer.c">
+      <SubType>compile</SubType>
+      <Link>src\WSNVisualizer.c</Link>
+    </Compile>
+    <Compile Include=".\..\src\WSNEndDevice.c">
+      <SubType>compile</SubType>
+      <Link>src\WSNEndDevice.c</Link>
+    </Compile>
+    <Compile Include=".\..\src\WSNCoord.c">
+      <SubType>compile</SubType>
+      <Link>src\WSNCoord.c</Link>
+    </Compile>
+    <Compile Include=".\..\src\WSNMessageSender.c">
+      <SubType>compile</SubType>
+      <Link>src\WSNMessageSender.c</Link>
+    </Compile>
+    <Compile Include=".\..\src\WSNCommandHandler.c">
+      <SubType>compile</SubType>
+      <Link>src\WSNCommandHandler.c</Link>
+    </Compile>
+    <Compile Include=".\..\src\WSNRouter.c">
+      <SubType>compile</SubType>
+      <Link>src\WSNRouter.c</Link>
+    </Compile>
+    <Compile Include=".\..\src\WSNDemoApp.c">
+      <SubType>compile</SubType>
+      <Link>src\WSNDemoApp.c</Link>
+    </Compile>
+    <Compile Include=".\..\src\WSNUARTManager.c">
+      <SubType>compile</SubType>
+      <Link>src\WSNUARTManager.c</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNZclManager.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNZclManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNVisualizer.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNVisualizer.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNUARTManager.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNUARTManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNMessageSender.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNMessageSender.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNCoord.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNCoord.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNDemoApp.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNDemoApp.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNEndDevice.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNEndDevice.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNRouter.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNRouter.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNCommandHandler.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNCommandHandler.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNSensorManager.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNSensorManager.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\WSNCommand.h">
+      <SubType>compile</SubType>
+      <Link>include\WSNCommand.h</Link>
+    </Compile>
+    <Compile Include=".\..\include\serialInterface.h">
+      <SubType>compile</SubType>
+      <Link>include\serialInterface.h</Link>
+    </Compile>
+    <Compile Include=".\..\configuration.h">
+      <SubType>compile</SubType>
+      <Link>configuration\configuration.h</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Components\BSP\" />
+    <Folder Include="Components\BSP\ATML_STK600" />
+    <Folder Include="Components\BSP\ATML_STK600\src" />
+    <Folder Include="Components\ConfigServer\" />
+    <Folder Include="Components\HAL" />
+    <Folder Include="Components\HAL\include" />
+    <Folder Include="Components\PersistDataServer\" />
+    <Folder Include="makefiles" />
+    <Folder Include="src" />
+    <Folder Include="Components\ConfigServer\src" />
+    <Folder Include="configuration" />
+    <Folder Include="Components\ConfigServer\include\private" />
+    <Folder Include="Components\PersistDataServer\src" />
+    <Folder Include="Components\PersistDataServer\include\private" />
+    <Folder Include="Components\ConfigServer\include" />
+    <Folder Include="Components\PersistDataServer\include" />
+    <Folder Include="include" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\makefiles\STK600\Makefile_All_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_All_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_All_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_All_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_All_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_Coordinator_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_Coordinator_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_Coordinator_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_Coordinator_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_EndDevice_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_EndDevice_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_EndDevice_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_EndDevice_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_Router_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_Router_Sec_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_Router_StdlinkSec_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+    <None Include="..\makefiles\STK600\Makefile_Router_Stk600_Atmega128rfa1_8Mhz_Gcc">
+      <SubType>compile</SubType>
+      <Link>makefiles\Makefile_Router_Stk600_Atmega128rfa1_8Mhz_Gcc</Link>
+    </None>
+  </ItemGroup>
+</Project>

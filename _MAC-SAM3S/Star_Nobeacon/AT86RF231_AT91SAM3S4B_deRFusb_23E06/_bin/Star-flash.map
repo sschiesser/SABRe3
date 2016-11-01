@@ -1,0 +1,2829 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_addsubsf3.o)
+                              _obj/flash_pal_timer.o (__aeabi_ui2f)
+c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_fixunssfsi.o)
+                              _obj/flash_pal_timer.o (__aeabi_f2uiz)
+c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+                              _obj/flash_pal_utils.o (__errno)
+c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+                              _obj/flash_uart_console.o (_impure_ptr)
+c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+                              _obj/flash_main.o (memcpy)
+c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+                              _obj/flash_pal_trx_access.o (memset)
+c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+                              _obj/flash_tal_init.o (srand)
+c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+                              _obj/flash_pal_utils.o (strcpy)
+c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+                              _obj/flash_pal_utils.o (strlen)
+
+Allocating common symbols
+Common symbol       size              file
+
+mac_pib_macAssociationPermit
+                    0x1               _obj/flash_mac.o
+mac_last_dsn        0x1               _obj/flash_mac.o
+sabre_mux_counter   0x1               _obj/flash_sabre_tasks.o
+mac_nhle_q          0xc               _obj/flash_mac_api.o
+tal_pib_TransmitPower
+                    0x1               _obj/flash_tal.o
+indirect_data_q     0xc               _obj/flash_mac.o
+mac_pib_macRxOnWhenIdle
+                    0x1               _obj/flash_mac.o
+tal_pib_IeeeAddress
+                    0x8               _obj/flash_tal.o
+tal_pib_MaxFrameDuration
+                    0x2               _obj/flash_tal.o
+tal_pib_CurrentPage
+                    0x1               _obj/flash_tal.o
+sys_time            0x2               _obj/flash_pal.o
+mac_pib_macBattLifeExtPeriods
+                    0x1               _obj/flash_mac.o
+tal_pib_PANId       0x2               _obj/flash_tal.o
+tal_pib_CCAMode     0x1               _obj/flash_tal.o
+tal_pib_ShortAddress
+                    0x2               _obj/flash_tal.o
+mac_last_src_addr   0x8               _obj/flash_mac.o
+tal_rx_on_required  0x1               _obj/flash_tal.o
+mac_scan_orig_page  0x1               _obj/flash_mac.o
+mac_pib_macSecurityEnabled
+                    0x1               _obj/flash_mac.o
+mac_poll_state      0x1               _obj/flash_mac.o
+mac_pib_macAutoRequest
+                    0x1               _obj/flash_mac.o
+mac_pib_macMaxFrameTotalWaitTime
+                    0x2               _obj/flash_mac.o
+nhle_mac_q          0xc               _obj/flash_mac.o
+tal_incoming_frame_queue
+                    0xc               _obj/flash_tal.o
+mac_scan_state      0x1               _obj/flash_mac.o
+mac_pib_macBSN      0x1               _obj/flash_mac.o
+tal_pib_MaxCSMABackoffs
+                    0x1               _obj/flash_tal.o
+timer_array         0x60              _obj/flash_pal_timer.o
+tal_pib_SymbolsPerOctet
+                    0x1               _obj/flash_tal.o
+tal_pib_CurrentChannel
+                    0x1               _obj/flash_tal.o
+mac_sync_state      0x1               _obj/flash_mac.o
+tal_pib_PrivatePanCoordinator
+                    0x1               _obj/flash_tal.o
+mac_pib_macDSN      0x1               _obj/flash_mac.o
+tal_pib_MaxBE       0x1               _obj/flash_tal.o
+mac_frame_ptr       0x4               _obj/flash_tal.o
+mac_pib_macBeaconPayloadLength
+                    0x1               _obj/flash_mac.o
+tal_pib_MinBE       0x1               _obj/flash_tal.o
+tal_pib_MaxFrameRetries
+                    0x1               _obj/flash_tal.o
+mac_pib_macTransactionPersistenceTime
+                    0x2               _obj/flash_mac.o
+mac_scan_orig_channel
+                    0x1               _obj/flash_mac.o
+mac_conf_buf_ptr    0x4               _obj/flash_mac.o
+mac_beacon_payload  0x34              _obj/flash_mac.o
+mac_pib_macCoordShortAddress
+                    0x2               _obj/flash_mac.o
+sabre_state         0x1               _obj/flash_main.o
+debug_mode          0x1               _obj/flash_main.o
+tal_rx_timestamp    0x4               _obj/flash_tal.o
+mac_rx_enabled      0x1               _obj/flash_mac.o
+mac_scan_orig_panid
+                    0x2               _obj/flash_mac.o
+tal_mac_q           0xc               _obj/flash_mac.o
+mac_pib_macResponseWaitTime
+                    0x2               _obj/flash_mac.o
+mac_scan_cmd_buf_ptr
+                    0x4               _obj/flash_mac.o
+mac_pib_macCoordExtendedAddress
+                    0x8               _obj/flash_mac.o
+mac_parse_data      0x40              _obj/flash_mac.o
+tal_trx_status      0x1               _obj/flash_tal.o
+tal_pib_SHRDuration
+                    0x1               _obj/flash_tal.o
+last_frame_length   0x1               _obj/flash_tal.o
+tal_frame_to_tx     0x4               _obj/flash_tal.o
+mac_state           0x1               _obj/flash_mac.o
+tal_pib_SupportedChannels
+                    0x4               _obj/flash_tal.o
+mac_busy            0x1               _obj/flash_mac.o
+tal_awake_end_flag  0x1               _obj/flash_tal.o
+mac_radio_sleep_state
+                    0x1               _obj/flash_mac.o
+mac_pib_macAssociatedPANCoord
+                    0x1               _obj/flash_mac.o
+tal_state           0x1               _obj/flash_tal.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 _obj/flash_main.o
+ .data          0x00000000        0x0 _obj/flash_main.o
+ .text          0x00000000        0x0 _obj/flash_sabre_tasks.o
+ .data          0x00000000        0x0 _obj/flash_sabre_tasks.o
+ .bss           0x00000000        0x0 _obj/flash_sabre_tasks.o
+ .text.sabre_poll_keys
+                0x00000000       0x3c _obj/flash_sabre_tasks.o
+ .text          0x00000000        0x0 _obj/flash_fifo.o
+ .data          0x00000000        0x0 _obj/flash_fifo.o
+ .bss           0x00000000        0x0 _obj/flash_fifo.o
+ .text.fifo_init
+                0x00000000       0x74 _obj/flash_fifo.o
+ .text          0x00000000        0x0 _obj/flash_pal.o
+ .data          0x00000000        0x0 _obj/flash_pal.o
+ .text.pal_ps_set
+                0x00000000       0x1c _obj/flash_pal.o
+ .text.pal_get_peripheral_clock_status
+                0x00000000       0x84 _obj/flash_pal.o
+ .text.pal_peripheral_clock_disable
+                0x00000000       0xd8 _obj/flash_pal.o
+ .text.pal_pio_get
+                0x00000000       0x44 _obj/flash_pal.o
+ .text          0x00000000        0x0 _obj/flash_pal_timer.o
+ .data          0x00000000        0x0 _obj/flash_pal_timer.o
+ .text.pal_are_all_timers_stopped
+                0x00000000       0x4c _obj/flash_pal_timer.o
+ .text          0x00000000        0x0 _obj/flash_pal_trx_access.o
+ .data          0x00000000        0x0 _obj/flash_pal_trx_access.o
+ .bss           0x00000000        0x0 _obj/flash_pal_trx_access.o
+ .text          0x00000000        0x0 _obj/flash_pal_utils.o
+ .data          0x00000000        0x0 _obj/flash_pal_utils.o
+ .text._sbrk_r  0x00000000       0x80 _obj/flash_pal_utils.o
+ .text          0x00000000        0x0 _obj/flash_bmm.o
+ .data          0x00000000        0x0 _obj/flash_bmm.o
+ .text          0x00000000        0x0 _obj/flash_qmm.o
+ .data          0x00000000        0x0 _obj/flash_qmm.o
+ .bss           0x00000000        0x0 _obj/flash_qmm.o
+ .text          0x00000000        0x0 _obj/flash_tal.o
+ .data          0x00000000        0x0 _obj/flash_tal.o
+ .text          0x00000000        0x0 _obj/flash_tal_rx.o
+ .data          0x00000000        0x0 _obj/flash_tal_rx.o
+ .bss           0x00000000        0x0 _obj/flash_tal_rx.o
+ .text          0x00000000        0x0 _obj/flash_tal_tx.o
+ .data          0x00000000        0x0 _obj/flash_tal_tx.o
+ .text          0x00000000        0x0 _obj/flash_tal_ed.o
+ .data          0x00000000        0x0 _obj/flash_tal_ed.o
+ .text          0x00000000        0x0 _obj/flash_tal_slotted_csma.o
+ .data          0x00000000        0x0 _obj/flash_tal_slotted_csma.o
+ .bss           0x00000000        0x0 _obj/flash_tal_slotted_csma.o
+ .text          0x00000000        0x0 _obj/flash_tal_pib.o
+ .data          0x00000000        0x0 _obj/flash_tal_pib.o
+ .bss           0x00000000        0x0 _obj/flash_tal_pib.o
+ .text          0x00000000        0x0 _obj/flash_tal_init.o
+ .data          0x00000000        0x0 _obj/flash_tal_init.o
+ .bss           0x00000000        0x0 _obj/flash_tal_init.o
+ .text          0x00000000        0x0 _obj/flash_tal_irq_handler.o
+ .data          0x00000000        0x0 _obj/flash_tal_irq_handler.o
+ .bss           0x00000000        0x0 _obj/flash_tal_irq_handler.o
+ .text          0x00000000        0x0 _obj/flash_tal_pwr_mgmt.o
+ .data          0x00000000        0x0 _obj/flash_tal_pwr_mgmt.o
+ .bss           0x00000000        0x0 _obj/flash_tal_pwr_mgmt.o
+ .text          0x00000000        0x0 _obj/flash_tal_rx_enable.o
+ .data          0x00000000        0x0 _obj/flash_tal_rx_enable.o
+ .bss           0x00000000        0x0 _obj/flash_tal_rx_enable.o
+ .text          0x00000000        0x0 _obj/flash_mac_associate.o
+ .data          0x00000000        0x0 _obj/flash_mac_associate.o
+ .bss           0x00000000        0x0 _obj/flash_mac_associate.o
+ .text          0x00000000        0x0 _obj/flash_mac_beacon.o
+ .data          0x00000000        0x0 _obj/flash_mac_beacon.o
+ .text          0x00000000        0x0 _obj/flash_mac_callback_wrapper.o
+ .data          0x00000000        0x0 _obj/flash_mac_callback_wrapper.o
+ .bss           0x00000000        0x0 _obj/flash_mac_callback_wrapper.o
+ .text          0x00000000        0x0 _obj/flash_mac_data_ind.o
+ .data          0x00000000        0x0 _obj/flash_mac_data_ind.o
+ .bss           0x00000000        0x0 _obj/flash_mac_data_ind.o
+ .text          0x00000000        0x0 _obj/flash_mac_data_req.o
+ .data          0x00000000        0x0 _obj/flash_mac_data_req.o
+ .bss           0x00000000        0x0 _obj/flash_mac_data_req.o
+ .text          0x00000000        0x0 _obj/flash_mac_disassociate.o
+ .data          0x00000000        0x0 _obj/flash_mac_disassociate.o
+ .bss           0x00000000        0x0 _obj/flash_mac_disassociate.o
+ .text          0x00000000        0x0 _obj/flash_mac_dispatcher.o
+ .data          0x00000000        0x0 _obj/flash_mac_dispatcher.o
+ .bss           0x00000000        0x0 _obj/flash_mac_dispatcher.o
+ .text          0x00000000        0x0 _obj/flash_mac.o
+ .data          0x00000000        0x0 _obj/flash_mac.o
+ .bss           0x00000000        0x0 _obj/flash_mac.o
+ .text          0x00000000        0x0 _obj/flash_mac_mcps_data.o
+ .data          0x00000000        0x0 _obj/flash_mac_mcps_data.o
+ .bss           0x00000000        0x0 _obj/flash_mac_mcps_data.o
+ .text          0x00000000        0x0 _obj/flash_mac_misc.o
+ .data          0x00000000        0x0 _obj/flash_mac_misc.o
+ .bss           0x00000000        0x0 _obj/flash_mac_misc.o
+ .text          0x00000000        0x0 _obj/flash_mac_orphan.o
+ .data          0x00000000        0x0 _obj/flash_mac_orphan.o
+ .bss           0x00000000        0x0 _obj/flash_mac_orphan.o
+ .text          0x00000000        0x0 _obj/flash_mac_pib.o
+ .data          0x00000000        0x0 _obj/flash_mac_pib.o
+ .text          0x00000000        0x0 _obj/flash_mac_poll.o
+ .data          0x00000000        0x0 _obj/flash_mac_poll.o
+ .bss           0x00000000        0x0 _obj/flash_mac_poll.o
+ .text          0x00000000        0x0 _obj/flash_mac_process_beacon_frame.o
+ .data          0x00000000        0x0 _obj/flash_mac_process_beacon_frame.o
+ .bss           0x00000000        0x0 _obj/flash_mac_process_beacon_frame.o
+ .text          0x00000000        0x0 _obj/flash_mac_process_tal_tx_frame_status.o
+ .data          0x00000000        0x0 _obj/flash_mac_process_tal_tx_frame_status.o
+ .bss           0x00000000        0x0 _obj/flash_mac_process_tal_tx_frame_status.o
+ .text          0x00000000        0x0 _obj/flash_mac_rx_enable.o
+ .data          0x00000000        0x0 _obj/flash_mac_rx_enable.o
+ .bss           0x00000000        0x0 _obj/flash_mac_rx_enable.o
+ .text          0x00000000        0x0 _obj/flash_mac_scan.o
+ .data          0x00000000        0x0 _obj/flash_mac_scan.o
+ .text          0x00000000        0x0 _obj/flash_mac_start.o
+ .data          0x00000000        0x0 _obj/flash_mac_start.o
+ .text          0x00000000        0x0 _obj/flash_mac_sync.o
+ .data          0x00000000        0x0 _obj/flash_mac_sync.o
+ .text          0x00000000        0x0 _obj/flash_mac_tx_coord_realignment_command.o
+ .data          0x00000000        0x0 _obj/flash_mac_tx_coord_realignment_command.o
+ .bss           0x00000000        0x0 _obj/flash_mac_tx_coord_realignment_command.o
+ .text          0x00000000        0x0 _obj/flash_mac_api.o
+ .data          0x00000000        0x0 _obj/flash_mac_api.o
+ .bss           0x00000000        0x0 _obj/flash_mac_api.o
+ .text.wpan_mcps_purge_req
+                0x00000000       0x5c _obj/flash_mac_api.o
+ .text.wpan_mlme_disassociate_req
+                0x00000000       0x9c _obj/flash_mac_api.o
+ .text.wpan_mlme_orphan_resp
+                0x00000000       0x74 _obj/flash_mac_api.o
+ .text.wpan_mlme_get_req
+                0x00000000       0x5c _obj/flash_mac_api.o
+ .text.wpan_mlme_rx_enable_req
+                0x00000000       0x6c _obj/flash_mac_api.o
+ .text.wpan_mlme_poll_req
+                0x00000000       0xa8 _obj/flash_mac_api.o
+ .text          0x00000000        0x0 _obj/flash_usr_mcps_purge_conf.o
+ .data          0x00000000        0x0 _obj/flash_usr_mcps_purge_conf.o
+ .bss           0x00000000        0x0 _obj/flash_usr_mcps_purge_conf.o
+ .text          0x00000000        0x0 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .data          0x00000000        0x0 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .bss           0x00000000        0x0 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .text          0x00000000        0x0 _obj/flash_usr_mlme_disassociate_conf.o
+ .data          0x00000000        0x0 _obj/flash_usr_mlme_disassociate_conf.o
+ .bss           0x00000000        0x0 _obj/flash_usr_mlme_disassociate_conf.o
+ .text          0x00000000        0x0 _obj/flash_usr_mlme_disassociate_ind.o
+ .data          0x00000000        0x0 _obj/flash_usr_mlme_disassociate_ind.o
+ .bss           0x00000000        0x0 _obj/flash_usr_mlme_disassociate_ind.o
+ .text          0x00000000        0x0 _obj/flash_usr_mlme_get_conf.o
+ .data          0x00000000        0x0 _obj/flash_usr_mlme_get_conf.o
+ .bss           0x00000000        0x0 _obj/flash_usr_mlme_get_conf.o
+ .text          0x00000000        0x0 _obj/flash_usr_mlme_orphan_ind.o
+ .data          0x00000000        0x0 _obj/flash_usr_mlme_orphan_ind.o
+ .bss           0x00000000        0x0 _obj/flash_usr_mlme_orphan_ind.o
+ .text          0x00000000        0x0 _obj/flash_usr_mlme_poll_conf.o
+ .data          0x00000000        0x0 _obj/flash_usr_mlme_poll_conf.o
+ .bss           0x00000000        0x0 _obj/flash_usr_mlme_poll_conf.o
+ .text          0x00000000        0x0 _obj/flash_usr_mlme_rx_enable_conf.o
+ .data          0x00000000        0x0 _obj/flash_usr_mlme_rx_enable_conf.o
+ .bss           0x00000000        0x0 _obj/flash_usr_mlme_rx_enable_conf.o
+ .text          0x00000000        0x0 _obj/flash_usr_mlme_sync_loss_ind.o
+ .data          0x00000000        0x0 _obj/flash_usr_mlme_sync_loss_ind.o
+ .bss           0x00000000        0x0 _obj/flash_usr_mlme_sync_loss_ind.o
+ .text          0x00000000        0x0 _obj/flash_pal_irq.o
+ .data          0x00000000        0x0 _obj/flash_pal_irq.o
+ .text          0x00000000        0x0 _obj/flash_pal_board.o
+ .data          0x00000000        0x0 _obj/flash_pal_board.o
+ .text.NVIC_DisableIRQ
+                0x00000000       0x34 _obj/flash_pal_board.o
+ .text.pal_button_init
+                0x00000000        0x4 _obj/flash_pal_board.o
+ .text.pal_button_read
+                0x00000000       0x14 _obj/flash_pal_board.o
+ .text.adc_initialize
+                0x00000000       0x34 _obj/flash_pal_board.o
+ .text.pal_generate_rand_seed
+                0x00000000      0x10c _obj/flash_pal_board.o
+ .text          0x00000000        0x0 _obj/flash_board_cstartup_gnu.o
+ .data          0x00000000        0x0 _obj/flash_board_cstartup_gnu.o
+ .bss           0x00000000        0x0 _obj/flash_board_cstartup_gnu.o
+ .text          0x00000000        0x0 _obj/flash_exceptions.o
+ .data          0x00000000        0x0 _obj/flash_exceptions.o
+ .bss           0x00000000        0x0 _obj/flash_exceptions.o
+ .text.PIOA_IrqHandler
+                0x00000000       0x10 _obj/flash_exceptions.o
+ .text.PIOB_IrqHandler
+                0x00000000       0x10 _obj/flash_exceptions.o
+ .text.PIOC_IrqHandler
+                0x00000000       0x10 _obj/flash_exceptions.o
+ .text.TC2_IrqHandler
+                0x00000000       0x10 _obj/flash_exceptions.o
+ .text.ADC_IrqHandler
+                0x00000000       0x10 _obj/flash_exceptions.o
+ .text          0x00000000        0x0 _obj/flash_sio_handler.o
+ .data          0x00000000        0x0 _obj/flash_sio_handler.o
+ .bss           0x00000000        0x0 _obj/flash_sio_handler.o
+ .text._sio_getchar
+                0x00000000       0x18 _obj/flash_sio_handler.o
+ .text._sio_getchar_nowait
+                0x00000000       0x34 _obj/flash_sio_handler.o
+ .text          0x00000000        0x0 _obj/flash_core_cm3.o
+ .data          0x00000000        0x0 _obj/flash_core_cm3.o
+ .bss           0x00000000        0x0 _obj/flash_core_cm3.o
+ .text.__get_PSP
+                0x00000000       0x1c _obj/flash_core_cm3.o
+ .text.__set_PSP
+                0x00000000       0x10 _obj/flash_core_cm3.o
+ .text.__get_MSP
+                0x00000000       0x1c _obj/flash_core_cm3.o
+ .text.__set_MSP
+                0x00000000       0x10 _obj/flash_core_cm3.o
+ .text.__get_BASEPRI
+                0x00000000       0x1c _obj/flash_core_cm3.o
+ .text.__set_BASEPRI
+                0x00000000       0x10 _obj/flash_core_cm3.o
+ .text.__get_FAULTMASK
+                0x00000000       0x1c _obj/flash_core_cm3.o
+ .text.__set_FAULTMASK
+                0x00000000       0x10 _obj/flash_core_cm3.o
+ .text.__REV    0x00000000       0x1c _obj/flash_core_cm3.o
+ .text.__REV16  0x00000000       0x24 _obj/flash_core_cm3.o
+ .text.__REVSH  0x00000000       0x24 _obj/flash_core_cm3.o
+ .text.__RBIT   0x00000000       0x20 _obj/flash_core_cm3.o
+ .text.__LDREXB
+                0x00000000       0x24 _obj/flash_core_cm3.o
+ .text.__LDREXH
+                0x00000000       0x24 _obj/flash_core_cm3.o
+ .text.__LDREXW
+                0x00000000       0x20 _obj/flash_core_cm3.o
+ .text.__STREXB
+                0x00000000       0x28 _obj/flash_core_cm3.o
+ .text.__STREXH
+                0x00000000       0x28 _obj/flash_core_cm3.o
+ .text.__STREXW
+                0x00000000       0x24 _obj/flash_core_cm3.o
+ .text.__get_CONTROL
+                0x00000000       0x1c _obj/flash_core_cm3.o
+ .text.__set_CONTROL
+                0x00000000       0x10 _obj/flash_core_cm3.o
+ .text          0x00000000        0x0 _obj/flash_led.o
+ .data          0x00000000        0x0 _obj/flash_led.o
+ .bss           0x00000000        0x0 _obj/flash_led.o
+ .rodata        0x00000000       0x28 _obj/flash_led.o
+ .text.LED_Configure
+                0x00000000       0x50 _obj/flash_led.o
+ .text.LED_Set  0x00000000       0x98 _obj/flash_led.o
+ .text.LED_Clear
+                0x00000000       0x98 _obj/flash_led.o
+ .text.LED_Toggle
+                0x00000000       0xa0 _obj/flash_led.o
+ .text          0x00000000        0x0 _obj/flash_pio.o
+ .data          0x00000000        0x0 _obj/flash_pio.o
+ .bss           0x00000000        0x0 _obj/flash_pio.o
+ .text.PIO_Set  0x00000000       0x14 _obj/flash_pio.o
+ .text.PIO_Clear
+                0x00000000       0x14 _obj/flash_pio.o
+ .text.PIO_Get  0x00000000       0x44 _obj/flash_pio.o
+ .text.PIO_GetOutputDataStatus
+                0x00000000       0x28 _obj/flash_pio.o
+ .text          0x00000000        0x0 _obj/flash_pmc.o
+ .data          0x00000000        0x0 _obj/flash_pmc.o
+ .bss           0x00000000        0x0 _obj/flash_pmc.o
+ .text.PMC_DisablePeripheral
+                0x00000000       0x90 _obj/flash_pmc.o
+ .text.PMC_EnableAllPeripherals
+                0x00000000       0x4c _obj/flash_pmc.o
+ .text.PMC_DisableAllPeripherals
+                0x00000000       0x48 _obj/flash_pmc.o
+ .text.PMC_IsPeriphEnabled
+                0x00000000       0x48 _obj/flash_pmc.o
+ .text          0x00000000        0x0 _obj/flash_uart_console.o
+ .data          0x00000000        0x4 _obj/flash_uart_console.o
+ .text.UART_GetChar
+                0x00000000       0x50 _obj/flash_uart_console.o
+ .text.UART_IsRxReady
+                0x00000000       0x4c _obj/flash_uart_console.o
+ .text.putchar  0x00000000       0x28 _obj/flash_uart_console.o
+ .text.fgetc    0x00000000       0x34 _obj/flash_uart_console.o
+ .text.getchar  0x00000000       0x54 _obj/flash_uart_console.o
+ .text.__ungetchar
+                0x00000000       0x18 _obj/flash_uart_console.o
+ .text          0x00000000        0x0 _obj/flash_stdio.o
+ .data          0x00000000        0x0 _obj/flash_stdio.o
+ .bss           0x00000000        0x0 _obj/flash_stdio.o
+ .text.snprintf
+                0x00000000       0x34 _obj/flash_stdio.o
+ .text.fprintf  0x00000000       0x30 _obj/flash_stdio.o
+ .text.sprintf  0x00000000       0x30 _obj/flash_stdio.o
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_addsubsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_fixunssfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_fixunssfsi.o)
+ .text          0x00000000        0xc c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ .rodata        0x00000000        0x4 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sram             0x20000000         0x0000c000         w !xr
+flash            0x00400000         0x00040000         w !xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD _obj/flash_main.o
+LOAD _obj/flash_sabre_tasks.o
+LOAD _obj/flash_fifo.o
+LOAD _obj/flash_pal.o
+LOAD _obj/flash_pal_timer.o
+LOAD _obj/flash_pal_trx_access.o
+LOAD _obj/flash_pal_utils.o
+LOAD _obj/flash_bmm.o
+LOAD _obj/flash_qmm.o
+LOAD _obj/flash_tal.o
+LOAD _obj/flash_tal_rx.o
+LOAD _obj/flash_tal_tx.o
+LOAD _obj/flash_tal_ed.o
+LOAD _obj/flash_tal_slotted_csma.o
+LOAD _obj/flash_tal_pib.o
+LOAD _obj/flash_tal_init.o
+LOAD _obj/flash_tal_irq_handler.o
+LOAD _obj/flash_tal_pwr_mgmt.o
+LOAD _obj/flash_tal_rx_enable.o
+LOAD _obj/flash_mac_associate.o
+LOAD _obj/flash_mac_beacon.o
+LOAD _obj/flash_mac_callback_wrapper.o
+LOAD _obj/flash_mac_data_ind.o
+LOAD _obj/flash_mac_data_req.o
+LOAD _obj/flash_mac_disassociate.o
+LOAD _obj/flash_mac_dispatcher.o
+LOAD _obj/flash_mac.o
+LOAD _obj/flash_mac_mcps_data.o
+LOAD _obj/flash_mac_misc.o
+LOAD _obj/flash_mac_orphan.o
+LOAD _obj/flash_mac_pib.o
+LOAD _obj/flash_mac_poll.o
+LOAD _obj/flash_mac_process_beacon_frame.o
+LOAD _obj/flash_mac_process_tal_tx_frame_status.o
+LOAD _obj/flash_mac_rx_enable.o
+LOAD _obj/flash_mac_scan.o
+LOAD _obj/flash_mac_start.o
+LOAD _obj/flash_mac_sync.o
+LOAD _obj/flash_mac_tx_coord_realignment_command.o
+LOAD _obj/flash_mac_api.o
+LOAD _obj/flash_usr_mcps_purge_conf.o
+LOAD _obj/flash_usr_mlme_beacon_notify_ind.o
+LOAD _obj/flash_usr_mlme_disassociate_conf.o
+LOAD _obj/flash_usr_mlme_disassociate_ind.o
+LOAD _obj/flash_usr_mlme_get_conf.o
+LOAD _obj/flash_usr_mlme_orphan_ind.o
+LOAD _obj/flash_usr_mlme_poll_conf.o
+LOAD _obj/flash_usr_mlme_rx_enable_conf.o
+LOAD _obj/flash_usr_mlme_sync_loss_ind.o
+LOAD _obj/flash_pal_irq.o
+LOAD _obj/flash_pal_board.o
+LOAD _obj/flash_board_cstartup_gnu.o
+LOAD _obj/flash_exceptions.o
+LOAD _obj/flash_sio_handler.o
+LOAD _obj/flash_core_cm3.o
+LOAD _obj/flash_led.o
+LOAD _obj/flash_pio.o
+LOAD _obj/flash_pmc.o
+LOAD _obj/flash_uart_console.o
+LOAD _obj/flash_stdio.o
+START GROUP
+LOAD c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a
+LOAD c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libc.a
+END GROUP
+
+.fixed          0x00400000    0x12cb8
+                0x00400000                . = ALIGN (0x4)
+                0x00400000                _sfixed = .
+ *(.vectors)
+ .vectors       0x00400000       0xd0 _obj/flash_board_cstartup_gnu.o
+                0x00400000                exception_table
+ *(.text*)
+ .text.__enable_irq
+                0x004000d0        0x4 _obj/flash_main.o
+ .text.pal_global_irq_enable
+                0x004000d4       0x10 _obj/flash_main.o
+ .text.main     0x004000e4       0x74 _obj/flash_main.o
+                0x004000e4                main
+ .text.app_init
+                0x00400158      0x168 _obj/flash_main.o
+ .text.sio_task
+                0x004002c0      0x2a0 _obj/flash_main.o
+ .text.usr_mlme_reset_conf
+                0x00400560      0x120 _obj/flash_main.o
+                0x00400560                usr_mlme_reset_conf
+ .text.usr_mlme_scan_conf
+                0x00400680      0x338 _obj/flash_main.o
+                0x00400680                usr_mlme_scan_conf
+ .text.network_scan_indication_cb
+                0x004009b8       0x44 _obj/flash_main.o
+ .text.usr_mlme_set_conf
+                0x004009fc      0x144 _obj/flash_main.o
+                0x004009fc                usr_mlme_set_conf
+ .text.usr_mlme_start_conf
+                0x00400b40       0x98 _obj/flash_main.o
+                0x00400b40                usr_mlme_start_conf
+ .text.usr_mlme_associate_ind
+                0x00400bd8       0xc8 _obj/flash_main.o
+                0x00400bd8                usr_mlme_associate_ind
+ .text.usr_mlme_comm_status_ind
+                0x00400ca0       0x10 _obj/flash_main.o
+                0x00400ca0                usr_mlme_comm_status_ind
+ .text.usr_mcps_data_ind
+                0x00400cb0      0x498 _obj/flash_main.o
+                0x00400cb0                usr_mcps_data_ind
+ .text.assign_new_short_addr
+                0x00401148      0x118 _obj/flash_main.o
+ .text.usr_mlme_associate_conf
+                0x00401260      0x234 _obj/flash_main.o
+                0x00401260                usr_mlme_associate_conf
+ .text.usr_mcps_data_conf
+                0x00401494       0x74 _obj/flash_main.o
+                0x00401494                usr_mcps_data_conf
+ .text.sabre_task
+                0x00401508       0x4c _obj/flash_sabre_tasks.o
+                0x00401508                sabre_task
+ .text.sabre_switches_init
+                0x00401554       0x44 _obj/flash_sabre_tasks.o
+                0x00401554                sabre_switches_init
+ .text.sabre_keys_init
+                0x00401598       0x44 _obj/flash_sabre_tasks.o
+                0x00401598                sabre_keys_init
+ .text.sabre_imu_init
+                0x004015dc       0x44 _obj/flash_sabre_tasks.o
+                0x004015dc                sabre_imu_init
+ .text.sabre_airmems_init
+                0x00401620       0x44 _obj/flash_sabre_tasks.o
+                0x00401620                sabre_airmems_init
+ .text.sabre_data_init
+                0x00401664       0x44 _obj/flash_sabre_tasks.o
+                0x00401664                sabre_data_init
+ .text.NVIC_EnableIRQ
+                0x004016a8       0x30 _obj/flash_pal.o
+ .text.NVIC_DisableIRQ
+                0x004016d8       0x34 _obj/flash_pal.o
+ .text.NVIC_ClearPendingIRQ
+                0x0040170c       0x34 _obj/flash_pal.o
+ .text.NVIC_SetPriority
+                0x00401740       0x50 _obj/flash_pal.o
+ .text.pal_init
+                0x00401790       0x40 _obj/flash_pal.o
+                0x00401790                pal_init
+ .text.pal_task
+                0x004017d0       0x10 _obj/flash_pal.o
+                0x004017d0                pal_task
+ .text.pal_ps_get
+                0x004017e0       0x30 _obj/flash_pal.o
+                0x004017e0                pal_ps_get
+ .text.pal_alert
+                0x00401810      0x168 _obj/flash_pal.o
+                0x00401810                pal_alert
+ .text.watchdog_disable
+                0x00401978       0x18 _obj/flash_pal.o
+ .text.pal_peripheral_clock_enable
+                0x00401990       0xd8 _obj/flash_pal.o
+                0x00401990                pal_peripheral_clock_enable
+ .text.pal_pio_configure
+                0x00401a68      0x168 _obj/flash_pal.o
+                0x00401a68                pal_pio_configure
+ .text.pal_pio_setperiphA
+                0x00401bd0       0x68 _obj/flash_pal.o
+ .text.pal_pio_setperiphB
+                0x00401c38       0x5c _obj/flash_pal.o
+ .text.pal_pio_setperiphC
+                0x00401c94       0x5c _obj/flash_pal.o
+ .text.pal_pio_setperiphD
+                0x00401cf0       0x50 _obj/flash_pal.o
+ .text.pal_pio_setinput
+                0x00401d40       0x68 _obj/flash_pal.o
+ .text.pal_pio_setoutput
+                0x00401da8       0x60 _obj/flash_pal.o
+ .text.pal_pio_initialize_interrupts
+                0x00401e08      0x140 _obj/flash_pal.o
+                0x00401e08                pal_pio_initialize_interrupts
+ .text.pal_pio_configure_interrupt
+                0x00401f48      0x128 _obj/flash_pal.o
+                0x00401f48                pal_pio_configure_interrupt
+ .text.pal_pio_disable_interrupt
+                0x00402070       0x14 _obj/flash_pal.o
+                0x00402070                pal_pio_disable_interrupt
+ .text.pal_pio_enable_interrupt
+                0x00402084       0x18 _obj/flash_pal.o
+                0x00402084                pal_pio_enable_interrupt
+ .text.PIOA_IrqHandler
+                0x0040209c       0x1c _obj/flash_pal.o
+                0x0040209c                PIOA_IrqHandler
+ .text.PIOB_IrqHandler
+                0x004020b8       0x1c _obj/flash_pal.o
+                0x004020b8                PIOB_IrqHandler
+ .text.PIOC_IrqHandler
+                0x004020d4       0x1c _obj/flash_pal.o
+                0x004020d4                PIOC_IrqHandler
+ .text.pal_pio_interrupt_handler
+                0x004020f0       0xac _obj/flash_pal.o
+ .text.__disable_irq
+                0x0040219c        0x4 _obj/flash_pal_timer.o
+ .text.compare_time
+                0x004021a0       0x28 _obj/flash_pal_timer.o
+ .text.timer_service
+                0x004021c8      0x16c _obj/flash_pal_timer.o
+                0x004021c8                timer_service
+ .text.pal_timer_start
+                0x00402334       0xf0 _obj/flash_pal_timer.o
+                0x00402334                pal_timer_start
+ .text.pal_timer_stop
+                0x00402424      0x2f0 _obj/flash_pal_timer.o
+                0x00402424                pal_timer_stop
+ .text.timer_init
+                0x00402714       0xbc _obj/flash_pal_timer.o
+                0x00402714                timer_init
+ .text.pal_timer_source_select
+                0x004027d0        0xc _obj/flash_pal_timer.o
+                0x004027d0                pal_timer_source_select
+ .text.pal_get_current_time
+                0x004027dc       0x38 _obj/flash_pal_timer.o
+                0x004027dc                pal_get_current_time
+ .text.pal_timer_delay
+                0x00402814       0xc8 _obj/flash_pal_timer.o
+                0x00402814                pal_timer_delay
+ .text.pal_is_timer_running
+                0x004028dc       0x34 _obj/flash_pal_timer.o
+                0x004028dc                pal_is_timer_running
+ .text.gettime  0x00402910       0x50 _obj/flash_pal_timer.o
+ .text.prog_comp_reg
+                0x00402960      0x14c _obj/flash_pal_timer.o
+ .text.internal_timer_handler
+                0x00402aac      0x124 _obj/flash_pal_timer.o
+                0x00402aac                internal_timer_handler
+ .text.start_absolute_timer
+                0x00402bd0      0x258 _obj/flash_pal_timer.o
+ .text.TC2_IrqHandler
+                0x00402e28       0x8c _obj/flash_pal_timer.o
+                0x00402e28                TC2_IrqHandler
+ .text.__disable_irq
+                0x00402eb4        0x4 _obj/flash_pal_trx_access.o
+ .text.pal_trx_reg_write
+                0x00402eb8       0xd4 _obj/flash_pal_trx_access.o
+                0x00402eb8                pal_trx_reg_write
+ .text.pal_trx_reg_read
+                0x00402f8c      0x114 _obj/flash_pal_trx_access.o
+                0x00402f8c                pal_trx_reg_read
+ .text.pal_trx_frame_read
+                0x004030a0      0x138 _obj/flash_pal_trx_access.o
+                0x004030a0                pal_trx_frame_read
+ .text.pal_trx_frame_write
+                0x004031d8       0xfc _obj/flash_pal_trx_access.o
+                0x004031d8                pal_trx_frame_write
+ .text.pal_trx_bit_read
+                0x004032d4       0x58 _obj/flash_pal_trx_access.o
+                0x004032d4                pal_trx_bit_read
+ .text.pal_trx_bit_write
+                0x0040332c       0x8c _obj/flash_pal_trx_access.o
+                0x0040332c                pal_trx_bit_write
+ .text.pal_assert
+                0x004033b8       0x7c _obj/flash_pal_utils.o
+                0x004033b8                pal_assert
+ .text.bmm_buffer_init
+                0x00403434       0x88 _obj/flash_bmm.o
+                0x00403434                bmm_buffer_init
+ .text.bmm_buffer_alloc
+                0x004034bc       0x34 _obj/flash_bmm.o
+                0x004034bc                bmm_buffer_alloc
+ .text.bmm_buffer_free
+                0x004034f0       0x28 _obj/flash_bmm.o
+                0x004034f0                bmm_buffer_free
+ .text.__disable_irq
+                0x00403518        0x4 _obj/flash_qmm.o
+ .text.qmm_queue_init
+                0x0040351c       0x20 _obj/flash_qmm.o
+                0x0040351c                qmm_queue_init
+ .text.qmm_queue_append
+                0x0040353c       0x64 _obj/flash_qmm.o
+                0x0040353c                qmm_queue_append
+ .text.queue_read_or_remove
+                0x004035a0       0xe8 _obj/flash_qmm.o
+ .text.qmm_queue_remove
+                0x00403688       0x24 _obj/flash_qmm.o
+                0x00403688                qmm_queue_remove
+ .text.qmm_queue_read
+                0x004036ac       0x24 _obj/flash_qmm.o
+                0x004036ac                qmm_queue_read
+ .text.qmm_queue_flush
+                0x004036d0       0x68 _obj/flash_qmm.o
+                0x004036d0                qmm_queue_flush
+ .text.__NOP    0x00403738        0x4 _obj/flash_tal.o
+ .text.__enable_irq
+                0x0040373c        0x4 _obj/flash_tal.o
+ .text.__disable_irq
+                0x00403740        0x4 _obj/flash_tal.o
+ .text.tal_task
+                0x00403744      0x120 _obj/flash_tal.o
+                0x00403744                tal_task
+ .text.set_trx_state
+                0x00403864     0x18e4 _obj/flash_tal.o
+                0x00403864                set_trx_state
+ .text.switch_pll_on
+                0x00405148       0xe8 _obj/flash_tal.o
+ .text.handle_received_frame_irq
+                0x00405230      0x140 _obj/flash_tal_rx.o
+                0x00405230                handle_received_frame_irq
+ .text.process_incoming_frame
+                0x00405370       0x94 _obj/flash_tal_rx.o
+                0x00405370                process_incoming_frame
+ .text.normalize_lqi
+                0x00405404       0xb4 _obj/flash_tal_rx.o
+ .text.__NOP    0x004054b8        0x4 _obj/flash_tal_tx.o
+ .text.tal_tx_frame
+                0x004054bc       0x80 _obj/flash_tal_tx.o
+                0x004054bc                tal_tx_frame
+ .text.tx_done_handling
+                0x0040553c      0x270 _obj/flash_tal_tx.o
+                0x0040553c                tx_done_handling
+ .text.send_frame
+                0x004057ac      0x21c _obj/flash_tal_tx.o
+                0x004057ac                send_frame
+ .text.handle_tx_end_irq
+                0x004059c8       0xac _obj/flash_tal_tx.o
+                0x004059c8                handle_tx_end_irq
+ .text.tal_ed_start
+                0x00405a74      0x1c0 _obj/flash_tal_ed.o
+                0x00405a74                tal_ed_start
+ .text.trx_ed_irq_handler_cb
+                0x00405c34       0xd4 _obj/flash_tal_ed.o
+ .text.ed_scan_done
+                0x00405d08       0xf4 _obj/flash_tal_ed.o
+                0x00405d08                ed_scan_done
+ .text.init_tal_pib
+                0x00405dfc       0xe8 _obj/flash_tal_pib.o
+                0x00405dfc                init_tal_pib
+ .text.write_all_tal_pib_to_trx
+                0x00405ee4      0x1d8 _obj/flash_tal_pib.o
+                0x00405ee4                write_all_tal_pib_to_trx
+ .text.tal_pib_set
+                0x004060bc      0x47c _obj/flash_tal_pib.o
+                0x004060bc                tal_pib_set
+ .text.limit_tx_pwr
+                0x00406538      0x11c _obj/flash_tal_pib.o
+ .text.convert_phyTransmitPower_to_reg_value
+                0x00406654       0xa8 _obj/flash_tal_pib.o
+ .text.apply_channel_page_configuration
+                0x004066fc      0x1dc _obj/flash_tal_pib.o
+ .text.NVIC_ClearPendingIRQ
+                0x004068d8       0x34 _obj/flash_tal_init.o
+ .text.tal_init
+                0x0040690c      0x184 _obj/flash_tal_init.o
+                0x0040690c                tal_init
+ .text.trx_init
+                0x00406a90      0x158 _obj/flash_tal_init.o
+ .text.internal_tal_reset
+                0x00406be8       0x78 _obj/flash_tal_init.o
+ .text.trx_config
+                0x00406c60       0xcc _obj/flash_tal_init.o
+ .text.trx_reset
+                0x00406d2c       0xd8 _obj/flash_tal_init.o
+ .text.tal_reset
+                0x00406e04      0x11c _obj/flash_tal_init.o
+                0x00406e04                tal_reset
+ .text.generate_rand_seed
+                0x00406f20      0x100 _obj/flash_tal_init.o
+ .text.trx_irq_handler_cb
+                0x00407020       0x6c _obj/flash_tal_irq_handler.o
+                0x00407020                trx_irq_handler_cb
+ .text.trx_irq_timestamp_handler_cb
+                0x0040708c       0x18 _obj/flash_tal_irq_handler.o
+                0x0040708c                trx_irq_timestamp_handler_cb
+ .text.trx_irq_awake_handler_cb
+                0x004070a4       0x68 _obj/flash_tal_irq_handler.o
+                0x004070a4                trx_irq_awake_handler_cb
+ .text.tal_trx_sleep
+                0x0040710c       0xa4 _obj/flash_tal_pwr_mgmt.o
+                0x0040710c                tal_trx_sleep
+ .text.tal_trx_wakeup
+                0x004071b0       0x54 _obj/flash_tal_pwr_mgmt.o
+                0x004071b0                tal_trx_wakeup
+ .text.tal_rx_enable
+                0x00407204       0x80 _obj/flash_tal_rx_enable.o
+                0x00407204                tal_rx_enable
+ .text.convert_16_bit_to_byte_array
+                0x00407284       0x2c _obj/flash_mac_associate.o
+ .text.convert_spec_16_bit_to_byte_array
+                0x004072b0       0x2c _obj/flash_mac_associate.o
+ .text.convert_64_bit_to_byte_array
+                0x004072dc       0x54 _obj/flash_mac_associate.o
+ .text.mac_check_persistence_timer
+                0x00407330       0x28 _obj/flash_mac_associate.o
+ .text.mac_gen_mlme_associate_conf
+                0x00407358       0x48 _obj/flash_mac_associate.o
+                0x00407358                mac_gen_mlme_associate_conf
+ .text.mlme_associate_request
+                0x004073a0      0x394 _obj/flash_mac_associate.o
+                0x004073a0                mlme_associate_request
+ .text.mac_process_associate_request
+                0x00407734       0x74 _obj/flash_mac_associate.o
+                0x00407734                mac_process_associate_request
+ .text.mlme_associate_response
+                0x004077a8      0x19c _obj/flash_mac_associate.o
+                0x004077a8                mlme_associate_response
+ .text.mac_process_associate_response
+                0x00407944      0x198 _obj/flash_mac_associate.o
+                0x00407944                mac_process_associate_response
+ .text.mac_t_response_wait_cb
+                0x00407adc       0xdc _obj/flash_mac_associate.o
+                0x00407adc                mac_t_response_wait_cb
+ .text.mac_t_assocresponsetime_cb
+                0x00407bb8       0xb4 _obj/flash_mac_associate.o
+                0x00407bb8                mac_t_assocresponsetime_cb
+ .text.convert_16_bit_to_byte_array
+                0x00407c6c       0x2c _obj/flash_mac_beacon.o
+ .text.convert_spec_16_bit_to_byte_array
+                0x00407c98       0x2c _obj/flash_mac_beacon.o
+ .text.convert_64_bit_to_byte_array
+                0x00407cc4       0x54 _obj/flash_mac_beacon.o
+ .text.mac_buffer_add_pending
+                0x00407d18       0xf0 _obj/flash_mac_beacon.o
+ .text.mac_build_and_tx_beacon
+                0x00407e08      0x2a8 _obj/flash_mac_beacon.o
+                0x00407e08                mac_build_and_tx_beacon
+ .text.add_pending_short_address_cb
+                0x004080b0       0x94 _obj/flash_mac_beacon.o
+ .text.add_pending_extended_address_cb
+                0x00408144       0x94 _obj/flash_mac_beacon.o
+ .text.mac_process_beacon_request
+                0x004081d8       0x1c _obj/flash_mac_beacon.o
+                0x004081d8                mac_process_beacon_request
+ .text.mcps_data_ind
+                0x004081f4      0x108 _obj/flash_mac_callback_wrapper.o
+                0x004081f4                mcps_data_ind
+ .text.mcps_data_conf
+                0x004082fc       0x3c _obj/flash_mac_callback_wrapper.o
+                0x004082fc                mcps_data_conf
+ .text.mcps_purge_conf
+                0x00408338       0x34 _obj/flash_mac_callback_wrapper.o
+                0x00408338                mcps_purge_conf
+ .text.mlme_associate_conf
+                0x0040836c       0x34 _obj/flash_mac_callback_wrapper.o
+                0x0040836c                mlme_associate_conf
+ .text.mlme_associate_ind
+                0x004083a0       0x3c _obj/flash_mac_callback_wrapper.o
+                0x004083a0                mlme_associate_ind
+ .text.mlme_beacon_notify_ind
+                0x004083dc       0x54 _obj/flash_mac_callback_wrapper.o
+                0x004083dc                mlme_beacon_notify_ind
+ .text.mlme_comm_status_ind
+                0x00408430       0x94 _obj/flash_mac_callback_wrapper.o
+                0x00408430                mlme_comm_status_ind
+ .text.mlme_disassociate_conf
+                0x004084c4       0x60 _obj/flash_mac_callback_wrapper.o
+                0x004084c4                mlme_disassociate_conf
+ .text.mlme_disassociate_ind
+                0x00408524       0x3c _obj/flash_mac_callback_wrapper.o
+                0x00408524                mlme_disassociate_ind
+ .text.mlme_get_conf
+                0x00408560       0x3c _obj/flash_mac_callback_wrapper.o
+                0x00408560                mlme_get_conf
+ .text.mlme_orphan_ind
+                0x0040859c       0x34 _obj/flash_mac_callback_wrapper.o
+                0x0040859c                mlme_orphan_ind
+ .text.mlme_poll_conf
+                0x004085d0       0x30 _obj/flash_mac_callback_wrapper.o
+                0x004085d0                mlme_poll_conf
+ .text.mlme_reset_conf
+                0x00408600       0x30 _obj/flash_mac_callback_wrapper.o
+                0x00408600                mlme_reset_conf
+ .text.mlme_rx_enable_conf
+                0x00408630       0x30 _obj/flash_mac_callback_wrapper.o
+                0x00408630                mlme_rx_enable_conf
+ .text.mlme_scan_conf
+                0x00408660       0x50 _obj/flash_mac_callback_wrapper.o
+                0x00408660                mlme_scan_conf
+ .text.mlme_set_conf
+                0x004086b0       0x34 _obj/flash_mac_callback_wrapper.o
+                0x004086b0                mlme_set_conf
+ .text.mlme_start_conf
+                0x004086e4       0x30 _obj/flash_mac_callback_wrapper.o
+                0x004086e4                mlme_start_conf
+ .text.mlme_sync_loss_ind
+                0x00408714       0x2c _obj/flash_mac_callback_wrapper.o
+                0x00408714                mlme_sync_loss_ind
+ .text.convert_byte_array_to_16_bit
+                0x00408740       0x28 _obj/flash_mac_data_ind.o
+ .text.convert_byte_array_to_64_bit
+                0x00408768       0x44 _obj/flash_mac_data_ind.o
+ .text.convert_16_bit_to_byte_array
+                0x004087ac       0x2c _obj/flash_mac_data_ind.o
+ .text.convert_spec_16_bit_to_byte_array
+                0x004087d8       0x2c _obj/flash_mac_data_ind.o
+ .text.convert_64_bit_to_byte_array
+                0x00408804       0x54 _obj/flash_mac_data_ind.o
+ .text.mac_process_tal_data_ind
+                0x00408858      0x358 _obj/flash_mac_data_ind.o
+                0x00408858                mac_process_tal_data_ind
+ .text.process_data_ind_scanning
+                0x00408bb0      0x130 _obj/flash_mac_data_ind.o
+ .text.process_data_ind_not_transient
+                0x00408ce0      0x2d0 _obj/flash_mac_data_ind.o
+ .text.parse_mpdu
+                0x00408fb0      0x48c _obj/flash_mac_data_ind.o
+ .text.extract_mhr_addr_information
+                0x0040943c      0x234 _obj/flash_mac_data_ind.o
+ .text.tal_rx_frame_cb
+                0x00409670       0x58 _obj/flash_mac_data_ind.o
+                0x00409670                tal_rx_frame_cb
+ .text.check_for_pan_id_conflict_as_pc
+                0x004096c8       0x70 _obj/flash_mac_data_ind.o
+ .text.check_for_pan_id_conflict_non_pc
+                0x00409738       0xa4 _obj/flash_mac_data_ind.o
+ .text.tx_pan_id_conf_notif
+                0x004097dc      0x194 _obj/flash_mac_data_ind.o
+ .text.convert_byte_array_to_16_bit
+                0x00409970       0x28 _obj/flash_mac_data_req.o
+ .text.convert_byte_array_to_64_bit
+                0x00409998       0x44 _obj/flash_mac_data_req.o
+ .text.convert_16_bit_to_byte_array
+                0x004099dc       0x2c _obj/flash_mac_data_req.o
+ .text.convert_spec_16_bit_to_byte_array
+                0x00409a08       0x2c _obj/flash_mac_data_req.o
+ .text.convert_64_bit_to_byte_array
+                0x00409a34       0x54 _obj/flash_mac_data_req.o
+ .text.mac_build_and_tx_data_req
+                0x00409a88      0x364 _obj/flash_mac_data_req.o
+                0x00409a88                mac_build_and_tx_data_req
+ .text.build_null_data_frame
+                0x00409dec      0x150 _obj/flash_mac_data_req.o
+ .text.mac_process_data_request
+                0x00409f3c      0x1d4 _obj/flash_mac_data_req.o
+                0x00409f3c                mac_process_data_request
+ .text.mac_handle_tx_null_data_frame
+                0x0040a110       0x94 _obj/flash_mac_data_req.o
+                0x0040a110                mac_handle_tx_null_data_frame
+ .text.find_short_buffer
+                0x0040a1a4       0x68 _obj/flash_mac_data_req.o
+ .text.find_long_buffer
+                0x0040a20c       0x70 _obj/flash_mac_data_req.o
+ .text.convert_byte_array_to_16_bit
+                0x0040a27c       0x28 _obj/flash_mac_disassociate.o
+ .text.convert_byte_array_to_64_bit
+                0x0040a2a4       0x44 _obj/flash_mac_disassociate.o
+ .text.convert_16_bit_to_byte_array
+                0x0040a2e8       0x2c _obj/flash_mac_disassociate.o
+ .text.convert_spec_16_bit_to_byte_array
+                0x0040a314       0x2c _obj/flash_mac_disassociate.o
+ .text.convert_16_bit_to_byte_address
+                0x0040a340       0x2c _obj/flash_mac_disassociate.o
+ .text.convert_64_bit_to_byte_array
+                0x0040a36c       0x54 _obj/flash_mac_disassociate.o
+ .text.mac_check_persistence_timer
+                0x0040a3c0       0x28 _obj/flash_mac_disassociate.o
+ .text.mac_gen_mlme_disassociate_conf
+                0x0040a3e8       0x9c _obj/flash_mac_disassociate.o
+ .text.mlme_disassociate_request
+                0x0040a484      0x258 _obj/flash_mac_disassociate.o
+                0x0040a484                mlme_disassociate_request
+ .text.mac_awake_disassociate
+                0x0040a6dc       0x80 _obj/flash_mac_disassociate.o
+ .text.mac_process_disassociate_notification
+                0x0040a75c       0x7c _obj/flash_mac_disassociate.o
+                0x0040a75c                mac_process_disassociate_notification
+ .text.mac_prep_disassoc_conf
+                0x0040a7d8      0x260 _obj/flash_mac_disassociate.o
+                0x0040a7d8                mac_prep_disassoc_conf
+ .text.dispatch_event
+                0x0040aa38       0x70 _obj/flash_mac_dispatcher.o
+                0x0040aa38                dispatch_event
+ .text.mac_task
+                0x0040aaa8       0xb4 _obj/flash_mac.o
+                0x0040aaa8                mac_task
+ .text.convert_16_bit_to_byte_array
+                0x0040ab5c       0x2c _obj/flash_mac_mcps_data.o
+ .text.convert_spec_16_bit_to_byte_array
+                0x0040ab88       0x2c _obj/flash_mac_mcps_data.o
+ .text.convert_16_bit_to_byte_address
+                0x0040abb4       0x2c _obj/flash_mac_mcps_data.o
+ .text.convert_64_bit_to_byte_array
+                0x0040abe0       0x54 _obj/flash_mac_mcps_data.o
+ .text.mac_check_persistence_timer
+                0x0040ac34       0x28 _obj/flash_mac_mcps_data.o
+ .text.mac_gen_mcps_data_conf
+                0x0040ac5c       0x50 _obj/flash_mac_mcps_data.o
+                0x0040ac5c                mac_gen_mcps_data_conf
+ .text.mcps_data_request
+                0x0040acac      0x1c0 _obj/flash_mac_mcps_data.o
+                0x0040acac                mcps_data_request
+ .text.mac_process_data_frame
+                0x0040ae6c      0x4b0 _obj/flash_mac_mcps_data.o
+                0x0040ae6c                mac_process_data_frame
+ .text.build_data_frame
+                0x0040b31c      0x260 _obj/flash_mac_mcps_data.o
+ .text.mac_start_persistence_timer
+                0x0040b57c       0x78 _obj/flash_mac_mcps_data.o
+                0x0040b57c                mac_start_persistence_timer
+ .text.mac_t_persistence_cb
+                0x0040b5f4       0x2c _obj/flash_mac_mcps_data.o
+ .text.handle_persistence_time_decrement
+                0x0040b620       0x6c _obj/flash_mac_mcps_data.o
+ .text.decrement_persistence_time
+                0x0040b68c       0x30 _obj/flash_mac_mcps_data.o
+ .text.check_persistence_time_zero
+                0x0040b6bc       0x30 _obj/flash_mac_mcps_data.o
+ .text.handle_exp_persistence_timer
+                0x0040b6ec       0xb4 _obj/flash_mac_mcps_data.o
+ .text.mac_buffer_purge
+                0x0040b7a0       0x60 _obj/flash_mac_mcps_data.o
+ .text.mcps_purge_request
+                0x0040b800       0x6c _obj/flash_mac_mcps_data.o
+                0x0040b800                mcps_purge_request
+ .text.check_msdu_handle_cb
+                0x0040b86c       0x30 _obj/flash_mac_mcps_data.o
+ .text.__disable_irq
+                0x0040b89c        0x4 _obj/flash_mac_misc.o
+ .text.reset_globals
+                0x0040b8a0       0x88 _obj/flash_mac_misc.o
+ .text.mac_init
+                0x0040b928       0x8c _obj/flash_mac_misc.o
+                0x0040b928                mac_init
+ .text.mac_idle_trans
+                0x0040b9b4       0xcc _obj/flash_mac_misc.o
+                0x0040b9b4                mac_idle_trans
+ .text.do_init_pib
+                0x0040ba80       0xe4 _obj/flash_mac_misc.o
+ .text.mlme_reset_request
+                0x0040bb64       0x58 _obj/flash_mac_misc.o
+                0x0040bb64                mlme_reset_request
+ .text.mac_reset
+                0x0040bbbc       0x68 _obj/flash_mac_misc.o
+ .text.mac_soft_reset
+                0x0040bc24       0x8c _obj/flash_mac_misc.o
+ .text.mac_sleep_trans
+                0x0040bcb0       0x38 _obj/flash_mac_misc.o
+                0x0040bcb0                mac_sleep_trans
+ .text.flush_queues
+                0x0040bce8       0x4c _obj/flash_mac_misc.o
+ .text.send_reset_conf
+                0x0040bd34       0x3c _obj/flash_mac_misc.o
+ .text.mac_mlme_comm_status
+                0x0040bd70       0x98 _obj/flash_mac_misc.o
+                0x0040bd70                mac_mlme_comm_status
+ .text.mac_trx_init_sleep
+                0x0040be08       0x54 _obj/flash_mac_misc.o
+                0x0040be08                mac_trx_init_sleep
+ .text.mac_trx_wakeup
+                0x0040be5c       0x40 _obj/flash_mac_misc.o
+                0x0040be5c                mac_trx_wakeup
+ .text.mac_process_orphan_notification
+                0x0040be9c       0x48 _obj/flash_mac_orphan.o
+                0x0040be9c                mac_process_orphan_notification
+ .text.mlme_orphan_response
+                0x0040bee4       0x64 _obj/flash_mac_orphan.o
+                0x0040bee4                mlme_orphan_response
+ .text.mlme_get_request
+                0x0040bf48      0x678 _obj/flash_mac_pib.o
+                0x0040bf48                mlme_get_request
+ .text.mlme_set
+                0x0040c5c0      0x5d8 _obj/flash_mac_pib.o
+                0x0040c5c0                mlme_set
+ .text.mlme_set_request
+                0x0040cb98       0x70 _obj/flash_mac_pib.o
+                0x0040cb98                mlme_set_request
+ .text.set_tal_pib_internal
+                0x0040cc08       0x6c _obj/flash_mac_pib.o
+                0x0040cc08                set_tal_pib_internal
+ .text.recalc_macMaxFrameTotalWaitTime
+                0x0040cc74      0x128 _obj/flash_mac_pib.o
+ .text.mac_get_pib_attribute_size
+                0x0040cd9c       0x84 _obj/flash_mac_pib.o
+                0x0040cd9c                mac_get_pib_attribute_size
+ .text.gen_mlme_poll_conf
+                0x0040ce20       0x4c _obj/flash_mac_poll.o
+ .text.mlme_poll_request
+                0x0040ce6c       0xf4 _obj/flash_mac_poll.o
+                0x0040ce6c                mlme_poll_request
+ .text.mac_t_poll_wait_time_cb
+                0x0040cf60       0x88 _obj/flash_mac_poll.o
+                0x0040cf60                mac_t_poll_wait_time_cb
+ .text.mac_process_data_response
+                0x0040cfe8      0x110 _obj/flash_mac_poll.o
+                0x0040cfe8                mac_process_data_response
+ .text.mac_process_beacon_frame
+                0x0040d0f8      0x314 _obj/flash_mac_process_beacon_frame.o
+                0x0040d0f8                mac_process_beacon_frame
+ .text.mac_process_tal_tx_status
+                0x0040d40c      0x488 _obj/flash_mac_process_tal_tx_frame_status.o
+ .text.tal_tx_frame_done_cb
+                0x0040d894       0xa8 _obj/flash_mac_process_tal_tx_frame_status.o
+                0x0040d894                tal_tx_frame_done_cb
+ .text.remove_frame_from_indirect_q
+                0x0040d93c       0x30 _obj/flash_mac_process_tal_tx_frame_status.o
+ .text.find_buffer_cb
+                0x0040d96c       0x24 _obj/flash_mac_process_tal_tx_frame_status.o
+ .text.mlme_rx_enable_request
+                0x0040d990       0x7c _obj/flash_mac_rx_enable.o
+                0x0040d990                mlme_rx_enable_request
+ .text.mac_rx_enable
+                0x0040da0c       0x3c _obj/flash_mac_rx_enable.o
+ .text.mac_t_rx_off_cb
+                0x0040da48       0x88 _obj/flash_mac_rx_enable.o
+ .text.handle_rx_on
+                0x0040dad0       0xf4 _obj/flash_mac_rx_enable.o
+ .text.gen_rx_enable_conf
+                0x0040dbc4       0x3c _obj/flash_mac_rx_enable.o
+ .text.convert_16_bit_to_byte_array
+                0x0040dc00       0x2c _obj/flash_mac_scan.o
+ .text.convert_spec_16_bit_to_byte_array
+                0x0040dc2c       0x2c _obj/flash_mac_scan.o
+ .text.convert_64_bit_to_byte_array
+                0x0040dc58       0x54 _obj/flash_mac_scan.o
+ .text.scan_proceed
+                0x0040dcac      0x30c _obj/flash_mac_scan.o
+ .text.mac_awake_scan
+                0x0040dfb8      0x260 _obj/flash_mac_scan.o
+ .text.send_scan_cmd
+                0x0040e218      0x1a4 _obj/flash_mac_scan.o
+                0x0040e218                send_scan_cmd
+ .text.scan_set_complete
+                0x0040e3bc      0x15c _obj/flash_mac_scan.o
+ .text.mac_scan_send_complete
+                0x0040e518      0x128 _obj/flash_mac_scan.o
+                0x0040e518                mac_scan_send_complete
+ .text.mac_t_scan_duration_cb
+                0x0040e640       0x74 _obj/flash_mac_scan.o
+ .text.mlme_scan_request
+                0x0040e6b4      0x118 _obj/flash_mac_scan.o
+                0x0040e6b4                mlme_scan_request
+ .text.tal_ed_end_cb
+                0x0040e7cc       0xd4 _obj/flash_mac_scan.o
+                0x0040e7cc                tal_ed_end_cb
+ .text.scan_clean_up
+                0x0040e8a0       0xfc _obj/flash_mac_scan.o
+ .text.mac_process_orphan_realign
+                0x0040e99c      0x220 _obj/flash_mac_scan.o
+                0x0040e99c                mac_process_orphan_realign
+ .text.gen_mlme_start_conf
+                0x0040ebbc       0x3c _obj/flash_mac_start.o
+ .text.mlme_start_request
+                0x0040ebf8      0x1f4 _obj/flash_mac_start.o
+                0x0040ebf8                mlme_start_request
+ .text.mac_coord_realignment_command_tx_success
+                0x0040edec      0x104 _obj/flash_mac_start.o
+                0x0040edec                mac_coord_realignment_command_tx_success
+ .text.mac_sync_loss
+                0x0040eef0      0x100 _obj/flash_mac_sync.o
+                0x0040eef0                mac_sync_loss
+ .text.mac_process_coord_realign
+                0x0040eff0      0x18c _obj/flash_mac_sync.o
+                0x0040eff0                mac_process_coord_realign
+ .text.convert_16_bit_to_byte_array
+                0x0040f17c       0x2c _obj/flash_mac_tx_coord_realignment_command.o
+ .text.convert_spec_16_bit_to_byte_array
+                0x0040f1a8       0x2c _obj/flash_mac_tx_coord_realignment_command.o
+ .text.convert_64_bit_to_byte_array
+                0x0040f1d4       0x54 _obj/flash_mac_tx_coord_realignment_command.o
+ .text.mac_tx_coord_realignment_command
+                0x0040f228      0x2c8 _obj/flash_mac_tx_coord_realignment_command.o
+                0x0040f228                mac_tx_coord_realignment_command
+ .text.wpan_init
+                0x0040f4f0       0x24 _obj/flash_mac_api.o
+                0x0040f4f0                wpan_init
+ .text.wpan_task
+                0x0040f514       0x6c _obj/flash_mac_api.o
+                0x0040f514                wpan_task
+ .text.wpan_mcps_data_req
+                0x0040f580       0xfc _obj/flash_mac_api.o
+                0x0040f580                wpan_mcps_data_req
+ .text.wpan_mlme_associate_req
+                0x0040f67c       0xa8 _obj/flash_mac_api.o
+                0x0040f67c                wpan_mlme_associate_req
+ .text.wpan_mlme_associate_resp
+                0x0040f724       0x74 _obj/flash_mac_api.o
+                0x0040f724                wpan_mlme_associate_resp
+ .text.wpan_mlme_reset_req
+                0x0040f798       0x5c _obj/flash_mac_api.o
+                0x0040f798                wpan_mlme_reset_req
+ .text.wpan_mlme_set_req
+                0x0040f7f4       0x90 _obj/flash_mac_api.o
+                0x0040f7f4                wpan_mlme_set_req
+ .text.wpan_mlme_scan_req
+                0x0040f884       0x7c _obj/flash_mac_api.o
+                0x0040f884                wpan_mlme_scan_req
+ .text.wpan_mlme_start_req
+                0x0040f900       0xa0 _obj/flash_mac_api.o
+                0x0040f900                wpan_mlme_start_req
+ .text.usr_mcps_purge_conf
+                0x0040f9a0       0x14 _obj/flash_usr_mcps_purge_conf.o
+                0x0040f9a0                usr_mcps_purge_conf
+ .text.usr_mlme_beacon_notify_ind
+                0x0040f9b4       0x18 _obj/flash_usr_mlme_beacon_notify_ind.o
+                0x0040f9b4                usr_mlme_beacon_notify_ind
+ .text.usr_mlme_disassociate_conf
+                0x0040f9cc       0x10 _obj/flash_usr_mlme_disassociate_conf.o
+                0x0040f9cc                usr_mlme_disassociate_conf
+ .text.usr_mlme_disassociate_ind
+                0x0040f9dc       0x10 _obj/flash_usr_mlme_disassociate_ind.o
+                0x0040f9dc                usr_mlme_disassociate_ind
+ .text.usr_mlme_get_conf
+                0x0040f9ec       0x14 _obj/flash_usr_mlme_get_conf.o
+                0x0040f9ec                usr_mlme_get_conf
+ .text.usr_mlme_orphan_ind
+                0x0040fa00        0xc _obj/flash_usr_mlme_orphan_ind.o
+                0x0040fa00                usr_mlme_orphan_ind
+ .text.usr_mlme_poll_conf
+                0x0040fa0c        0xc _obj/flash_usr_mlme_poll_conf.o
+                0x0040fa0c                usr_mlme_poll_conf
+ .text.usr_mlme_rx_enable_conf
+                0x0040fa18        0xc _obj/flash_usr_mlme_rx_enable_conf.o
+                0x0040fa18                usr_mlme_rx_enable_conf
+ .text.usr_mlme_sync_loss_ind
+                0x0040fa24       0x18 _obj/flash_usr_mlme_sync_loss_ind.o
+                0x0040fa24                usr_mlme_sync_loss_ind
+ .text.NVIC_EnableIRQ
+                0x0040fa3c       0x30 _obj/flash_pal_irq.o
+ .text.NVIC_ClearPendingIRQ
+                0x0040fa6c       0x34 _obj/flash_pal_irq.o
+ .text.pal_trx_irq_init
+                0x0040faa0       0x70 _obj/flash_pal_irq.o
+                0x0040faa0                pal_trx_irq_init
+ .text.pal_trx_irq_init_tstamp
+                0x0040fb10       0x70 _obj/flash_pal_irq.o
+                0x0040fb10                pal_trx_irq_init_tstamp
+ .text.trx_isr  0x0040fb80       0x10 _obj/flash_pal_irq.o
+ .text.trx_tstamp_isr
+                0x0040fb90       0x10 _obj/flash_pal_irq.o
+ .text.__disable_irq
+                0x0040fba0        0x4 _obj/flash_pal_board.o
+ .text.NVIC_EnableIRQ
+                0x0040fba4       0x30 _obj/flash_pal_board.o
+ .text.pal_trx_read_timestamp
+                0x0040fbd4       0x80 _obj/flash_pal_board.o
+                0x0040fbd4                pal_trx_read_timestamp
+ .text.pal_calibrate_rc_osc
+                0x0040fc54        0x8 _obj/flash_pal_board.o
+                0x0040fc54                pal_calibrate_rc_osc
+ .text.gpio_init
+                0x0040fc5c       0x4c _obj/flash_pal_board.o
+                0x0040fc5c                gpio_init
+ .text.timer_init_non_generic
+                0x0040fca8       0x68 _obj/flash_pal_board.o
+                0x0040fca8                timer_init_non_generic
+ .text.initialize_timer_channel
+                0x0040fd10       0x2c _obj/flash_pal_board.o
+ .text.pal_led_init
+                0x0040fd3c       0x1c _obj/flash_pal_board.o
+                0x0040fd3c                pal_led_init
+ .text.pal_led  0x0040fd58      0x18c _obj/flash_pal_board.o
+                0x0040fd58                pal_led
+ .text.ADC_IrqHandler
+                0x0040fee4       0x54 _obj/flash_pal_board.o
+                0x0040fee4                ADC_IrqHandler
+ .text.adc_is_channel_irq_status_set
+                0x0040ff38       0x40 _obj/flash_pal_board.o
+ .text.trx_interface_init
+                0x0040ff78       0xa8 _obj/flash_pal_board.o
+                0x0040ff78                trx_interface_init
+ .text.sam3_lowlevel_init
+                0x00410020      0x230 _obj/flash_pal_board.o
+                0x00410020                sam3_lowlevel_init
+ .text.ResetException
+                0x00410250       0xa8 _obj/flash_board_cstartup_gnu.o
+                0x00410250                ResetException
+ .text.IrqHandlerNotUsed
+                0x004102f8       0x10 _obj/flash_exceptions.o
+                0x004102f8                IrqHandlerNotUsed
+ .text.NMI_Handler
+                0x00410308       0x10 _obj/flash_exceptions.o
+                0x00410308                NMI_Handler
+ .text.HardFault_Handler
+                0x00410318       0x5c _obj/flash_exceptions.o
+                0x00410318                HardFault_Handler
+ .text.MemManage_Handler
+                0x00410374       0x10 _obj/flash_exceptions.o
+                0x00410374                MemManage_Handler
+ .text.BusFault_Handler
+                0x00410384       0x10 _obj/flash_exceptions.o
+                0x00410384                BusFault_Handler
+ .text.UsageFault_Handler
+                0x00410394       0x10 _obj/flash_exceptions.o
+                0x00410394                UsageFault_Handler
+ .text.SVC_Handler
+                0x004103a4       0x10 _obj/flash_exceptions.o
+                0x004103a4                SVC_Handler
+ .text.DebugMon_Handler
+                0x004103b4       0x10 _obj/flash_exceptions.o
+                0x004103b4                DebugMon_Handler
+ .text.PendSV_Handler
+                0x004103c4       0x10 _obj/flash_exceptions.o
+                0x004103c4                PendSV_Handler
+ .text.SysTick_Handler
+                0x004103d4       0x10 _obj/flash_exceptions.o
+                0x004103d4                SysTick_Handler
+ .text.SUPC_IrqHandler
+                0x004103e4       0x10 _obj/flash_exceptions.o
+                0x004103e4                SUPC_IrqHandler
+ .text.RSTC_IrqHandler
+                0x004103f4       0x10 _obj/flash_exceptions.o
+                0x004103f4                RSTC_IrqHandler
+ .text.RTC_IrqHandler
+                0x00410404       0x10 _obj/flash_exceptions.o
+                0x00410404                RTC_IrqHandler
+ .text.RTT_IrqHandler
+                0x00410414       0x10 _obj/flash_exceptions.o
+                0x00410414                RTT_IrqHandler
+ .text.WDT_IrqHandler
+                0x00410424       0x10 _obj/flash_exceptions.o
+                0x00410424                WDT_IrqHandler
+ .text.PMC_IrqHandler
+                0x00410434       0x10 _obj/flash_exceptions.o
+                0x00410434                PMC_IrqHandler
+ .text.EEFC_IrqHandler
+                0x00410444       0x10 _obj/flash_exceptions.o
+                0x00410444                EEFC_IrqHandler
+ .text.UART0_IrqHandler
+                0x00410454       0x10 _obj/flash_exceptions.o
+                0x00410454                UART0_IrqHandler
+ .text.UART1_IrqHandler
+                0x00410464       0x10 _obj/flash_exceptions.o
+                0x00410464                UART1_IrqHandler
+ .text.SMC_IrqHandler
+                0x00410474       0x10 _obj/flash_exceptions.o
+                0x00410474                SMC_IrqHandler
+ .text.USART0_IrqHandler
+                0x00410484       0x10 _obj/flash_exceptions.o
+                0x00410484                USART0_IrqHandler
+ .text.USART1_IrqHandler
+                0x00410494       0x10 _obj/flash_exceptions.o
+                0x00410494                USART1_IrqHandler
+ .text.MCI_IrqHandler
+                0x004104a4       0x10 _obj/flash_exceptions.o
+                0x004104a4                MCI_IrqHandler
+ .text.TWI0_IrqHandler
+                0x004104b4       0x10 _obj/flash_exceptions.o
+                0x004104b4                TWI0_IrqHandler
+ .text.TWI1_IrqHandler
+                0x004104c4       0x10 _obj/flash_exceptions.o
+                0x004104c4                TWI1_IrqHandler
+ .text.SPI_IrqHandler
+                0x004104d4       0x10 _obj/flash_exceptions.o
+                0x004104d4                SPI_IrqHandler
+ .text.SSC_IrqHandler
+                0x004104e4       0x10 _obj/flash_exceptions.o
+                0x004104e4                SSC_IrqHandler
+ .text.TC0_IrqHandler
+                0x004104f4       0x10 _obj/flash_exceptions.o
+                0x004104f4                TC0_IrqHandler
+ .text.TC1_IrqHandler
+                0x00410504       0x10 _obj/flash_exceptions.o
+                0x00410504                TC1_IrqHandler
+ .text.TC3_IrqHandler
+                0x00410514       0x10 _obj/flash_exceptions.o
+                0x00410514                TC3_IrqHandler
+ .text.TC4_IrqHandler
+                0x00410524       0x10 _obj/flash_exceptions.o
+                0x00410524                TC4_IrqHandler
+ .text.TC5_IrqHandler
+                0x00410534       0x10 _obj/flash_exceptions.o
+                0x00410534                TC5_IrqHandler
+ .text.DAC_IrqHandler
+                0x00410544       0x10 _obj/flash_exceptions.o
+                0x00410544                DAC_IrqHandler
+ .text.PWM_IrqHandler
+                0x00410554       0x10 _obj/flash_exceptions.o
+                0x00410554                PWM_IrqHandler
+ .text.CRCCU_IrqHandler
+                0x00410564       0x10 _obj/flash_exceptions.o
+                0x00410564                CRCCU_IrqHandler
+ .text.ACC_IrqHandler
+                0x00410574       0x10 _obj/flash_exceptions.o
+                0x00410574                ACC_IrqHandler
+ .text.USBD_IrqHandler
+                0x00410584       0x10 _obj/flash_exceptions.o
+                0x00410584                USBD_IrqHandler
+ .text._sio_putchar
+                0x00410594       0x28 _obj/flash_sio_handler.o
+                0x00410594                _sio_putchar
+ .text.__get_PRIMASK
+                0x004105bc       0x1c _obj/flash_core_cm3.o
+                0x004105bc                __get_PRIMASK
+ .text.__set_PRIMASK
+                0x004105d8       0x10 _obj/flash_core_cm3.o
+                0x004105d8                __set_PRIMASK
+ .text.PIO_SetPeripheralA
+                0x004105e8       0x70 _obj/flash_pio.o
+ .text.PIO_SetPeripheralB
+                0x00410658       0x64 _obj/flash_pio.o
+ .text.PIO_SetPeripheralC
+                0x004106bc       0x64 _obj/flash_pio.o
+ .text.PIO_SetPeripheralD
+                0x00410720       0x58 _obj/flash_pio.o
+ .text.PIO_SetInput
+                0x00410778       0x6c _obj/flash_pio.o
+ .text.PIO_SetOutput
+                0x004107e4       0x68 _obj/flash_pio.o
+ .text.PIO_Configure
+                0x0041084c      0x168 _obj/flash_pio.o
+                0x0041084c                PIO_Configure
+ .text.PMC_EnablePeripheral
+                0x004109b4       0x90 _obj/flash_pmc.o
+                0x004109b4                PMC_EnablePeripheral
+ .text.UART_Configure
+                0x00410a44       0x8c _obj/flash_uart_console.o
+                0x00410a44                UART_Configure
+ .text.UART_PutChar
+                0x00410ad0       0x54 _obj/flash_uart_console.o
+                0x00410ad0                UART_PutChar
+ .text.fputc    0x00410b24       0x4c _obj/flash_uart_console.o
+                0x00410b24                fputc
+ .text.fputs    0x00410b70       0x50 _obj/flash_uart_console.o
+                0x00410b70                fputs
+ .text.PutChar  0x00410bc0       0x1c _obj/flash_stdio.o
+                0x00410bc0                PutChar
+ .text.PutString
+                0x00410bdc       0x40 _obj/flash_stdio.o
+                0x00410bdc                PutString
+ .text.PutUnsignedInt
+                0x00410c1c       0xd0 _obj/flash_stdio.o
+                0x00410c1c                PutUnsignedInt
+ .text.PutSignedInt
+                0x00410cec      0x150 _obj/flash_stdio.o
+                0x00410cec                PutSignedInt
+ .text.PutHexa  0x00410e3c      0x10c _obj/flash_stdio.o
+                0x00410e3c                PutHexa
+ .text.vsnprintf
+                0x00410f48      0x310 _obj/flash_stdio.o
+                0x00410f48                vsnprintf
+ .text.vsprintf
+                0x00411258       0x28 _obj/flash_stdio.o
+                0x00411258                vsprintf
+ .text.vfprintf
+                0x00411280       0x80 _obj/flash_stdio.o
+                0x00411280                vfprintf
+ .text.vprintf  0x00411300       0x2c _obj/flash_stdio.o
+                0x00411300                vprintf
+ .text.printf   0x0041132c       0x2c _obj/flash_stdio.o
+                0x0041132c                printf
+ .text.puts     0x00411358       0x28 _obj/flash_stdio.o
+                0x00411358                puts
+ .text          0x00411380      0x21c c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_addsubsf3.o)
+                0x00411380                __aeabi_frsub
+                0x00411388                __subsf3
+                0x00411388                __aeabi_fsub
+                0x0041138c                __aeabi_fadd
+                0x0041138c                __addsf3
+                0x004114ec                __aeabi_ui2f
+                0x004114ec                __floatunsisf
+                0x004114f4                __aeabi_i2f
+                0x004114f4                __floatsisf
+                0x00411510                __aeabi_ul2f
+                0x00411510                __floatundisf
+                0x00411520                __aeabi_l2f
+                0x00411520                __floatdisf
+ .text          0x0041159c       0x40 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_fixunssfsi.o)
+                0x0041159c                __fixunssfsi
+                0x0041159c                __aeabi_f2uiz
+ .text          0x004115dc       0x8c c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+                0x004115dc                memcpy
+ .text          0x00411668       0x9c c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+                0x00411668                memset
+ .text          0x00411704       0x64 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+                0x00411704                srand
+                0x0041171c                rand
+ .text          0x00411768       0x5c c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+                0x00411768                strcpy
+ .text          0x004117c4       0x6c c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+                0x004117c4                strlen
+ *(.rodata*)
+ .rodata        0x00411830      0x4c4 _obj/flash_main.o
+ .rodata        0x00411cf4       0xa8 _obj/flash_sabre_tasks.o
+ .rodata        0x00411d9c       0x54 _obj/flash_pal.o
+ .rodata        0x00411df0       0x38 _obj/flash_pal_utils.o
+ .rodata        0x00411e28       0x64 _obj/flash_qmm.o
+ .rodata        0x00411e8c       0xfc _obj/flash_tal.o
+ .rodata        0x00411f88       0x64 _obj/flash_tal_rx.o
+ .rodata        0x00411fec       0x78 _obj/flash_tal_tx.o
+ .rodata        0x00412064       0xa4 _obj/flash_tal_ed.o
+ .rodata        0x00412108       0x68 _obj/flash_tal_pib.o
+ .rodata        0x00412170       0x30 _obj/flash_tal_init.o
+ .rodata        0x004121a0       0x68 _obj/flash_tal_irq_handler.o
+ .rodata        0x00412208       0xc4 _obj/flash_mac_associate.o
+ .rodata        0x004122cc       0x58 _obj/flash_mac_beacon.o
+ .rodata        0x00412324      0x1cc _obj/flash_mac_data_ind.o
+ .rodata        0x004124f0       0xac _obj/flash_mac_data_req.o
+ .rodata        0x0041259c       0x5c _obj/flash_mac_disassociate.o
+ .rodata        0x004125f8       0xf4 _obj/flash_mac_dispatcher.o
+ .rodata        0x004126ec       0xd8 _obj/flash_mac_mcps_data.o
+ .rodata        0x004127c4       0x54 _obj/flash_mac_misc.o
+ .rodata        0x00412818       0x2c _obj/flash_mac_pib.o
+ .rodata        0x00412844       0x70 _obj/flash_mac_poll.o
+ .rodata        0x004128b4       0xb8 _obj/flash_mac_process_tal_tx_frame_status.o
+ .rodata        0x0041296c       0x5c _obj/flash_mac_rx_enable.o
+ .rodata        0x004129c8       0xa4 _obj/flash_mac_scan.o
+ .rodata        0x00412a6c       0x88 _obj/flash_mac_start.o
+ .rodata        0x00412af4       0x54 _obj/flash_mac_sync.o
+ .rodata        0x00412b48       0x6c _obj/flash_mac_tx_coord_realignment_command.o
+ .rodata        0x00412bb4       0x18 _obj/flash_pal_irq.o
+                0x00412bb4                pin_radio_irq
+                0x00412bc0                pin_radio_rx_ts
+ .rodata        0x00412bcc       0x6c _obj/flash_pal_board.o
+                0x00412bcc                led_pins
+                0x00412bf0                sel
+                0x00412bfc                rst
+                0x00412c08                slp_tr
+                0x00412c14                spi_pins
+ .rodata        0x00412c38       0x2c _obj/flash_exceptions.o
+ .rodata        0x00412c64        0xc _obj/flash_uart_console.o
+ .rodata        0x00412c70       0x44 _obj/flash_stdio.o
+ .rodata.str1.4
+                0x00412cb4        0x4 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+                0x00412cb8                . = ALIGN (0x4)
+                0x00412cb8                _efixed = .
+
+.vfp11_veneer   0x00000000        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000000        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.relocate       0x20000000      0x430 load address 0x00412cb8
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _srelocate = .
+ *(.ramfunc)
+ *(.data)
+ .data          0x20000000      0x430 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+                0x20000000                _impure_ptr
+                0x20000430                . = ALIGN (0x4)
+                0x20000430                _erelocate = .
+
+.bss            0x20000430      0xab8 load address 0x004130e8
+                0x20000430                . = ALIGN (0x4)
+                0x20000430                _szero = .
+ *(.bss)
+ .bss           0x20000430      0x2e0 _obj/flash_main.o
+                0x20000430                sabre_node
+                0x20000431                sabre_message_len
+                0x20000432                sabre_node_address
+ .bss           0x20000710       0x3c _obj/flash_pal.o
+ .bss           0x2000074c       0x14 _obj/flash_pal_timer.o
+ .bss           0x20000760      0x104 _obj/flash_pal_utils.o
+ .bss           0x20000864      0x488 _obj/flash_bmm.o
+ .bss           0x20000cec        0x4 _obj/flash_tal.o
+                0x20000cec                tal_rx_buffer
+ .bss           0x20000cf0        0x1 _obj/flash_tal_tx.o
+ *fill*         0x20000cf1        0x3 00
+ .bss           0x20000cf4        0x8 _obj/flash_tal_ed.o
+ .bss           0x20000cfc        0x8 _obj/flash_mac_beacon.o
+ .bss           0x20000d04        0x1 _obj/flash_mac_pib.o
+ *fill*         0x20000d05        0x3 00
+ .bss           0x20000d08        0xc _obj/flash_mac_scan.o
+ .bss           0x20000d14        0xc _obj/flash_mac_start.o
+ .bss           0x20000d20       0x10 _obj/flash_mac_sync.o
+ .bss           0x20000d30        0x8 _obj/flash_pal_irq.o
+ .bss           0x20000d38        0x1 _obj/flash_pal_board.o
+ .bss           0x20000d39        0x1 _obj/flash_uart_console.o
+                0x20000d3c                . = ALIGN (0x4)
+ *fill*         0x20000d3a        0x2 00
+                0x20000d3c                _ezero = .
+ COMMON         0x20000d3c        0x2 _obj/flash_main.o
+                0x20000d3c                sabre_state
+                0x20000d3d                debug_mode
+ COMMON         0x20000d3e        0x1 _obj/flash_sabre_tasks.o
+                0x20000d3e                sabre_mux_counter
+ *fill*         0x20000d3f        0x1 00
+ COMMON         0x20000d40        0x2 _obj/flash_pal.o
+                0x20000d40                sys_time
+ *fill*         0x20000d42        0x2 00
+ COMMON         0x20000d44       0x60 _obj/flash_pal_timer.o
+                0x20000d44                timer_array
+ *fill*         0x20000da4        0x4 00
+ COMMON         0x20000da8       0x4a _obj/flash_tal.o
+                0x20000da8                tal_pib_TransmitPower
+                0x20000db0                tal_pib_IeeeAddress
+                0x20000db8                tal_pib_MaxFrameDuration
+                0x20000dba                tal_pib_CurrentPage
+                0x20000dbc                tal_pib_PANId
+                0x20000dbe                tal_pib_CCAMode
+                0x20000dc0                tal_pib_ShortAddress
+                0x20000dc2                tal_rx_on_required
+                0x20000dc4                tal_incoming_frame_queue
+                0x20000dd0                tal_pib_MaxCSMABackoffs
+                0x20000dd1                tal_pib_SymbolsPerOctet
+                0x20000dd2                tal_pib_CurrentChannel
+                0x20000dd3                tal_pib_PrivatePanCoordinator
+                0x20000dd4                tal_pib_MaxBE
+                0x20000dd8                mac_frame_ptr
+                0x20000ddc                tal_pib_MinBE
+                0x20000ddd                tal_pib_MaxFrameRetries
+                0x20000de0                tal_rx_timestamp
+                0x20000de4                tal_trx_status
+                0x20000de5                tal_pib_SHRDuration
+                0x20000de6                last_frame_length
+                0x20000de8                tal_frame_to_tx
+                0x20000dec                tal_pib_SupportedChannels
+                0x20000df0                tal_awake_end_flag
+                0x20000df1                tal_state
+ *fill*         0x20000df2        0x6 00
+ COMMON         0x20000df8       0xe4 _obj/flash_mac.o
+                0x20000df8                mac_pib_macAssociationPermit
+                0x20000df9                mac_last_dsn
+                0x20000dfc                indirect_data_q
+                0x20000e08                mac_pib_macRxOnWhenIdle
+                0x20000e09                mac_pib_macBattLifeExtPeriods
+                0x20000e10                mac_last_src_addr
+                0x20000e18                mac_scan_orig_page
+                0x20000e19                mac_pib_macSecurityEnabled
+                0x20000e1a                mac_poll_state
+                0x20000e1b                mac_pib_macAutoRequest
+                0x20000e1c                mac_pib_macMaxFrameTotalWaitTime
+                0x20000e20                nhle_mac_q
+                0x20000e2c                mac_scan_state
+                0x20000e2d                mac_pib_macBSN
+                0x20000e2e                mac_sync_state
+                0x20000e2f                mac_pib_macDSN
+                0x20000e30                mac_pib_macBeaconPayloadLength
+                0x20000e32                mac_pib_macTransactionPersistenceTime
+                0x20000e34                mac_scan_orig_channel
+                0x20000e38                mac_conf_buf_ptr
+                0x20000e3c                mac_beacon_payload
+                0x20000e70                mac_pib_macCoordShortAddress
+                0x20000e72                mac_rx_enabled
+                0x20000e74                mac_scan_orig_panid
+                0x20000e78                tal_mac_q
+                0x20000e84                mac_pib_macResponseWaitTime
+                0x20000e88                mac_scan_cmd_buf_ptr
+                0x20000e90                mac_pib_macCoordExtendedAddress
+                0x20000e98                mac_parse_data
+                0x20000ed8                mac_state
+                0x20000ed9                mac_busy
+                0x20000eda                mac_radio_sleep_state
+                0x20000edb                mac_pib_macAssociatedPANCoord
+ COMMON         0x20000edc        0xc _obj/flash_mac_api.o
+                0x20000edc                mac_nhle_q
+                0x2000bffc                _estack = 0x2000bffc
+                0x20000ee8                end = .
+OUTPUT(_bin/Star-flash.elf elf32-littlearm)
+
+.debug_abbrev   0x00000000     0x542e
+ .debug_abbrev  0x00000000      0x1db _obj/flash_main.o
+ .debug_abbrev  0x000001db       0xac _obj/flash_sabre_tasks.o
+ .debug_abbrev  0x00000287       0xc6 _obj/flash_fifo.o
+ .debug_abbrev  0x0000034d      0x254 _obj/flash_pal.o
+ .debug_abbrev  0x000005a1      0x25a _obj/flash_pal_timer.o
+ .debug_abbrev  0x000007fb      0x196 _obj/flash_pal_trx_access.o
+ .debug_abbrev  0x00000991      0x211 _obj/flash_pal_utils.o
+ .debug_abbrev  0x00000ba2       0xc9 _obj/flash_bmm.o
+ .debug_abbrev  0x00000c6b      0x161 _obj/flash_qmm.o
+ .debug_abbrev  0x00000dcc      0x1b5 _obj/flash_tal.o
+ .debug_abbrev  0x00000f81      0x11e _obj/flash_tal_rx.o
+ .debug_abbrev  0x0000109f      0x1a1 _obj/flash_tal_tx.o
+ .debug_abbrev  0x00001240      0x15c _obj/flash_tal_ed.o
+ .debug_abbrev  0x0000139c        0x1 _obj/flash_tal_slotted_csma.o
+ .debug_abbrev  0x0000139d      0x18b _obj/flash_tal_pib.o
+ .debug_abbrev  0x00001528      0x21d _obj/flash_tal_init.o
+ .debug_abbrev  0x00001745       0xc0 _obj/flash_tal_irq_handler.o
+ .debug_abbrev  0x00001805       0xb5 _obj/flash_tal_pwr_mgmt.o
+ .debug_abbrev  0x000018ba       0xc0 _obj/flash_tal_rx_enable.o
+ .debug_abbrev  0x0000197a      0x1bf _obj/flash_mac_associate.o
+ .debug_abbrev  0x00001b39      0x191 _obj/flash_mac_beacon.o
+ .debug_abbrev  0x00001cca      0x164 _obj/flash_mac_callback_wrapper.o
+ .debug_abbrev  0x00001e2e      0x199 _obj/flash_mac_data_ind.o
+ .debug_abbrev  0x00001fc7      0x1d2 _obj/flash_mac_data_req.o
+ .debug_abbrev  0x00002199      0x224 _obj/flash_mac_disassociate.o
+ .debug_abbrev  0x000023bd       0xee _obj/flash_mac_dispatcher.o
+ .debug_abbrev  0x000024ab      0x10c _obj/flash_mac.o
+ .debug_abbrev  0x000025b7      0x1f1 _obj/flash_mac_mcps_data.o
+ .debug_abbrev  0x000027a8      0x203 _obj/flash_mac_misc.o
+ .debug_abbrev  0x000029ab      0x12e _obj/flash_mac_orphan.o
+ .debug_abbrev  0x00002ad9      0x1e3 _obj/flash_mac_pib.o
+ .debug_abbrev  0x00002cbc      0x169 _obj/flash_mac_poll.o
+ .debug_abbrev  0x00002e25      0x172 _obj/flash_mac_process_beacon_frame.o
+ .debug_abbrev  0x00002f97      0x1a0 _obj/flash_mac_process_tal_tx_frame_status.o
+ .debug_abbrev  0x00003137      0x183 _obj/flash_mac_rx_enable.o
+ .debug_abbrev  0x000032ba      0x1e9 _obj/flash_mac_scan.o
+ .debug_abbrev  0x000034a3      0x176 _obj/flash_mac_start.o
+ .debug_abbrev  0x00003619      0x140 _obj/flash_mac_sync.o
+ .debug_abbrev  0x00003759      0x13a _obj/flash_mac_tx_coord_realignment_command.o
+ .debug_abbrev  0x00003893      0x178 _obj/flash_mac_api.o
+ .debug_abbrev  0x00003a0b       0x5d _obj/flash_usr_mcps_purge_conf.o
+ .debug_abbrev  0x00003a68       0xaf _obj/flash_usr_mlme_beacon_notify_ind.o
+ .debug_abbrev  0x00003b17       0xa0 _obj/flash_usr_mlme_disassociate_conf.o
+ .debug_abbrev  0x00003bb7       0x5d _obj/flash_usr_mlme_disassociate_ind.o
+ .debug_abbrev  0x00003c14       0x64 _obj/flash_usr_mlme_get_conf.o
+ .debug_abbrev  0x00003c78       0x5d _obj/flash_usr_mlme_orphan_ind.o
+ .debug_abbrev  0x00003cd5       0x5d _obj/flash_usr_mlme_poll_conf.o
+ .debug_abbrev  0x00003d32       0x5d _obj/flash_usr_mlme_rx_enable_conf.o
+ .debug_abbrev  0x00003d8f       0x5d _obj/flash_usr_mlme_sync_loss_ind.o
+ .debug_abbrev  0x00003dec      0x180 _obj/flash_pal_irq.o
+ .debug_abbrev  0x00003f6c      0x285 _obj/flash_pal_board.o
+ .debug_abbrev  0x000041f1       0xdc _obj/flash_board_cstartup_gnu.o
+ .debug_abbrev  0x000042cd       0xe1 _obj/flash_exceptions.o
+ .debug_abbrev  0x000043ae      0x187 _obj/flash_sio_handler.o
+ .debug_abbrev  0x00004535       0xa5 _obj/flash_core_cm3.o
+ .debug_abbrev  0x000045da       0xed _obj/flash_led.o
+ .debug_abbrev  0x000046c7      0x16c _obj/flash_pio.o
+ .debug_abbrev  0x00004833       0xc7 _obj/flash_pmc.o
+ .debug_abbrev  0x000048fa      0x233 _obj/flash_uart_console.o
+ .debug_abbrev  0x00004b2d      0x220 _obj/flash_stdio.o
+ .debug_abbrev  0x00004d4d       0x14 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_addsubsf3.o)
+ .debug_abbrev  0x00004d61       0x14 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_fixunssfsi.o)
+ .debug_abbrev  0x00004d75      0x16e c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .debug_abbrev  0x00004ee3      0x166 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ .debug_abbrev  0x00005049       0xa8 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .debug_abbrev  0x000050f1       0x9c c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .debug_abbrev  0x0000518d      0x194 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .debug_abbrev  0x00005321       0x8f c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .debug_abbrev  0x000053b0       0x7e c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+
+.debug_info     0x00000000    0x1fa86
+ .debug_info    0x00000000      0xac9 _obj/flash_main.o
+ .debug_info    0x00000ac9      0x202 _obj/flash_sabre_tasks.o
+ .debug_info    0x00000ccb      0x1a8 _obj/flash_fifo.o
+ .debug_info    0x00000e73     0x14c7 _obj/flash_pal.o
+ .debug_info    0x0000233a      0xa55 _obj/flash_pal_timer.o
+ .debug_info    0x00002d8f      0x9bc _obj/flash_pal_trx_access.o
+ .debug_info    0x0000374b      0xa9a _obj/flash_pal_utils.o
+ .debug_info    0x000041e5      0x1ef _obj/flash_bmm.o
+ .debug_info    0x000043d4      0x360 _obj/flash_qmm.o
+ .debug_info    0x00004734      0xbd8 _obj/flash_tal.o
+ .debug_info    0x0000530c      0x422 _obj/flash_tal_rx.o
+ .debug_info    0x0000572e      0xbcf _obj/flash_tal_tx.o
+ .debug_info    0x000062fd      0x8fa _obj/flash_tal_ed.o
+ .debug_info    0x00006bf7        0x0 _obj/flash_tal_slotted_csma.o
+ .debug_info    0x00006bf7      0x809 _obj/flash_tal_pib.o
+ .debug_info    0x00007400      0xe2d _obj/flash_tal_init.o
+ .debug_info    0x0000822d      0x1d4 _obj/flash_tal_irq_handler.o
+ .debug_info    0x00008401      0x393 _obj/flash_tal_pwr_mgmt.o
+ .debug_info    0x00008794      0x3b2 _obj/flash_tal_rx_enable.o
+ .debug_info    0x00008b46      0xe8f _obj/flash_mac_associate.o
+ .debug_info    0x000099d5      0x653 _obj/flash_mac_beacon.o
+ .debug_info    0x0000a028      0xdec _obj/flash_mac_callback_wrapper.o
+ .debug_info    0x0000ae14      0xd78 _obj/flash_mac_data_ind.o
+ .debug_info    0x0000bb8c      0xbef _obj/flash_mac_data_req.o
+ .debug_info    0x0000c77b      0xd87 _obj/flash_mac_disassociate.o
+ .debug_info    0x0000d502      0x239 _obj/flash_mac_dispatcher.o
+ .debug_info    0x0000d73b      0x7b1 _obj/flash_mac.o
+ .debug_info    0x0000deec     0x10cf _obj/flash_mac_mcps_data.o
+ .debug_info    0x0000efbb      0xbf5 _obj/flash_mac_misc.o
+ .debug_info    0x0000fbb0      0x78b _obj/flash_mac_orphan.o
+ .debug_info    0x0001033b      0xaf1 _obj/flash_mac_pib.o
+ .debug_info    0x00010e2c      0x917 _obj/flash_mac_poll.o
+ .debug_info    0x00011743      0x897 _obj/flash_mac_process_beacon_frame.o
+ .debug_info    0x00011fda      0x7f6 _obj/flash_mac_process_tal_tx_frame_status.o
+ .debug_info    0x000127d0      0x6ac _obj/flash_mac_rx_enable.o
+ .debug_info    0x00012e7c      0xfe8 _obj/flash_mac_scan.o
+ .debug_info    0x00013e64      0x650 _obj/flash_mac_start.o
+ .debug_info    0x000144b4      0x936 _obj/flash_mac_sync.o
+ .debug_info    0x00014dea      0x670 _obj/flash_mac_tx_coord_realignment_command.o
+ .debug_info    0x0001545a      0xf33 _obj/flash_mac_api.o
+ .debug_info    0x0001638d       0xbb _obj/flash_usr_mcps_purge_conf.o
+ .debug_info    0x00016448      0x20a _obj/flash_usr_mlme_beacon_notify_ind.o
+ .debug_info    0x00016652      0x147 _obj/flash_usr_mlme_disassociate_conf.o
+ .debug_info    0x00016799       0xc6 _obj/flash_usr_mlme_disassociate_ind.o
+ .debug_info    0x0001685f       0xcb _obj/flash_usr_mlme_get_conf.o
+ .debug_info    0x0001692a       0xad _obj/flash_usr_mlme_orphan_ind.o
+ .debug_info    0x000169d7       0xad _obj/flash_usr_mlme_poll_conf.o
+ .debug_info    0x00016a84       0xad _obj/flash_usr_mlme_rx_enable_conf.o
+ .debug_info    0x00016b31       0xe2 _obj/flash_usr_mlme_sync_loss_ind.o
+ .debug_info    0x00016c13      0x92a _obj/flash_pal_irq.o
+ .debug_info    0x0001753d     0x1568 _obj/flash_pal_board.o
+ .debug_info    0x00018aa5      0x344 _obj/flash_board_cstartup_gnu.o
+ .debug_info    0x00018de9      0x5e8 _obj/flash_exceptions.o
+ .debug_info    0x000193d1      0x9cd _obj/flash_sio_handler.o
+ .debug_info    0x00019d9e      0x554 _obj/flash_core_cm3.o
+ .debug_info    0x0001a2f2      0x66b _obj/flash_led.o
+ .debug_info    0x0001a95d      0x868 _obj/flash_pio.o
+ .debug_info    0x0001b1c5      0x3a8 _obj/flash_pmc.o
+ .debug_info    0x0001b56d     0x14ac _obj/flash_uart_console.o
+ .debug_info    0x0001ca19      0xe99 _obj/flash_stdio.o
+ .debug_info    0x0001d8b2       0xa9 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_addsubsf3.o)
+ .debug_info    0x0001d95b       0xa9 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_fixunssfsi.o)
+ .debug_info    0x0001da04      0x964 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .debug_info    0x0001e368      0x966 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ .debug_info    0x0001ecce      0x13b c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .debug_info    0x0001ee09      0x114 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .debug_info    0x0001ef1d      0x985 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .debug_info    0x0001f8a2      0x10b c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .debug_info    0x0001f9ad       0xd9 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+
+.debug_line     0x00000000     0xb4ff
+ .debug_line    0x00000000      0x5f3 _obj/flash_main.o
+ .debug_line    0x000005f3      0x19a _obj/flash_sabre_tasks.o
+ .debug_line    0x0000078d      0x126 _obj/flash_fifo.o
+ .debug_line    0x000008b3      0x5db _obj/flash_pal.o
+ .debug_line    0x00000e8e      0x4c1 _obj/flash_pal_timer.o
+ .debug_line    0x0000134f      0x388 _obj/flash_pal_trx_access.o
+ .debug_line    0x000016d7      0x211 _obj/flash_pal_utils.o
+ .debug_line    0x000018e8      0x1d8 _obj/flash_bmm.o
+ .debug_line    0x00001ac0      0x28a _obj/flash_qmm.o
+ .debug_line    0x00001d4a      0x4b0 _obj/flash_tal.o
+ .debug_line    0x000021fa      0x268 _obj/flash_tal_rx.o
+ .debug_line    0x00002462      0x451 _obj/flash_tal_tx.o
+ .debug_line    0x000028b3      0x265 _obj/flash_tal_ed.o
+ .debug_line    0x00002b18        0x0 _obj/flash_tal_slotted_csma.o
+ .debug_line    0x00002b18      0x3c4 _obj/flash_tal_pib.o
+ .debug_line    0x00002edc      0x520 _obj/flash_tal_init.o
+ .debug_line    0x000033fc      0x178 _obj/flash_tal_irq_handler.o
+ .debug_line    0x00003574      0x1a9 _obj/flash_tal_pwr_mgmt.o
+ .debug_line    0x0000371d      0x1e9 _obj/flash_tal_rx_enable.o
+ .debug_line    0x00003906      0x468 _obj/flash_mac_associate.o
+ .debug_line    0x00003d6e      0x329 _obj/flash_mac_beacon.o
+ .debug_line    0x00004097      0x369 _obj/flash_mac_callback_wrapper.o
+ .debug_line    0x00004400      0x5ae _obj/flash_mac_data_ind.o
+ .debug_line    0x000049ae      0x463 _obj/flash_mac_data_req.o
+ .debug_line    0x00004e11      0x48b _obj/flash_mac_disassociate.o
+ .debug_line    0x0000529c      0x18a _obj/flash_mac_dispatcher.o
+ .debug_line    0x00005426      0x1e1 _obj/flash_mac.o
+ .debug_line    0x00005607      0x55e _obj/flash_mac_mcps_data.o
+ .debug_line    0x00005b65      0x46d _obj/flash_mac_misc.o
+ .debug_line    0x00005fd2      0x296 _obj/flash_mac_orphan.o
+ .debug_line    0x00006268      0x3ac _obj/flash_mac_pib.o
+ .debug_line    0x00006614      0x2f5 _obj/flash_mac_poll.o
+ .debug_line    0x00006909      0x2d6 _obj/flash_mac_process_beacon_frame.o
+ .debug_line    0x00006bdf      0x3cc _obj/flash_mac_process_tal_tx_frame_status.o
+ .debug_line    0x00006fab      0x2fc _obj/flash_mac_rx_enable.o
+ .debug_line    0x000072a7      0x54c _obj/flash_mac_scan.o
+ .debug_line    0x000077f3      0x2d8 _obj/flash_mac_start.o
+ .debug_line    0x00007acb      0x2c4 _obj/flash_mac_sync.o
+ .debug_line    0x00007d8f      0x2e1 _obj/flash_mac_tx_coord_realignment_command.o
+ .debug_line    0x00008070      0x477 _obj/flash_mac_api.o
+ .debug_line    0x000084e7       0xe4 _obj/flash_usr_mcps_purge_conf.o
+ .debug_line    0x000085cb      0x12e _obj/flash_usr_mlme_beacon_notify_ind.o
+ .debug_line    0x000086f9      0x12e _obj/flash_usr_mlme_disassociate_conf.o
+ .debug_line    0x00008827       0xea _obj/flash_usr_mlme_disassociate_ind.o
+ .debug_line    0x00008911       0xe2 _obj/flash_usr_mlme_get_conf.o
+ .debug_line    0x000089f3       0xe4 _obj/flash_usr_mlme_orphan_ind.o
+ .debug_line    0x00008ad7       0xe3 _obj/flash_usr_mlme_poll_conf.o
+ .debug_line    0x00008bba       0xe8 _obj/flash_usr_mlme_rx_enable_conf.o
+ .debug_line    0x00008ca2       0xe7 _obj/flash_usr_mlme_sync_loss_ind.o
+ .debug_line    0x00008d89      0x25e _obj/flash_pal_irq.o
+ .debug_line    0x00008fe7      0x45d _obj/flash_pal_board.o
+ .debug_line    0x00009444      0x1b5 _obj/flash_board_cstartup_gnu.o
+ .debug_line    0x000095f9      0x41c _obj/flash_exceptions.o
+ .debug_line    0x00009a15      0x229 _obj/flash_sio_handler.o
+ .debug_line    0x00009c3e      0x286 _obj/flash_core_cm3.o
+ .debug_line    0x00009ec4      0x16b _obj/flash_led.o
+ .debug_line    0x0000a02f      0x201 _obj/flash_pio.o
+ .debug_line    0x0000a230      0x143 _obj/flash_pmc.o
+ .debug_line    0x0000a373      0x381 _obj/flash_uart_console.o
+ .debug_line    0x0000a6f4      0x398 _obj/flash_stdio.o
+ .debug_line    0x0000aa8c      0x129 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_addsubsf3.o)
+ .debug_line    0x0000abb5       0x83 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_fixunssfsi.o)
+ .debug_line    0x0000ac38      0x132 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .debug_line    0x0000ad6a      0x116 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ .debug_line    0x0000ae80      0x173 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .debug_line    0x0000aff3      0x16f c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .debug_line    0x0000b162      0x178 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .debug_line    0x0000b2da       0xe3 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .debug_line    0x0000b3bd      0x142 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+
+.debug_loc      0x00000000     0x4500
+ .debug_loc     0x00000000      0x265 _obj/flash_main.o
+ .debug_loc     0x00000265       0xec _obj/flash_sabre_tasks.o
+ .debug_loc     0x00000351       0x20 _obj/flash_fifo.o
+ .debug_loc     0x00000371      0x3f4 _obj/flash_pal.o
+ .debug_loc     0x00000765      0x24c _obj/flash_pal_timer.o
+ .debug_loc     0x000009b1      0x108 _obj/flash_pal_trx_access.o
+ .debug_loc     0x00000ab9       0x58 _obj/flash_pal_utils.o
+ .debug_loc     0x00000b11       0x84 _obj/flash_bmm.o
+ .debug_loc     0x00000b95       0xfc _obj/flash_qmm.o
+ .debug_loc     0x00000c91       0x84 _obj/flash_tal.o
+ .debug_loc     0x00000d15       0x78 _obj/flash_tal_rx.o
+ .debug_loc     0x00000d8d       0xb0 _obj/flash_tal_tx.o
+ .debug_loc     0x00000e3d       0x84 _obj/flash_tal_ed.o
+ .debug_loc     0x00000ec1       0xe4 _obj/flash_tal_pib.o
+ .debug_loc     0x00000fa5      0x148 _obj/flash_tal_init.o
+ .debug_loc     0x000010ed       0x78 _obj/flash_tal_irq_handler.o
+ .debug_loc     0x00001165       0x58 _obj/flash_tal_pwr_mgmt.o
+ .debug_loc     0x000011bd       0x2c _obj/flash_tal_rx_enable.o
+ .debug_loc     0x000011e9      0x1b5 _obj/flash_mac_associate.o
+ .debug_loc     0x0000139e      0x13c _obj/flash_mac_beacon.o
+ .debug_loc     0x000014da      0x319 _obj/flash_mac_callback_wrapper.o
+ .debug_loc     0x000017f3      0x22c _obj/flash_mac_data_ind.o
+ .debug_loc     0x00001a1f      0x1a8 _obj/flash_mac_data_req.o
+ .debug_loc     0x00001bc7      0x1bd _obj/flash_mac_disassociate.o
+ .debug_loc     0x00001d84       0x2c _obj/flash_mac_dispatcher.o
+ .debug_loc     0x00001db0       0x2c _obj/flash_mac.o
+ .debug_loc     0x00001ddc      0x2b8 _obj/flash_mac_mcps_data.o
+ .debug_loc     0x00002094      0x1c8 _obj/flash_mac_misc.o
+ .debug_loc     0x0000225c       0x58 _obj/flash_mac_orphan.o
+ .debug_loc     0x000022b4       0xf0 _obj/flash_mac_pib.o
+ .debug_loc     0x000023a4       0xb0 _obj/flash_mac_poll.o
+ .debug_loc     0x00002454       0x2d _obj/flash_mac_process_beacon_frame.o
+ .debug_loc     0x00002481       0xa4 _obj/flash_mac_process_tal_tx_frame_status.o
+ .debug_loc     0x00002525       0xdc _obj/flash_mac_rx_enable.o
+ .debug_loc     0x00002601      0x218 _obj/flash_mac_scan.o
+ .debug_loc     0x00002819       0x84 _obj/flash_mac_start.o
+ .debug_loc     0x0000289d       0x58 _obj/flash_mac_sync.o
+ .debug_loc     0x000028f5       0x8d _obj/flash_mac_tx_coord_realignment_command.o
+ .debug_loc     0x00002982      0x288 _obj/flash_mac_api.o
+ .debug_loc     0x00002c0a       0x20 _obj/flash_usr_mcps_purge_conf.o
+ .debug_loc     0x00002c2a       0x20 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .debug_loc     0x00002c4a       0x20 _obj/flash_usr_mlme_disassociate_conf.o
+ .debug_loc     0x00002c6a       0x20 _obj/flash_usr_mlme_disassociate_ind.o
+ .debug_loc     0x00002c8a       0x20 _obj/flash_usr_mlme_get_conf.o
+ .debug_loc     0x00002caa       0x20 _obj/flash_usr_mlme_orphan_ind.o
+ .debug_loc     0x00002cca       0x20 _obj/flash_usr_mlme_poll_conf.o
+ .debug_loc     0x00002cea       0x20 _obj/flash_usr_mlme_rx_enable_conf.o
+ .debug_loc     0x00002d0a       0x20 _obj/flash_usr_mlme_sync_loss_ind.o
+ .debug_loc     0x00002d2a       0xd8 _obj/flash_pal_irq.o
+ .debug_loc     0x00002e02      0x21c _obj/flash_pal_board.o
+ .debug_loc     0x0000301e       0x2c _obj/flash_board_cstartup_gnu.o
+ .debug_loc     0x0000304a      0x54c _obj/flash_exceptions.o
+ .debug_loc     0x00003596       0x84 _obj/flash_sio_handler.o
+ .debug_loc     0x0000361a      0x380 _obj/flash_core_cm3.o
+ .debug_loc     0x0000399a       0xb0 _obj/flash_led.o
+ .debug_loc     0x00003a4a      0x16c _obj/flash_pio.o
+ .debug_loc     0x00003bb6       0x60 _obj/flash_pmc.o
+ .debug_loc     0x00003c16      0x1ac _obj/flash_uart_console.o
+ .debug_loc     0x00003dc2      0x281 _obj/flash_stdio.o
+ .debug_loc     0x00004043      0x1a1 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .debug_loc     0x000041e4      0x17e c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .debug_loc     0x00004362       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .debug_loc     0x00004382       0xab c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .debug_loc     0x0000442d       0xd3 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+
+.debug_pubnames
+                0x00000000     0x2472
+ .debug_pubnames
+                0x00000000      0x154 _obj/flash_main.o
+ .debug_pubnames
+                0x00000154       0xb5 _obj/flash_sabre_tasks.o
+ .debug_pubnames
+                0x00000209       0x20 _obj/flash_fifo.o
+ .debug_pubnames
+                0x00000229      0x1a9 _obj/flash_pal.o
+ .debug_pubnames
+                0x000003d2      0x119 _obj/flash_pal_timer.o
+ .debug_pubnames
+                0x000004eb       0x97 _obj/flash_pal_trx_access.o
+ .debug_pubnames
+                0x00000582       0x3b _obj/flash_pal_utils.o
+ .debug_pubnames
+                0x000005bd       0x4f _obj/flash_bmm.o
+ .debug_pubnames
+                0x0000060c       0x76 _obj/flash_qmm.o
+ .debug_pubnames
+                0x00000682      0x291 _obj/flash_tal.o
+ .debug_pubnames
+                0x00000913       0x4b _obj/flash_tal_rx.o
+ .debug_pubnames
+                0x0000095e       0x5d _obj/flash_tal_tx.o
+ .debug_pubnames
+                0x000009bb       0x34 _obj/flash_tal_ed.o
+ .debug_pubnames
+                0x000009ef       0x50 _obj/flash_tal_pib.o
+ .debug_pubnames
+                0x00000a3f       0x2d _obj/flash_tal_init.o
+ .debug_pubnames
+                0x00000a6c       0x67 _obj/flash_tal_irq_handler.o
+ .debug_pubnames
+                0x00000ad3       0x37 _obj/flash_tal_pwr_mgmt.o
+ .debug_pubnames
+                0x00000b0a       0x24 _obj/flash_tal_rx_enable.o
+ .debug_pubnames
+                0x00000b2e       0xe8 _obj/flash_mac_associate.o
+ .debug_pubnames
+                0x00000c16       0x4d _obj/flash_mac_beacon.o
+ .debug_pubnames
+                0x00000c63      0x198 _obj/flash_mac_callback_wrapper.o
+ .debug_pubnames
+                0x00000dfb       0x43 _obj/flash_mac_data_ind.o
+ .debug_pubnames
+                0x00000e3e       0x6f _obj/flash_mac_data_req.o
+ .debug_pubnames
+                0x00000ead       0x75 _obj/flash_mac_disassociate.o
+ .debug_pubnames
+                0x00000f22       0x25 _obj/flash_mac_dispatcher.o
+ .debug_pubnames
+                0x00000f47      0x351 _obj/flash_mac.o
+ .debug_pubnames
+                0x00001298       0x95 _obj/flash_mac_mcps_data.o
+ .debug_pubnames
+                0x0000132d       0xa0 _obj/flash_mac_misc.o
+ .debug_pubnames
+                0x000013cd       0x4f _obj/flash_mac_orphan.o
+ .debug_pubnames
+                0x0000141c       0x81 _obj/flash_mac_pib.o
+ .debug_pubnames
+                0x0000149d       0x62 _obj/flash_mac_poll.o
+ .debug_pubnames
+                0x000014ff       0x2f _obj/flash_mac_process_beacon_frame.o
+ .debug_pubnames
+                0x0000152e       0x2b _obj/flash_mac_process_tal_tx_frame_status.o
+ .debug_pubnames
+                0x00001559       0x2d _obj/flash_mac_rx_enable.o
+ .debug_pubnames
+                0x00001586       0x86 _obj/flash_mac_scan.o
+ .debug_pubnames
+                0x0000160c       0x56 _obj/flash_mac_start.o
+ .debug_pubnames
+                0x00001662       0x42 _obj/flash_mac_sync.o
+ .debug_pubnames
+                0x000016a4       0x37 _obj/flash_mac_tx_coord_realignment_command.o
+ .debug_pubnames
+                0x000016db      0x184 _obj/flash_mac_api.o
+ .debug_pubnames
+                0x0000185f       0x2a _obj/flash_usr_mcps_purge_conf.o
+ .debug_pubnames
+                0x00001889       0x31 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .debug_pubnames
+                0x000018ba       0x31 _obj/flash_usr_mlme_disassociate_conf.o
+ .debug_pubnames
+                0x000018eb       0x30 _obj/flash_usr_mlme_disassociate_ind.o
+ .debug_pubnames
+                0x0000191b       0x28 _obj/flash_usr_mlme_get_conf.o
+ .debug_pubnames
+                0x00001943       0x2a _obj/flash_usr_mlme_orphan_ind.o
+ .debug_pubnames
+                0x0000196d       0x29 _obj/flash_usr_mlme_poll_conf.o
+ .debug_pubnames
+                0x00001996       0x2e _obj/flash_usr_mlme_rx_enable_conf.o
+ .debug_pubnames
+                0x000019c4       0x2d _obj/flash_usr_mlme_sync_loss_ind.o
+ .debug_pubnames
+                0x000019f1       0x69 _obj/flash_pal_irq.o
+ .debug_pubnames
+                0x00001a5a      0x145 _obj/flash_pal_board.o
+ .debug_pubnames
+                0x00001b9f       0x39 _obj/flash_board_cstartup_gnu.o
+ .debug_pubnames
+                0x00001bd8      0x351 _obj/flash_exceptions.o
+ .debug_pubnames
+                0x00001f29       0x4c _obj/flash_sio_handler.o
+ .debug_pubnames
+                0x00001f75      0x159 _obj/flash_core_cm3.o
+ .debug_pubnames
+                0x000020ce       0x4d _obj/flash_led.o
+ .debug_pubnames
+                0x0000211b       0x66 _obj/flash_pio.o
+ .debug_pubnames
+                0x00002181       0x98 _obj/flash_pmc.o
+ .debug_pubnames
+                0x00002219       0xa0 _obj/flash_uart_console.o
+ .debug_pubnames
+                0x000022b9       0xc9 _obj/flash_stdio.o
+ .debug_pubnames
+                0x00002382       0x1e c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .debug_pubnames
+                0x000023a0       0x39 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ .debug_pubnames
+                0x000023d9       0x1d c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .debug_pubnames
+                0x000023f6       0x1d c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .debug_pubnames
+                0x00002413       0x25 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .debug_pubnames
+                0x00002438       0x1d c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .debug_pubnames
+                0x00002455       0x1d c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+
+.debug_pubtypes
+                0x00000000     0x4c39
+ .debug_pubtypes
+                0x00000000      0x17b _obj/flash_main.o
+ .debug_pubtypes
+                0x0000017b       0x68 _obj/flash_sabre_tasks.o
+ .debug_pubtypes
+                0x000001e3       0x56 _obj/flash_fifo.o
+ .debug_pubtypes
+                0x00000239       0xf3 _obj/flash_pal.o
+ .debug_pubtypes
+                0x0000032c      0x102 _obj/flash_pal_timer.o
+ .debug_pubtypes
+                0x0000042e       0x52 _obj/flash_pal_trx_access.o
+ .debug_pubtypes
+                0x00000480      0x101 _obj/flash_pal_utils.o
+ .debug_pubtypes
+                0x00000581       0x54 _obj/flash_bmm.o
+ .debug_pubtypes
+                0x000005d5       0xae _obj/flash_qmm.o
+ .debug_pubtypes
+                0x00000683      0x168 _obj/flash_tal.o
+ .debug_pubtypes
+                0x000007eb       0xc1 _obj/flash_tal_rx.o
+ .debug_pubtypes
+                0x000008ac      0x173 _obj/flash_tal_tx.o
+ .debug_pubtypes
+                0x00000a1f       0xfb _obj/flash_tal_ed.o
+ .debug_pubtypes
+                0x00000b1a       0xef _obj/flash_tal_pib.o
+ .debug_pubtypes
+                0x00000c09      0x166 _obj/flash_tal_init.o
+ .debug_pubtypes
+                0x00000d6f       0x78 _obj/flash_tal_irq_handler.o
+ .debug_pubtypes
+                0x00000de7       0xc4 _obj/flash_tal_pwr_mgmt.o
+ .debug_pubtypes
+                0x00000eab       0xa3 _obj/flash_tal_rx_enable.o
+ .debug_pubtypes
+                0x00000f4e      0x397 _obj/flash_mac_associate.o
+ .debug_pubtypes
+                0x000012e5       0xfc _obj/flash_mac_beacon.o
+ .debug_pubtypes
+                0x000013e1      0x481 _obj/flash_mac_callback_wrapper.o
+ .debug_pubtypes
+                0x00001862      0x2ae _obj/flash_mac_data_ind.o
+ .debug_pubtypes
+                0x00001b10      0x27e _obj/flash_mac_data_req.o
+ .debug_pubtypes
+                0x00001d8e      0x334 _obj/flash_mac_disassociate.o
+ .debug_pubtypes
+                0x000020c2       0x60 _obj/flash_mac_dispatcher.o
+ .debug_pubtypes
+                0x00002122      0x24c _obj/flash_mac.o
+ .debug_pubtypes
+                0x0000236e      0x3b9 _obj/flash_mac_mcps_data.o
+ .debug_pubtypes
+                0x00002727      0x21c _obj/flash_mac_misc.o
+ .debug_pubtypes
+                0x00002943      0x22b _obj/flash_mac_orphan.o
+ .debug_pubtypes
+                0x00002b6e      0x198 _obj/flash_mac_pib.o
+ .debug_pubtypes
+                0x00002d06      0x2ad _obj/flash_mac_poll.o
+ .debug_pubtypes
+                0x00002fb3      0x2e2 _obj/flash_mac_process_beacon_frame.o
+ .debug_pubtypes
+                0x00003295      0x186 _obj/flash_mac_process_tal_tx_frame_status.o
+ .debug_pubtypes
+                0x0000341b      0x180 _obj/flash_mac_rx_enable.o
+ .debug_pubtypes
+                0x0000359b      0x380 _obj/flash_mac_scan.o
+ .debug_pubtypes
+                0x0000391b      0x110 _obj/flash_mac_start.o
+ .debug_pubtypes
+                0x00003a2b      0x298 _obj/flash_mac_sync.o
+ .debug_pubtypes
+                0x00003cc3      0x10f _obj/flash_mac_tx_coord_realignment_command.o
+ .debug_pubtypes
+                0x00003dd2      0x359 _obj/flash_mac_api.o
+ .debug_pubtypes
+                0x0000412b       0x1e _obj/flash_usr_mcps_purge_conf.o
+ .debug_pubtypes
+                0x00004149       0xb9 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .debug_pubtypes
+                0x00004202       0x78 _obj/flash_usr_mlme_disassociate_conf.o
+ .debug_pubtypes
+                0x0000427a       0x2b _obj/flash_usr_mlme_disassociate_ind.o
+ .debug_pubtypes
+                0x000042a5       0x1e _obj/flash_usr_mlme_get_conf.o
+ .debug_pubtypes
+                0x000042c3       0x1f _obj/flash_usr_mlme_orphan_ind.o
+ .debug_pubtypes
+                0x000042e2       0x1e _obj/flash_usr_mlme_poll_conf.o
+ .debug_pubtypes
+                0x00004300       0x1e _obj/flash_usr_mlme_rx_enable_conf.o
+ .debug_pubtypes
+                0x0000431e       0x2b _obj/flash_usr_mlme_sync_loss_ind.o
+ .debug_pubtypes
+                0x00004349       0x74 _obj/flash_pal_irq.o
+ .debug_pubtypes
+                0x000043bd      0x12e _obj/flash_pal_board.o
+ .debug_pubtypes
+                0x000044eb       0x44 _obj/flash_board_cstartup_gnu.o
+ .debug_pubtypes
+                0x0000452f       0x38 _obj/flash_exceptions.o
+ .debug_pubtypes
+                0x00004567       0xe6 _obj/flash_sio_handler.o
+ .debug_pubtypes
+                0x0000464d       0x50 _obj/flash_core_cm3.o
+ .debug_pubtypes
+                0x0000469d       0x22 _obj/flash_led.o
+ .debug_pubtypes
+                0x000046bf       0x22 _obj/flash_pio.o
+ .debug_pubtypes
+                0x000046e1       0x1a _obj/flash_pmc.o
+ .debug_pubtypes
+                0x000046fb      0x120 _obj/flash_uart_console.o
+ .debug_pubtypes
+                0x0000481b      0x11e _obj/flash_stdio.o
+ .debug_pubtypes
+                0x00004939       0xdd c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .debug_pubtypes
+                0x00004a16       0xdd c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ .debug_pubtypes
+                0x00004af3       0x1d c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .debug_pubtypes
+                0x00004b10       0x1d c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .debug_pubtypes
+                0x00004b2d       0xdd c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .debug_pubtypes
+                0x00004c0a       0x12 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .debug_pubtypes
+                0x00004c1c       0x1d c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+
+.debug_aranges  0x00000000     0x1430
+ .debug_aranges
+                0x00000000       0x98 _obj/flash_main.o
+ .debug_aranges
+                0x00000098       0x50 _obj/flash_sabre_tasks.o
+ .debug_aranges
+                0x000000e8       0x20 _obj/flash_fifo.o
+ .debug_aranges
+                0x00000108      0x100 _obj/flash_pal.o
+ .debug_aranges
+                0x00000208       0x98 _obj/flash_pal_timer.o
+ .debug_aranges
+                0x000002a0       0x50 _obj/flash_pal_trx_access.o
+ .debug_aranges
+                0x000002f0       0x28 _obj/flash_pal_utils.o
+ .debug_aranges
+                0x00000318       0x30 _obj/flash_bmm.o
+ .debug_aranges
+                0x00000348       0x50 _obj/flash_qmm.o
+ .debug_aranges
+                0x00000398       0x48 _obj/flash_tal.o
+ .debug_aranges
+                0x000003e0       0x30 _obj/flash_tal_rx.o
+ .debug_aranges
+                0x00000410       0x40 _obj/flash_tal_tx.o
+ .debug_aranges
+                0x00000450       0x30 _obj/flash_tal_ed.o
+ .debug_aranges
+                0x00000480       0x48 _obj/flash_tal_pib.o
+ .debug_aranges
+                0x000004c8       0x58 _obj/flash_tal_init.o
+ .debug_aranges
+                0x00000520       0x30 _obj/flash_tal_irq_handler.o
+ .debug_aranges
+                0x00000550       0x28 _obj/flash_tal_pwr_mgmt.o
+ .debug_aranges
+                0x00000578       0x20 _obj/flash_tal_rx_enable.o
+ .debug_aranges
+                0x00000598       0x70 _obj/flash_mac_associate.o
+ .debug_aranges
+                0x00000608       0x58 _obj/flash_mac_beacon.o
+ .debug_aranges
+                0x00000660       0xa8 _obj/flash_mac_callback_wrapper.o
+ .debug_aranges
+                0x00000708       0x88 _obj/flash_mac_data_ind.o
+ .debug_aranges
+                0x00000790       0x70 _obj/flash_mac_data_req.o
+ .debug_aranges
+                0x00000800       0x78 _obj/flash_mac_disassociate.o
+ .debug_aranges
+                0x00000878       0x20 _obj/flash_mac_dispatcher.o
+ .debug_aranges
+                0x00000898       0x20 _obj/flash_mac.o
+ .debug_aranges
+                0x000008b8       0xa8 _obj/flash_mac_mcps_data.o
+ .debug_aranges
+                0x00000960       0x88 _obj/flash_mac_misc.o
+ .debug_aranges
+                0x000009e8       0x28 _obj/flash_mac_orphan.o
+ .debug_aranges
+                0x00000a10       0x48 _obj/flash_mac_pib.o
+ .debug_aranges
+                0x00000a58       0x38 _obj/flash_mac_poll.o
+ .debug_aranges
+                0x00000a90       0x20 _obj/flash_mac_process_beacon_frame.o
+ .debug_aranges
+                0x00000ab0       0x38 _obj/flash_mac_process_tal_tx_frame_status.o
+ .debug_aranges
+                0x00000ae8       0x40 _obj/flash_mac_rx_enable.o
+ .debug_aranges
+                0x00000b28       0x80 _obj/flash_mac_scan.o
+ .debug_aranges
+                0x00000ba8       0x30 _obj/flash_mac_start.o
+ .debug_aranges
+                0x00000bd8       0x28 _obj/flash_mac_sync.o
+ .debug_aranges
+                0x00000c00       0x38 _obj/flash_mac_tx_coord_realignment_command.o
+ .debug_aranges
+                0x00000c38       0x90 _obj/flash_mac_api.o
+ .debug_aranges
+                0x00000cc8       0x20 _obj/flash_usr_mcps_purge_conf.o
+ .debug_aranges
+                0x00000ce8       0x20 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .debug_aranges
+                0x00000d08       0x20 _obj/flash_usr_mlme_disassociate_conf.o
+ .debug_aranges
+                0x00000d28       0x20 _obj/flash_usr_mlme_disassociate_ind.o
+ .debug_aranges
+                0x00000d48       0x20 _obj/flash_usr_mlme_get_conf.o
+ .debug_aranges
+                0x00000d68       0x20 _obj/flash_usr_mlme_orphan_ind.o
+ .debug_aranges
+                0x00000d88       0x20 _obj/flash_usr_mlme_poll_conf.o
+ .debug_aranges
+                0x00000da8       0x20 _obj/flash_usr_mlme_rx_enable_conf.o
+ .debug_aranges
+                0x00000dc8       0x20 _obj/flash_usr_mlme_sync_loss_ind.o
+ .debug_aranges
+                0x00000de8       0x48 _obj/flash_pal_irq.o
+ .debug_aranges
+                0x00000e30       0xa8 _obj/flash_pal_board.o
+ .debug_aranges
+                0x00000ed8       0x20 _obj/flash_board_cstartup_gnu.o
+ .debug_aranges
+                0x00000ef8      0x168 _obj/flash_exceptions.o
+ .debug_aranges
+                0x00001060       0x30 _obj/flash_sio_handler.o
+ .debug_aranges
+                0x00001090       0xc8 _obj/flash_core_cm3.o
+ .debug_aranges
+                0x00001158       0x38 _obj/flash_led.o
+ .debug_aranges
+                0x00001190       0x70 _obj/flash_pio.o
+ .debug_aranges
+                0x00001200       0x40 _obj/flash_pmc.o
+ .debug_aranges
+                0x00001240       0x68 _obj/flash_uart_console.o
+ .debug_aranges
+                0x000012a8       0x88 _obj/flash_stdio.o
+ .debug_aranges
+                0x00001330       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_addsubsf3.o)
+ .debug_aranges
+                0x00001350       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_fixunssfsi.o)
+ .debug_aranges
+                0x00001370       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .debug_aranges
+                0x00001390       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x000013b0       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .debug_aranges
+                0x000013d0       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .debug_aranges
+                0x000013f0       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .debug_aranges
+                0x00001410       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+
+.debug_ranges   0x00000000      0xfb0
+ .debug_ranges  0x00000000       0x88 _obj/flash_main.o
+ .debug_ranges  0x00000088       0x40 _obj/flash_sabre_tasks.o
+ .debug_ranges  0x000000c8       0x10 _obj/flash_fifo.o
+ .debug_ranges  0x000000d8       0xf0 _obj/flash_pal.o
+ .debug_ranges  0x000001c8       0x88 _obj/flash_pal_timer.o
+ .debug_ranges  0x00000250       0x40 _obj/flash_pal_trx_access.o
+ .debug_ranges  0x00000290       0x18 _obj/flash_pal_utils.o
+ .debug_ranges  0x000002a8       0x20 _obj/flash_bmm.o
+ .debug_ranges  0x000002c8       0x40 _obj/flash_qmm.o
+ .debug_ranges  0x00000308       0x38 _obj/flash_tal.o
+ .debug_ranges  0x00000340       0x20 _obj/flash_tal_rx.o
+ .debug_ranges  0x00000360       0x30 _obj/flash_tal_tx.o
+ .debug_ranges  0x00000390       0x20 _obj/flash_tal_ed.o
+ .debug_ranges  0x000003b0       0x50 _obj/flash_tal_pib.o
+ .debug_ranges  0x00000400       0x48 _obj/flash_tal_init.o
+ .debug_ranges  0x00000448       0x20 _obj/flash_tal_irq_handler.o
+ .debug_ranges  0x00000468       0x18 _obj/flash_tal_pwr_mgmt.o
+ .debug_ranges  0x00000480       0x10 _obj/flash_tal_rx_enable.o
+ .debug_ranges  0x00000490       0x60 _obj/flash_mac_associate.o
+ .debug_ranges  0x000004f0       0x48 _obj/flash_mac_beacon.o
+ .debug_ranges  0x00000538       0x98 _obj/flash_mac_callback_wrapper.o
+ .debug_ranges  0x000005d0       0x78 _obj/flash_mac_data_ind.o
+ .debug_ranges  0x00000648       0x60 _obj/flash_mac_data_req.o
+ .debug_ranges  0x000006a8       0x68 _obj/flash_mac_disassociate.o
+ .debug_ranges  0x00000710       0x10 _obj/flash_mac_dispatcher.o
+ .debug_ranges  0x00000720       0x10 _obj/flash_mac.o
+ .debug_ranges  0x00000730       0x98 _obj/flash_mac_mcps_data.o
+ .debug_ranges  0x000007c8       0x78 _obj/flash_mac_misc.o
+ .debug_ranges  0x00000840       0x18 _obj/flash_mac_orphan.o
+ .debug_ranges  0x00000858       0x38 _obj/flash_mac_pib.o
+ .debug_ranges  0x00000890       0x40 _obj/flash_mac_poll.o
+ .debug_ranges  0x000008d0       0x10 _obj/flash_mac_process_beacon_frame.o
+ .debug_ranges  0x000008e0       0x28 _obj/flash_mac_process_tal_tx_frame_status.o
+ .debug_ranges  0x00000908       0x30 _obj/flash_mac_rx_enable.o
+ .debug_ranges  0x00000938       0x70 _obj/flash_mac_scan.o
+ .debug_ranges  0x000009a8       0x20 _obj/flash_mac_start.o
+ .debug_ranges  0x000009c8       0x18 _obj/flash_mac_sync.o
+ .debug_ranges  0x000009e0       0x28 _obj/flash_mac_tx_coord_realignment_command.o
+ .debug_ranges  0x00000a08       0x80 _obj/flash_mac_api.o
+ .debug_ranges  0x00000a88       0x10 _obj/flash_usr_mcps_purge_conf.o
+ .debug_ranges  0x00000a98       0x10 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .debug_ranges  0x00000aa8       0x10 _obj/flash_usr_mlme_disassociate_conf.o
+ .debug_ranges  0x00000ab8       0x10 _obj/flash_usr_mlme_disassociate_ind.o
+ .debug_ranges  0x00000ac8       0x10 _obj/flash_usr_mlme_get_conf.o
+ .debug_ranges  0x00000ad8       0x10 _obj/flash_usr_mlme_orphan_ind.o
+ .debug_ranges  0x00000ae8       0x10 _obj/flash_usr_mlme_poll_conf.o
+ .debug_ranges  0x00000af8       0x10 _obj/flash_usr_mlme_rx_enable_conf.o
+ .debug_ranges  0x00000b08       0x10 _obj/flash_usr_mlme_sync_loss_ind.o
+ .debug_ranges  0x00000b18       0x38 _obj/flash_pal_irq.o
+ .debug_ranges  0x00000b50       0x98 _obj/flash_pal_board.o
+ .debug_ranges  0x00000be8       0x10 _obj/flash_board_cstartup_gnu.o
+ .debug_ranges  0x00000bf8      0x158 _obj/flash_exceptions.o
+ .debug_ranges  0x00000d50       0x20 _obj/flash_sio_handler.o
+ .debug_ranges  0x00000d70       0xb8 _obj/flash_core_cm3.o
+ .debug_ranges  0x00000e28       0x28 _obj/flash_led.o
+ .debug_ranges  0x00000e50       0x60 _obj/flash_pio.o
+ .debug_ranges  0x00000eb0       0x30 _obj/flash_pmc.o
+ .debug_ranges  0x00000ee0       0x58 _obj/flash_uart_console.o
+ .debug_ranges  0x00000f38       0x78 _obj/flash_stdio.o
+
+.debug_str      0x00000000     0x6a7b
+ .debug_str     0x00000000      0x9ce _obj/flash_main.o
+                                0xa84 (size before relaxing)
+ .debug_str     0x000009ce       0xbc _obj/flash_sabre_tasks.o
+                                0x2c1 (size before relaxing)
+ .debug_str     0x00000a8a       0xb9 _obj/flash_fifo.o
+                                0x1ec (size before relaxing)
+ .debug_str     0x00000b43      0x951 _obj/flash_pal.o
+                                0xdc6 (size before relaxing)
+ .debug_str     0x00001494      0x451 _obj/flash_pal_timer.o
+                                0x8f8 (size before relaxing)
+ .debug_str     0x000018e5      0x1b4 _obj/flash_pal_trx_access.o
+                                0x588 (size before relaxing)
+ .debug_str     0x00001a99      0x420 _obj/flash_pal_utils.o
+                                0x57d (size before relaxing)
+ .debug_str     0x00001eb9       0xdf _obj/flash_bmm.o
+                                0x214 (size before relaxing)
+ .debug_str     0x00001f98      0x13d _obj/flash_qmm.o
+                                0x2bb (size before relaxing)
+ .debug_str     0x000020d5      0x603 _obj/flash_tal.o
+                                0xaa7 (size before relaxing)
+ .debug_str     0x000026d8       0xbe _obj/flash_tal_rx.o
+                                0x4cd (size before relaxing)
+ .debug_str     0x00002796      0x1b8 _obj/flash_tal_tx.o
+                                0xc99 (size before relaxing)
+ .debug_str     0x0000294e       0xa9 _obj/flash_tal_ed.o
+                                0x9ee (size before relaxing)
+ .debug_str     0x000029f7      0x1e5 _obj/flash_tal_pib.o
+                                0x958 (size before relaxing)
+ .debug_str     0x00002bdc       0xd6 _obj/flash_tal_init.o
+                                0xd46 (size before relaxing)
+ .debug_str     0x00002cb2       0x92 _obj/flash_tal_irq_handler.o
+                                0x2f6 (size before relaxing)
+ .debug_str     0x00002d44       0x70 _obj/flash_tal_pwr_mgmt.o
+                                0x6d2 (size before relaxing)
+ .debug_str     0x00002db4      0x108 _obj/flash_tal_rx_enable.o
+                                0x705 (size before relaxing)
+ .debug_str     0x00002ebc      0xa93 _obj/flash_mac_associate.o
+                               0x1252 (size before relaxing)
+ .debug_str     0x0000394f      0x197 _obj/flash_mac_beacon.o
+                                0x652 (size before relaxing)
+ .debug_str     0x00003ae6      0x3cc _obj/flash_mac_callback_wrapper.o
+                                0xb8f (size before relaxing)
+ .debug_str     0x00003eb2      0x303 _obj/flash_mac_data_ind.o
+                               0x116d (size before relaxing)
+ .debug_str     0x000041b5      0x141 _obj/flash_mac_data_req.o
+                                0xcb6 (size before relaxing)
+ .debug_str     0x000042f6      0x183 _obj/flash_mac_disassociate.o
+                               0x10db (size before relaxing)
+ .debug_str     0x00004479       0x68 _obj/flash_mac_dispatcher.o
+                                0x480 (size before relaxing)
+ .debug_str     0x000044e1      0x195 _obj/flash_mac.o
+                                0x929 (size before relaxing)
+ .debug_str     0x00004676      0x212 _obj/flash_mac_mcps_data.o
+                               0x128d (size before relaxing)
+ .debug_str     0x00004888      0x163 _obj/flash_mac_misc.o
+                                0xfdd (size before relaxing)
+ .debug_str     0x000049eb       0x6f _obj/flash_mac_orphan.o
+                                0xc4d (size before relaxing)
+ .debug_str     0x00004a5a      0x15e _obj/flash_mac_pib.o
+                                0xd4c (size before relaxing)
+ .debug_str     0x00004bb8       0xc4 _obj/flash_mac_poll.o
+                                0xd46 (size before relaxing)
+ .debug_str     0x00004c7c       0xa5 _obj/flash_mac_process_beacon_frame.o
+                                0xa9c (size before relaxing)
+ .debug_str     0x00004d21       0xcb _obj/flash_mac_process_tal_tx_frame_status.o
+                                0xc0b (size before relaxing)
+ .debug_str     0x00004dec      0x108 _obj/flash_mac_rx_enable.o
+                                0xb11 (size before relaxing)
+ .debug_str     0x00004ef4      0x197 _obj/flash_mac_scan.o
+                               0x1276 (size before relaxing)
+ .debug_str     0x0000508b      0x15f _obj/flash_mac_start.o
+                                0xb00 (size before relaxing)
+ .debug_str     0x000051ea       0x89 _obj/flash_mac_sync.o
+                                0xda2 (size before relaxing)
+ .debug_str     0x00005273       0xea _obj/flash_mac_tx_coord_realignment_command.o
+                                0xae6 (size before relaxing)
+ .debug_str     0x0000535d      0x1b5 _obj/flash_mac_api.o
+                                0xea5 (size before relaxing)
+ .debug_str     0x00005512       0x57 _obj/flash_usr_mcps_purge_conf.o
+                                0x17f (size before relaxing)
+ .debug_str     0x00005569       0x65 _obj/flash_usr_mlme_beacon_notify_ind.o
+                                0x2ab (size before relaxing)
+ .debug_str     0x000055ce       0x65 _obj/flash_usr_mlme_disassociate_conf.o
+                                0x206 (size before relaxing)
+ .debug_str     0x00005633       0x63 _obj/flash_usr_mlme_disassociate_ind.o
+                                0x1a3 (size before relaxing)
+ .debug_str     0x00005696       0x53 _obj/flash_usr_mlme_get_conf.o
+                                0x18f (size before relaxing)
+ .debug_str     0x000056e9       0x57 _obj/flash_usr_mlme_orphan_ind.o
+                                0x17c (size before relaxing)
+ .debug_str     0x00005740       0x55 _obj/flash_usr_mlme_poll_conf.o
+                                0x172 (size before relaxing)
+ .debug_str     0x00005795       0x5f _obj/flash_usr_mlme_rx_enable_conf.o
+                                0x17c (size before relaxing)
+ .debug_str     0x000057f4       0x5d _obj/flash_usr_mlme_sync_loss_ind.o
+                                0x1a8 (size before relaxing)
+ .debug_str     0x00005851       0xe1 _obj/flash_pal_irq.o
+                                0x6e1 (size before relaxing)
+ .debug_str     0x00005932      0x393 _obj/flash_pal_board.o
+                                0xc6d (size before relaxing)
+ .debug_str     0x00005cc5       0xd2 _obj/flash_board_cstartup_gnu.o
+                                0x239 (size before relaxing)
+ .debug_str     0x00005d97      0x2a7 _obj/flash_exceptions.o
+                                0x45c (size before relaxing)
+ .debug_str     0x0000603e       0x91 _obj/flash_sio_handler.o
+                                0x552 (size before relaxing)
+ .debug_str     0x000060cf      0x170 _obj/flash_core_cm3.o
+                                0x2af (size before relaxing)
+ .debug_str     0x0000623f       0x8a _obj/flash_led.o
+                                0x41a (size before relaxing)
+ .debug_str     0x000062c9       0xf1 _obj/flash_pio.o
+                                0x4bd (size before relaxing)
+ .debug_str     0x000063ba       0xbc _obj/flash_pmc.o
+                                0x301 (size before relaxing)
+ .debug_str     0x00006476      0x1a7 _obj/flash_uart_console.o
+                                0xa10 (size before relaxing)
+ .debug_str     0x0000661d       0xeb _obj/flash_stdio.o
+                                0x61d (size before relaxing)
+ .debug_str     0x00006708       0x95 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+                                0x4e5 (size before relaxing)
+ .debug_str     0x0000679d       0xad c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+                                0x4fd (size before relaxing)
+ .debug_str     0x0000684a       0xbe c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+                                0x15a (size before relaxing)
+ .debug_str     0x00006908       0x53 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+                                0x147 (size before relaxing)
+ .debug_str     0x0000695b       0x94 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+                                0x4ee (size before relaxing)
+ .debug_str     0x000069ef       0x46 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+                                0x14e (size before relaxing)
+ .debug_str     0x00006a35       0x46 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+                                0x146 (size before relaxing)
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 _obj/flash_main.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 _obj/flash_sabre_tasks.o
+ .comment       0x00000000       0x12 _obj/flash_fifo.o
+ .comment       0x00000000       0x12 _obj/flash_pal.o
+ .comment       0x00000000       0x12 _obj/flash_pal_timer.o
+ .comment       0x00000000       0x12 _obj/flash_pal_trx_access.o
+ .comment       0x00000000       0x12 _obj/flash_pal_utils.o
+ .comment       0x00000000       0x12 _obj/flash_bmm.o
+ .comment       0x00000000       0x12 _obj/flash_qmm.o
+ .comment       0x00000000       0x12 _obj/flash_tal.o
+ .comment       0x00000000       0x12 _obj/flash_tal_rx.o
+ .comment       0x00000000       0x12 _obj/flash_tal_tx.o
+ .comment       0x00000000       0x12 _obj/flash_tal_ed.o
+ .comment       0x00000000       0x12 _obj/flash_tal_slotted_csma.o
+ .comment       0x00000000       0x12 _obj/flash_tal_pib.o
+ .comment       0x00000000       0x12 _obj/flash_tal_init.o
+ .comment       0x00000000       0x12 _obj/flash_tal_irq_handler.o
+ .comment       0x00000000       0x12 _obj/flash_tal_pwr_mgmt.o
+ .comment       0x00000000       0x12 _obj/flash_tal_rx_enable.o
+ .comment       0x00000000       0x12 _obj/flash_mac_associate.o
+ .comment       0x00000000       0x12 _obj/flash_mac_beacon.o
+ .comment       0x00000000       0x12 _obj/flash_mac_callback_wrapper.o
+ .comment       0x00000000       0x12 _obj/flash_mac_data_ind.o
+ .comment       0x00000000       0x12 _obj/flash_mac_data_req.o
+ .comment       0x00000000       0x12 _obj/flash_mac_disassociate.o
+ .comment       0x00000000       0x12 _obj/flash_mac_dispatcher.o
+ .comment       0x00000000       0x12 _obj/flash_mac.o
+ .comment       0x00000000       0x12 _obj/flash_mac_mcps_data.o
+ .comment       0x00000000       0x12 _obj/flash_mac_misc.o
+ .comment       0x00000000       0x12 _obj/flash_mac_orphan.o
+ .comment       0x00000000       0x12 _obj/flash_mac_pib.o
+ .comment       0x00000000       0x12 _obj/flash_mac_poll.o
+ .comment       0x00000000       0x12 _obj/flash_mac_process_beacon_frame.o
+ .comment       0x00000000       0x12 _obj/flash_mac_process_tal_tx_frame_status.o
+ .comment       0x00000000       0x12 _obj/flash_mac_rx_enable.o
+ .comment       0x00000000       0x12 _obj/flash_mac_scan.o
+ .comment       0x00000000       0x12 _obj/flash_mac_start.o
+ .comment       0x00000000       0x12 _obj/flash_mac_sync.o
+ .comment       0x00000000       0x12 _obj/flash_mac_tx_coord_realignment_command.o
+ .comment       0x00000000       0x12 _obj/flash_mac_api.o
+ .comment       0x00000000       0x12 _obj/flash_usr_mcps_purge_conf.o
+ .comment       0x00000000       0x12 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .comment       0x00000000       0x12 _obj/flash_usr_mlme_disassociate_conf.o
+ .comment       0x00000000       0x12 _obj/flash_usr_mlme_disassociate_ind.o
+ .comment       0x00000000       0x12 _obj/flash_usr_mlme_get_conf.o
+ .comment       0x00000000       0x12 _obj/flash_usr_mlme_orphan_ind.o
+ .comment       0x00000000       0x12 _obj/flash_usr_mlme_poll_conf.o
+ .comment       0x00000000       0x12 _obj/flash_usr_mlme_rx_enable_conf.o
+ .comment       0x00000000       0x12 _obj/flash_usr_mlme_sync_loss_ind.o
+ .comment       0x00000000       0x12 _obj/flash_pal_irq.o
+ .comment       0x00000000       0x12 _obj/flash_pal_board.o
+ .comment       0x00000000       0x12 _obj/flash_board_cstartup_gnu.o
+ .comment       0x00000000       0x12 _obj/flash_exceptions.o
+ .comment       0x00000000       0x12 _obj/flash_sio_handler.o
+ .comment       0x00000000       0x12 _obj/flash_core_cm3.o
+ .comment       0x00000000       0x12 _obj/flash_led.o
+ .comment       0x00000000       0x12 _obj/flash_pio.o
+ .comment       0x00000000       0x12 _obj/flash_pmc.o
+ .comment       0x00000000       0x12 _obj/flash_uart_console.o
+ .comment       0x00000000       0x12 _obj/flash_stdio.o
+ .comment       0x00000000       0x12 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .comment       0x00000000       0x12 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ .comment       0x00000000       0x12 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .comment       0x00000000       0x12 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .comment       0x00000000       0x12 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .comment       0x00000000       0x12 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .comment       0x00000000       0x12 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x31 _obj/flash_main.o
+ .ARM.attributes
+                0x00000031       0x31 _obj/flash_sabre_tasks.o
+ .ARM.attributes
+                0x00000062       0x31 _obj/flash_fifo.o
+ .ARM.attributes
+                0x00000093       0x31 _obj/flash_pal.o
+ .ARM.attributes
+                0x000000c4       0x31 _obj/flash_pal_timer.o
+ .ARM.attributes
+                0x000000f5       0x31 _obj/flash_pal_trx_access.o
+ .ARM.attributes
+                0x00000126       0x31 _obj/flash_pal_utils.o
+ .ARM.attributes
+                0x00000157       0x31 _obj/flash_bmm.o
+ .ARM.attributes
+                0x00000188       0x31 _obj/flash_qmm.o
+ .ARM.attributes
+                0x000001b9       0x31 _obj/flash_tal.o
+ .ARM.attributes
+                0x000001ea       0x31 _obj/flash_tal_rx.o
+ .ARM.attributes
+                0x0000021b       0x31 _obj/flash_tal_tx.o
+ .ARM.attributes
+                0x0000024c       0x31 _obj/flash_tal_ed.o
+ .ARM.attributes
+                0x0000027d       0x31 _obj/flash_tal_slotted_csma.o
+ .ARM.attributes
+                0x000002ae       0x31 _obj/flash_tal_pib.o
+ .ARM.attributes
+                0x000002df       0x31 _obj/flash_tal_init.o
+ .ARM.attributes
+                0x00000310       0x31 _obj/flash_tal_irq_handler.o
+ .ARM.attributes
+                0x00000341       0x31 _obj/flash_tal_pwr_mgmt.o
+ .ARM.attributes
+                0x00000372       0x31 _obj/flash_tal_rx_enable.o
+ .ARM.attributes
+                0x000003a3       0x31 _obj/flash_mac_associate.o
+ .ARM.attributes
+                0x000003d4       0x31 _obj/flash_mac_beacon.o
+ .ARM.attributes
+                0x00000405       0x31 _obj/flash_mac_callback_wrapper.o
+ .ARM.attributes
+                0x00000436       0x31 _obj/flash_mac_data_ind.o
+ .ARM.attributes
+                0x00000467       0x31 _obj/flash_mac_data_req.o
+ .ARM.attributes
+                0x00000498       0x31 _obj/flash_mac_disassociate.o
+ .ARM.attributes
+                0x000004c9       0x31 _obj/flash_mac_dispatcher.o
+ .ARM.attributes
+                0x000004fa       0x31 _obj/flash_mac.o
+ .ARM.attributes
+                0x0000052b       0x31 _obj/flash_mac_mcps_data.o
+ .ARM.attributes
+                0x0000055c       0x31 _obj/flash_mac_misc.o
+ .ARM.attributes
+                0x0000058d       0x31 _obj/flash_mac_orphan.o
+ .ARM.attributes
+                0x000005be       0x31 _obj/flash_mac_pib.o
+ .ARM.attributes
+                0x000005ef       0x31 _obj/flash_mac_poll.o
+ .ARM.attributes
+                0x00000620       0x31 _obj/flash_mac_process_beacon_frame.o
+ .ARM.attributes
+                0x00000651       0x31 _obj/flash_mac_process_tal_tx_frame_status.o
+ .ARM.attributes
+                0x00000682       0x31 _obj/flash_mac_rx_enable.o
+ .ARM.attributes
+                0x000006b3       0x31 _obj/flash_mac_scan.o
+ .ARM.attributes
+                0x000006e4       0x31 _obj/flash_mac_start.o
+ .ARM.attributes
+                0x00000715       0x31 _obj/flash_mac_sync.o
+ .ARM.attributes
+                0x00000746       0x31 _obj/flash_mac_tx_coord_realignment_command.o
+ .ARM.attributes
+                0x00000777       0x31 _obj/flash_mac_api.o
+ .ARM.attributes
+                0x000007a8       0x31 _obj/flash_usr_mcps_purge_conf.o
+ .ARM.attributes
+                0x000007d9       0x31 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .ARM.attributes
+                0x0000080a       0x31 _obj/flash_usr_mlme_disassociate_conf.o
+ .ARM.attributes
+                0x0000083b       0x31 _obj/flash_usr_mlme_disassociate_ind.o
+ .ARM.attributes
+                0x0000086c       0x31 _obj/flash_usr_mlme_get_conf.o
+ .ARM.attributes
+                0x0000089d       0x31 _obj/flash_usr_mlme_orphan_ind.o
+ .ARM.attributes
+                0x000008ce       0x31 _obj/flash_usr_mlme_poll_conf.o
+ .ARM.attributes
+                0x000008ff       0x31 _obj/flash_usr_mlme_rx_enable_conf.o
+ .ARM.attributes
+                0x00000930       0x31 _obj/flash_usr_mlme_sync_loss_ind.o
+ .ARM.attributes
+                0x00000961       0x31 _obj/flash_pal_irq.o
+ .ARM.attributes
+                0x00000992       0x31 _obj/flash_pal_board.o
+ .ARM.attributes
+                0x000009c3       0x31 _obj/flash_board_cstartup_gnu.o
+ .ARM.attributes
+                0x000009f4       0x31 _obj/flash_exceptions.o
+ .ARM.attributes
+                0x00000a25       0x31 _obj/flash_sio_handler.o
+ .ARM.attributes
+                0x00000a56       0x31 _obj/flash_core_cm3.o
+ .ARM.attributes
+                0x00000a87       0x31 _obj/flash_led.o
+ .ARM.attributes
+                0x00000ab8       0x31 _obj/flash_pio.o
+ .ARM.attributes
+                0x00000ae9       0x31 _obj/flash_pmc.o
+ .ARM.attributes
+                0x00000b1a       0x31 _obj/flash_uart_console.o
+ .ARM.attributes
+                0x00000b4b       0x31 _obj/flash_stdio.o
+ .ARM.attributes
+                0x00000b7c       0x19 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x00000b95       0x19 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/thumb/v7m\libgcc.a(_arm_fixunssfsi.o)
+ .ARM.attributes
+                0x00000bae       0x27 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000bd5       0x27 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000bfc       0x27 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000c23       0x27 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000c4a       0x27 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .ARM.attributes
+                0x00000c71       0x27 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000c98       0x27 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)
+
+.debug_frame    0x00000000     0x2f58
+ .debug_frame   0x00000000      0x1ac _obj/flash_main.o
+ .debug_frame   0x000001ac       0xb8 _obj/flash_sabre_tasks.o
+ .debug_frame   0x00000264       0x24 _obj/flash_fifo.o
+ .debug_frame   0x00000288      0x2a0 _obj/flash_pal.o
+ .debug_frame   0x00000528      0x198 _obj/flash_pal_timer.o
+ .debug_frame   0x000006c0       0xc8 _obj/flash_pal_trx_access.o
+ .debug_frame   0x00000788       0x48 _obj/flash_pal_utils.o
+ .debug_frame   0x000007d0       0x64 _obj/flash_bmm.o
+ .debug_frame   0x00000834       0xc0 _obj/flash_qmm.o
+ .debug_frame   0x000008f4       0x94 _obj/flash_tal.o
+ .debug_frame   0x00000988       0x5c _obj/flash_tal_rx.o
+ .debug_frame   0x000009e4       0x90 _obj/flash_tal_tx.o
+ .debug_frame   0x00000a74       0x64 _obj/flash_tal_ed.o
+ .debug_frame   0x00000ad8       0xa4 _obj/flash_tal_pib.o
+ .debug_frame   0x00000b7c       0xe4 _obj/flash_tal_init.o
+ .debug_frame   0x00000c60       0x60 _obj/flash_tal_irq_handler.o
+ .debug_frame   0x00000cc0       0x48 _obj/flash_tal_pwr_mgmt.o
+ .debug_frame   0x00000d08       0x2c _obj/flash_tal_rx_enable.o
+ .debug_frame   0x00000d34      0x128 _obj/flash_mac_associate.o
+ .debug_frame   0x00000e5c       0xd8 _obj/flash_mac_beacon.o
+ .debug_frame   0x00000f34      0x208 _obj/flash_mac_callback_wrapper.o
+ .debug_frame   0x0000113c      0x170 _obj/flash_mac_data_ind.o
+ .debug_frame   0x000012ac      0x120 _obj/flash_mac_data_req.o
+ .debug_frame   0x000013cc      0x12c _obj/flash_mac_disassociate.o
+ .debug_frame   0x000014f8       0x2c _obj/flash_mac_dispatcher.o
+ .debug_frame   0x00001524       0x2c _obj/flash_mac.o
+ .debug_frame   0x00001550      0x1cc _obj/flash_mac_mcps_data.o
+ .debug_frame   0x0000171c      0x168 _obj/flash_mac_misc.o
+ .debug_frame   0x00001884       0x48 _obj/flash_mac_orphan.o
+ .debug_frame   0x000018cc       0xa8 _obj/flash_mac_pib.o
+ .debug_frame   0x00001974       0x80 _obj/flash_mac_poll.o
+ .debug_frame   0x000019f4       0x2c _obj/flash_mac_process_beacon_frame.o
+ .debug_frame   0x00001a20       0x78 _obj/flash_mac_process_tal_tx_frame_status.o
+ .debug_frame   0x00001a98       0x9c _obj/flash_mac_rx_enable.o
+ .debug_frame   0x00001b34      0x164 _obj/flash_mac_scan.o
+ .debug_frame   0x00001c98       0x64 _obj/flash_mac_start.o
+ .debug_frame   0x00001cfc       0x48 _obj/flash_mac_sync.o
+ .debug_frame   0x00001d44       0x68 _obj/flash_mac_tx_coord_realignment_command.o
+ .debug_frame   0x00001dac      0x1b0 _obj/flash_mac_api.o
+ .debug_frame   0x00001f5c       0x24 _obj/flash_usr_mcps_purge_conf.o
+ .debug_frame   0x00001f80       0x24 _obj/flash_usr_mlme_beacon_notify_ind.o
+ .debug_frame   0x00001fa4       0x24 _obj/flash_usr_mlme_disassociate_conf.o
+ .debug_frame   0x00001fc8       0x24 _obj/flash_usr_mlme_disassociate_ind.o
+ .debug_frame   0x00001fec       0x24 _obj/flash_usr_mlme_get_conf.o
+ .debug_frame   0x00002010       0x24 _obj/flash_usr_mlme_orphan_ind.o
+ .debug_frame   0x00002034       0x24 _obj/flash_usr_mlme_poll_conf.o
+ .debug_frame   0x00002058       0x24 _obj/flash_usr_mlme_rx_enable_conf.o
+ .debug_frame   0x0000207c       0x24 _obj/flash_usr_mlme_sync_loss_ind.o
+ .debug_frame   0x000020a0       0xa0 _obj/flash_pal_irq.o
+ .debug_frame   0x00002140      0x1a4 _obj/flash_pal_board.o
+ .debug_frame   0x000022e4       0x2c _obj/flash_board_cstartup_gnu.o
+ .debug_frame   0x00002310      0x404 _obj/flash_exceptions.o
+ .debug_frame   0x00002714       0x64 _obj/flash_sio_handler.o
+ .debug_frame   0x00002778      0x248 _obj/flash_core_cm3.o
+ .debug_frame   0x000029c0       0x80 _obj/flash_led.o
+ .debug_frame   0x00002a40       0xf4 _obj/flash_pio.o
+ .debug_frame   0x00002b34       0x6c _obj/flash_pmc.o
+ .debug_frame   0x00002ba0      0x120 _obj/flash_uart_console.o
+ .debug_frame   0x00002cc0      0x1a4 _obj/flash_stdio.o
+ .debug_frame   0x00002e64       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-errno.o)
+ .debug_frame   0x00002e84       0x2c c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memcpy.o)
+ .debug_frame   0x00002eb0       0x28 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-memset.o)
+ .debug_frame   0x00002ed8       0x38 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-rand.o)
+ .debug_frame   0x00002f10       0x28 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strcpy.o)
+ .debug_frame   0x00002f38       0x20 c:/program files (x86)/atmel/atmel toolchain/arm gcc/yagarto/bin/../lib/gcc/arm-none-eabi/4.5.1/../../../../arm-none-eabi/lib/thumb/v7m\libg.a(lib_a-strlen.o)

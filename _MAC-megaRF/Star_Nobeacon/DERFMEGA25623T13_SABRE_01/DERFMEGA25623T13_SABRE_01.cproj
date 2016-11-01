@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.2</ProjectVersion>
+    <ProjectGuid>{ba699b39-63d3-4db8-81c3-b4b9e1a26248}</ProjectGuid>
+    <Name>DERFMEGA25623T13_SABRE_01</Name>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options>
+          <option id="common.applications.user_application" value="Add" config="" content-id="Atmel.ASF" />
+          <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
+          <option id="common.services.basic.gpio" value="Add" config="" content-id="Atmel.ASF" />
+        </options>
+        <configurations />
+        <files>
+          <file path="src/config/conf_board.h" source="common/applications/user_application/atmega256rfr2_atmega256rfr2_xplained_pro/config/conf_board.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/main.c" source="common/applications/user_application/main.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/boards/board.h" source="common/boards/board.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/gpio/gpio.h" source="common/services/gpio/gpio.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/gpio/mega_gpio/mega_gpio.h" source="common/services/gpio/mega_gpio/mega_gpio.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/ioport/ioport.h" source="common/services/ioport/ioport.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/ioport/mega/ioport.h" source="common/services/ioport/mega/ioport.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/interrupt.h" source="common/utils/interrupt.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/interrupt/interrupt_avr8.h" source="common/utils/interrupt/interrupt_avr8.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/make/Makefile.avr.in" source="common/utils/make/Makefile.avr.in" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/parts.h" source="common/utils/parts.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/boards/atmega256rfr2_xplained_pro/atmega256rfr2_xplained_pro.h" source="mega/boards/atmega256rfr2_xplained_pro/atmega256rfr2_xplained_pro.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/boards/atmega256rfr2_xplained_pro/init.c" source="mega/boards/atmega256rfr2_xplained_pro/init.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/boards/atmega256rfr2_xplained_pro/led.h" source="mega/boards/atmega256rfr2_xplained_pro/led.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/assembler.h" source="mega/utils/assembler.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/assembler/gas.h" source="mega/utils/assembler/gas.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/compiler.h" source="mega/utils/compiler.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/preprocessor/mrepeat.h" source="mega/utils/preprocessor/mrepeat.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/preprocessor/preprocessor.h" source="mega/utils/preprocessor/preprocessor.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/preprocessor/stringz.h" source="mega/utils/preprocessor/stringz.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/preprocessor/tpaste.h" source="mega/utils/preprocessor/tpaste.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/progmem.h" source="mega/utils/progmem.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/status_codes.h" source="mega/utils/status_codes.h" changed="False" content-id="Atmel.ASF" />
+        </files>
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.9.1" />
+        </dependencies>
+        <board id="board.atmega256rfr2_xplained_pro" content-id="Atmel.ASF" config="" value="Add" />
+        <project id="common.applications.user_application.atmega256rfr2_xplained_pro" content-id="Atmel.ASF" config="" value="Add" />
+        <documentation help="http://asf.atmel.com/docs/3.9.1/common.applications.user_application.atmega256rfr2_xplained_pro/html/index.html" />
+        <offline-documentation help="" />
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrdevice>ATmega256RFR2</avrdevice>
+    <avrdeviceseries>mega</avrdeviceseries>
+    <Language>C</Language>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <AvrGccProjectExtensions />
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputType>Executable</OutputType>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>BOARD=ATMEGA256RFR2_XPLAINED_PRO</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/common/services/gpio</Value>
+            <Value>../src/ASF/common/services/ioport</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/boards</Value>
+            <Value>../src/ASF/mega/boards/atmega256rfr2_xplained_pro</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/ASF/mega/utils/preprocessor</Value>
+            <Value>../src/config</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/common/services/gpio</Value>
+            <Value>../src/ASF/common/services/ioport</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/boards</Value>
+            <Value>../src/ASF/mega/boards/atmega256rfr2_xplained_pro</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/ASF/mega/utils/preprocessor</Value>
+            <Value>../src/config</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <!-- Project configurable options -->
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax</avrgcc.linker.miscellaneous.LinkerFlags>
+        <avrgcc.linker.libraries.Libraries />
+        <avrgcc.linker.libraries.LibrarySearchPaths />
+        <avrgcc.linker.general.DoNotUseStandardStartFiles>False</avrgcc.linker.general.DoNotUseStandardStartFiles>
+        <avrgcc.linker.general.DoNotUseDefaultLibraries>False</avrgcc.linker.general.DoNotUseDefaultLibraries>
+        <avrgcc.linker.general.NoStartupOrDefaultLibs>False</avrgcc.linker.general.NoStartupOrDefaultLibs>
+        <!-- Fixed options, according to ASF 2 MEGA/XMEGA Makefile -->
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.optimization.DebugLevel>None</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.linker.optimization.RelaxBranches>True</avrgcc.linker.optimization.RelaxBranches>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>False</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>False</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
+        <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.assembler.general.AssemblerFlags>-mrelax -DBOARD=ATMEGA256RFR2_XPLAINED_PRO</avrgcc.assembler.general.AssemblerFlags>
+        <avrgcc.assembler.debugging.DebugLevel>None</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
+    </ToolchainSettings>
+    <MemorySettings />
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>True</GenerateEepFile>
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>.</OutputDirectory>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+    <ExternalMakeFilePath>.\Makefile</ExternalMakeFilePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>BOARD=ATMEGA256RFR2_XPLAINED_PRO</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/common/services/gpio</Value>
+            <Value>../src/ASF/common/services/ioport</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/boards</Value>
+            <Value>../src/ASF/mega/boards/atmega256rfr2_xplained_pro</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/ASF/mega/utils/preprocessor</Value>
+            <Value>../src/config</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/common/services/gpio</Value>
+            <Value>../src/ASF/common/services/ioport</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/boards</Value>
+            <Value>../src/ASF/mega/boards/atmega256rfr2_xplained_pro</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/ASF/mega/utils/preprocessor</Value>
+            <Value>../src/config</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <!-- Project configurable options -->
+        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+        <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax</avrgcc.linker.miscellaneous.LinkerFlags>
+        <avrgcc.linker.libraries.Libraries />
+        <avrgcc.linker.libraries.LibrarySearchPaths />
+        <avrgcc.linker.general.DoNotUseStandardStartFiles>False</avrgcc.linker.general.DoNotUseStandardStartFiles>
+        <avrgcc.linker.general.DoNotUseDefaultLibraries>False</avrgcc.linker.general.DoNotUseDefaultLibraries>
+        <avrgcc.linker.general.NoStartupOrDefaultLibs>False</avrgcc.linker.general.NoStartupOrDefaultLibs>
+        <!-- Fixed options, according to ASF 2 MEGA/XMEGA Makefile -->
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.optimization.DebugLevel>Maximum (-g3)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.linker.optimization.RelaxBranches>True</avrgcc.linker.optimization.RelaxBranches>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>False</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>False</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
+        <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.assembler.general.AssemblerFlags>-mrelax -DBOARD=ATMEGA256RFR2_XPLAINED_PRO</avrgcc.assembler.general.AssemblerFlags>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
+    </ToolchainSettings>
+    <MemorySettings />
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>True</GenerateEepFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Inc" />
+    <Folder Include="MAC_v_2_8_0b_ICST" />
+    <Folder Include="MAC_v_2_8_0b_ICST\Applications" />
+    <Folder Include="MAC_v_2_8_0b_ICST\Applications\Helper_Files" />
+    <Folder Include="MAC_v_2_8_0b_ICST\Applications\Helper_Files\SIO_Support" />
+    <Folder Include="MAC_v_2_8_0b_ICST\Applications\Helper_Files\SIO_Support\Inc" />
+    <Folder Include="MAC_v_2_8_0b_ICST\Applications\Helper_Files\SIO_Support\Src" />
+    <Folder Include="MAC_v_2_8_0b_ICST\MAC" />
+    <Folder Include="MAC_v_2_8_0b_ICST\Include" />
+    <Folder Include="MAC_v_2_8_0b_ICST\MAC\Inc" />
+    <Folder Include="MAC_v_2_8_0b_ICST\MAC\Src" />
+    <Folder Include="MAC_v_2_8_0b_ICST\TFA" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\MEGA_RF" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Boards" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Boards\DERFMEGA25623T13_SABRE_01" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Inc" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Inc" />
+    <Folder Include="MAC_v_2_8_0b_ICST\TAL" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL" />
+    <Folder Include="MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2" />
+    <Folder Include="MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc" />
+    <Folder Include="MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src" />
+    <Folder Include="MAC_v_2_8_0b_ICST\TAL\Inc" />
+    <Folder Include="MAC_v_2_8_0b_ICST\TAL\Src" />
+    <Folder Include="MAC_v_2_8_0b_ICST\TFA\ATMEGARFR2\Src" />
+    <Folder Include="MAC_v_2_8_0b_ICST\TFA\Inc" />
+    <Folder Include="MAC_v_2_8_0b_ICST\TFA\ATMEGARFR2" />
+    <Folder Include="SABRE_v_3_0" />
+    <Folder Include="SABRE_v_3_0\Inc" />
+    <Folder Include="SABRE_v_3_0\Src" />
+    <Folder Include="Src" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\Applications\Helper_Files\SIO_Support\Inc\sio_handler.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\Applications\Helper_Files\SIO_Support\Inc\sio_handler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\Applications\Helper_Files\SIO_Support\Src\sio_handler.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\Applications\Helper_Files\SIO_Support\Src\sio_handler.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\Include\ieee_const.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\Include\ieee_const.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\Include\mac_build_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\Include\mac_build_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\Include\return_val.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\Include\return_val.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\Include\stack_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\Include\stack_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\Include\vendor_nwk_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\Include\vendor_nwk_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\Include\vendor_stack_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\Include\vendor_stack_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Inc\mac.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Inc\mac.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Inc\mac_api.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Inc\mac_api.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Inc\mac_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Inc\mac_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Inc\mac_data_structures.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Inc\mac_data_structures.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Inc\mac_internal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Inc\mac_internal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Inc\mac_msg_const.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Inc\mac_msg_const.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Inc\mac_msg_types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Inc\mac_msg_types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Inc\mac_msg_type_data_ind.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Inc\mac_msg_type_data_ind.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Inc\mac_security.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Inc\mac_security.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_api.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_api.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_associate.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_associate.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_beacon.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_beacon.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_callback_wrapper.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_callback_wrapper.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_data_extract_mhr.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_data_extract_mhr.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_data_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_data_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_data_req.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_data_req.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_disassociate.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_disassociate.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_dispatcher.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_dispatcher.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_mcps_data.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_mcps_data.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_misc.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_misc.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_orphan.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_orphan.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_pib.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_pib.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_poll.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_poll.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_process_beacon_frame.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_process_beacon_frame.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_process_tal_tx_frame_status.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_process_tal_tx_frame_status.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_rx_enable.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_rx_enable.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_scan.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_scan.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_security.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_security.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_start.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_start.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_sync.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_sync.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\mac_tx_coord_realignment_command.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\mac_tx_coord_realignment_command.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mcps_data_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mcps_data_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mcps_data_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mcps_data_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mcps_purge_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mcps_purge_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_associate_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_associate_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_associate_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_associate_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_beacon_notify_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_beacon_notify_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_comm_status_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_comm_status_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_disassociate_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_disassociate_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_disassociate_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_disassociate_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_get_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_get_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_orphan_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_orphan_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_poll_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_poll_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_reset_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_reset_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_rx_enable_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_rx_enable_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_scan_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_scan_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_set_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_set_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_start_conf.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_start_conf.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_sync_loss_ind.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\MAC\Src\usr_mlme_sync_loss_ind.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\armtypes.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Inc\armtypes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\avr32types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Inc\avr32types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\avrtypes.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Inc\avrtypes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\mcu_types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Inc\mcu_types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\pal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Inc\pal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\pal_types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Inc\pal_types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Boards\DERFMEGA25623T13_SABRE_01\pal_board.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Boards\DERFMEGA25623T13_SABRE_01\pal_board.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Boards\DERFMEGA25623T13_SABRE_01\pal_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Boards\DERFMEGA25623T13_SABRE_01\pal_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Boards\pal_boardtypes.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Boards\pal_boardtypes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Boards\vendor_boardtypes.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Boards\vendor_boardtypes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Inc\pal_mcu_generic.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Inc\pal_mcu_generic.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Inc\pal_usb.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Inc\pal_usb.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src\pal_irq.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src\pal_irq.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src\pal_mcu_generic.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src\pal_mcu_generic.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src\pal_sio_hub.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src\pal_sio_hub.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src\pal_timer.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src\pal_timer.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src\pal_usb_ftdi.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\ATMEGA256RFR2\Src\pal_usb_ftdi.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_adc.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_adc.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_boot_flash.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_boot_flash.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_flash.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_flash.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_internal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_internal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_spi.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_spi.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_timer.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_timer.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_twi.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_twi.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_uart.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Inc\pal_uart.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal_boot_flash.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal_boot_flash.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal_flash.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal_flash.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal_twi.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal_twi.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal_uart.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal_uart.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal_utils.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\MEGA_RF\Generic\Src\pal_utils.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\atmega256rfr2.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\atmega256rfr2.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_config.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_constants.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_constants.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_internal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_internal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_irq_handler.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_irq_handler.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_pib.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_pib.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_rx.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_rx.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_slotted_csma.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_slotted_csma.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_tx.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Inc\tal_tx.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_ed.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_ed.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_init.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_init.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_irq_handler.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_irq_handler.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_pib.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_pib.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_pwr_mgmt.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_pwr_mgmt.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_rx.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_rx.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_rx_enable.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_rx_enable.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_slotted_csma.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_slotted_csma.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_tx.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\ATMEGARFR2\Src\tal_tx.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\Inc\tal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\Inc\tal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\Inc\tal_types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\Inc\tal_types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\Src\tal_ed_end_cb.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\Src\tal_ed_end_cb.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\Src\tal_rx_frame_cb.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\Src\tal_rx_frame_cb.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TAL\Src\tal_tx_frame_done_cb.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TAL\Src\tal_tx_frame_done_cb.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TFA\ATMEGARFR2\Src\tfa.c">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TFA\ATMEGARFR2\Src\tfa.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\TFA\Inc\tfa.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\TFA\Inc\tfa.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Inc\sabre_config.h">
+      <SubType>compile</SubType>
+      <Link>SABRE_v_3_0\Inc\sabre_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Src\sabre_tasks.c">
+      <SubType>compile</SubType>
+      <Link>SABRE_v_3_0\Src\sabre_tasks.c</Link>
+    </Compile>
+    <Compile Include="..\Inc\app_config.h">
+      <SubType>compile</SubType>
+      <Link>Inc\app_config.h</Link>
+    </Compile>
+    <Compile Include="..\Src\main.c">
+      <SubType>compile</SubType>
+      <Link>Src\main.c</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile">
+      <SubType>compile</SubType>
+      <Link>Makefile</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\AvrGCC.targets" />
+</Project>

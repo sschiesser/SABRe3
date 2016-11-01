@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.2</ProjectVersion>
+    <ProjectGuid>{0a5fb60e-e774-4676-9721-c6e7339cf26b}</ProjectGuid>
+    <Name>ATMEGA128RFA1_S2_USBSTICK</Name>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options>
+          <option id="common.applications.user_application" value="Add" config="" content-id="Atmel.ASF" />
+          <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
+          <option id="common.services.basic.gpio" value="Add" config="" content-id="Atmel.ASF" />
+        </options>
+        <configurations />
+        <files>
+          <file path="src/config/conf_board.h" source="common/applications/user_application/atmega128rfa1_stk600-mega/config/conf_board.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/main.c" source="common/applications/user_application/main.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/boards/board.h" source="common/boards/board.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/gpio/gpio.h" source="common/services/gpio/gpio.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/gpio/mega_gpio/mega_gpio.h" source="common/services/gpio/mega_gpio/mega_gpio.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/ioport/ioport.h" source="common/services/ioport/ioport.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/services/ioport/mega/ioport.h" source="common/services/ioport/mega/ioport.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/interrupt.h" source="common/utils/interrupt.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/interrupt/interrupt_avr8.h" source="common/utils/interrupt/interrupt_avr8.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/make/Makefile.avr.in" source="common/utils/make/Makefile.avr.in" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/common/utils/parts.h" source="common/utils/parts.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/boards/stk600/rc128x_rfx/init.c" source="mega/boards/stk600/rc128x_rfx/init.c" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/boards/stk600/rc128x_rfx/led.h" source="mega/boards/stk600/rc128x_rfx/led.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/boards/stk600/rc128x_rfx/stk600.h" source="mega/boards/stk600/rc128x_rfx/stk600.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/assembler.h" source="mega/utils/assembler.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/assembler/gas.h" source="mega/utils/assembler/gas.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/compiler.h" source="mega/utils/compiler.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/progmem.h" source="mega/utils/progmem.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/ASF/mega/utils/status_codes.h" source="mega/utils/status_codes.h" changed="False" content-id="Atmel.ASF" />
+          <file path="src/config/touch_config.h" source="thirdparty/qtouch/generic/avr8/qmatrix/examples/example_qm_mega_stk600/atmega128rfa1_stk600/include/touch_config.h" changed="False" content-id="Atmel.ASF" />
+        </files>
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.8.1" />
+        </dependencies>
+        <board id="board.stk600-mega.atmega128rfa1" content-id="Atmel.ASF" config="" value="Add" />
+        <project id="common.applications.user_application.stk600-mega.atmega128rfa1" content-id="Atmel.ASF" config="" value="Add" />
+        <documentation help="http://asf.atmel.com/docs/3.8.1/common.applications.user_application.stk600-mega.atmega128rfa1/html/index.html" />
+        <offline-documentation help="" />
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrdevice>ATmega128RFA1</avrdevice>
+    <avrdeviceseries>mega</avrdeviceseries>
+    <Language>C</Language>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <AvrGccProjectExtensions />
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputType>Executable</OutputType>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>2</BootSegment>
+    <avrtool>com.atmel.avrdbg.tool.stk600</avrtool>
+    <com_atmel_avrdbg_tool_stk600>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagEnableExtResetOnStartSession>true</JtagEnableExtResetOnStartSession>
+          <JtagInChain>false</JtagInChain>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+          <JtagDbgClock>0</JtagDbgClock>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.stk600</ToolType>
+      <ToolNumber>0045E5507C69</ToolNumber>
+      <ToolName>STK600</ToolName>
+    </com_atmel_avrdbg_tool_stk600>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>BOARD=STK600_MEGA_RF</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/common/services/gpio</Value>
+            <Value>../src/ASF/common/services/ioport</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/boards/stk600</Value>
+            <Value>../src/ASF/mega/boards/stk600/rc128x_rfx</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/config</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/common/services/gpio</Value>
+            <Value>../src/ASF/common/services/ioport</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/boards/stk600</Value>
+            <Value>../src/ASF/mega/boards/stk600/rc128x_rfx</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/config</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <!-- Project configurable options -->
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax</avrgcc.linker.miscellaneous.LinkerFlags>
+        <avrgcc.linker.libraries.Libraries />
+        <avrgcc.linker.libraries.LibrarySearchPaths />
+        <avrgcc.linker.general.DoNotUseStandardStartFiles />
+        <avrgcc.linker.general.DoNotUseDefaultLibraries />
+        <avrgcc.linker.general.NoStartupOrDefaultLibs />
+        <!-- Fixed options, according to ASF 2 MEGA/XMEGA Makefile -->
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.optimization.DebugLevel>None</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.linker.optimization.RelaxBranches>True</avrgcc.linker.optimization.RelaxBranches>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>False</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>False</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
+        <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.assembler.general.AssemblerFlags>-mrelax -DBOARD=STK600_MEGA_RF</avrgcc.assembler.general.AssemblerFlags>
+      </AvrGcc>
+    </ToolchainSettings>
+    <MemorySettings />
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>True</GenerateEepFile>
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>.</OutputDirectory>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+    <ExternalMakeFilePath>.\Makefile</ExternalMakeFilePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>BOARD=STK600_MEGA_RF</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/common/services/gpio</Value>
+            <Value>../src/ASF/common/services/ioport</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/boards/stk600</Value>
+            <Value>../src/ASF/mega/boards/stk600/rc128x_rfx</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/config</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>../src</Value>
+            <Value>../src/ASF/common/boards</Value>
+            <Value>../src/ASF/common/services/gpio</Value>
+            <Value>../src/ASF/common/services/ioport</Value>
+            <Value>../src/ASF/common/utils</Value>
+            <Value>../src/ASF/mega/boards/stk600</Value>
+            <Value>../src/ASF/mega/boards/stk600/rc128x_rfx</Value>
+            <Value>../src/ASF/mega/utils</Value>
+            <Value>../src/config</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <!-- Project configurable options -->
+        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+        <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax</avrgcc.linker.miscellaneous.LinkerFlags>
+        <avrgcc.linker.libraries.Libraries />
+        <avrgcc.linker.libraries.LibrarySearchPaths />
+        <avrgcc.linker.general.DoNotUseStandardStartFiles />
+        <avrgcc.linker.general.DoNotUseDefaultLibraries />
+        <avrgcc.linker.general.NoStartupOrDefaultLibs />
+        <!-- Fixed options, according to ASF 2 MEGA/XMEGA Makefile -->
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.optimization.DebugLevel>Maximum (-g3)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.linker.optimization.RelaxBranches>True</avrgcc.linker.optimization.RelaxBranches>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>False</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>False</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</avrgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <avrgcc.linker.optimization.GarbageCollectUnusedSections>True</avrgcc.linker.optimization.GarbageCollectUnusedSections>
+        <avrgcc.compiler.optimization.OtherFlags>-fdata-sections</avrgcc.compiler.optimization.OtherFlags>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -fno-strict-aliasing -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -mrelax</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.assembler.general.AssemblerFlags>-mrelax -DBOARD=STK600_MEGA_RF</avrgcc.assembler.general.AssemblerFlags>
+      </AvrGcc>
+    </ToolchainSettings>
+    <MemorySettings />
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>True</GenerateEepFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Inc" />
+    <Folder Include="MAC_v_2_8_0b_ICST" />
+    <Folder Include="MAC_v_2_8_0b_ICST\NewFolder1\" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL" />
+    <Folder Include="MAC_v_2_8_0b_ICST\PAL\Inc" />
+    <Folder Include="SABRe_v_3_0" />
+    <Folder Include="SABRe_v_3_0\Inc" />
+    <Folder Include="SABRe_v_3_0\Src" />
+    <Folder Include="Src" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\armtypes.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\Inc\armtypes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\avr32types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\Inc\avr32types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\avrtypes.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\Inc\avrtypes.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\mcu_types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\Inc\mcu_types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\pal.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\Inc\pal.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Atmel_lib\MAC_v_2_8_0b_ICST\PAL\Inc\pal_types.h">
+      <SubType>compile</SubType>
+      <Link>MAC_v_2_8_0b_ICST\PAL\Inc\pal_types.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Inc\sabre_config.h">
+      <SubType>compile</SubType>
+      <Link>SABRe_v_3_0\Inc\sabre_config.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Inc\sabre_imu.h">
+      <SubType>compile</SubType>
+      <Link>SABRe_v_3_0\Inc\sabre_imu.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Inc\sabre_ms58.h">
+      <SubType>compile</SubType>
+      <Link>SABRe_v_3_0\Inc\sabre_ms58.h</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Src\fifo.c">
+      <SubType>compile</SubType>
+      <Link>SABRe_v_3_0\Src\fifo.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Src\sabre_ms58.c">
+      <SubType>compile</SubType>
+      <Link>SABRe_v_3_0\Src\sabre_ms58.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\SABRe_lib\SABRe_v_3_0\Src\sabre_tasks.c">
+      <SubType>compile</SubType>
+      <Link>SABRe_v_3_0\Src\sabre_tasks.c</Link>
+    </Compile>
+    <Compile Include="..\Inc\app_config.h">
+      <SubType>compile</SubType>
+      <Link>Inc\app_config.h</Link>
+    </Compile>
+    <Compile Include="..\Src\main.c">
+      <SubType>compile</SubType>
+      <Link>Src\main.c</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile">
+      <SubType>compile</SubType>
+      <Link>Makefile</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\AvrGCC.targets" />
+</Project>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "deRFusb", "deRFusb.cproj", "{9FC9C8AF-8BC4-4A2D-8988-644A27E7E42C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FC9C8AF-8BC4-4A2D-8988-644A27E7E42C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{9FC9C8AF-8BC4-4A2D-8988-644A27E7E42C}.Debug|ARM.Build.0 = Debug|ARM
+		{9FC9C8AF-8BC4-4A2D-8988-644A27E7E42C}.Release|ARM.ActiveCfg = Release|ARM
+		{9FC9C8AF-8BC4-4A2D-8988-644A27E7E42C}.Release|ARM.Build.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

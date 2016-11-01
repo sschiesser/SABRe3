@@ -1,0 +1,726 @@
+   1               		.file	"Serial2HID.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               	.Ltext0:
+   9               		.cfi_sections	.debug_frame
+  10               		.section	.text.startup.main,"ax",@progbits
+  11               	.global	main
+  13               	main:
+  14               	.LFB11:
+  15               		.file 1 "Serial2HID.c"
+   1:Serial2HID.c  **** /* Teensy RawHID example
+   2:Serial2HID.c  ****  * http://www.pjrc.com/teensy/rawhid.html
+   3:Serial2HID.c  ****  * Copyright (c) 2009 PJRC.COM, LLC
+   4:Serial2HID.c  ****  * 
+   5:Serial2HID.c  ****  * Permission is hereby granted, free of charge, to any person obtaining a copy
+   6:Serial2HID.c  ****  * of this software and associated documentation files (the "Software"), to deal
+   7:Serial2HID.c  ****  * in the Software without restriction, including without limitation the rights
+   8:Serial2HID.c  ****  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   9:Serial2HID.c  ****  * copies of the Software, and to permit persons to whom the Software is
+  10:Serial2HID.c  ****  * furnished to do so, subject to the following conditions:
+  11:Serial2HID.c  ****  * 
+  12:Serial2HID.c  ****  * The above description, website URL and copyright notice and this permission
+  13:Serial2HID.c  ****  * notice shall be included in all copies or substantial portions of the Software.
+  14:Serial2HID.c  ****  * 
+  15:Serial2HID.c  ****  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  16:Serial2HID.c  ****  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  17:Serial2HID.c  ****  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  18:Serial2HID.c  ****  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  19:Serial2HID.c  ****  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  20:Serial2HID.c  ****  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  21:Serial2HID.c  ****  * THE SOFTWARE.
+  22:Serial2HID.c  ****  */
+  23:Serial2HID.c  **** 
+  24:Serial2HID.c  **** #include <avr/io.h>
+  25:Serial2HID.c  **** #include <avr/pgmspace.h>
+  26:Serial2HID.c  **** #include <avr/interrupt.h>
+  27:Serial2HID.c  **** #include <util/delay.h>
+  28:Serial2HID.c  **** #include <stdlib.h>
+  29:Serial2HID.c  **** #include "usb_rawhid.h"
+  30:Serial2HID.c  **** 
+  31:Serial2HID.c  **** #define CPU_PRESCALE(n)	(CLKPR = 0x80, CLKPR = (n))
+  32:Serial2HID.c  **** 
+  33:Serial2HID.c  **** /* SABRe messages properties */
+  34:Serial2HID.c  **** #define SABRE_ADDRESS_01 0xF0	// SABRe LH
+  35:Serial2HID.c  **** #define SABRE_MESSLEN_01 23
+  36:Serial2HID.c  **** #define SABRE_ADDRESS_02 0xF1	// SABRe RH
+  37:Serial2HID.c  **** #define SABRE_MESSLEN_02 42
+  38:Serial2HID.c  **** #define SABRE_ADDRESS_03 0xF2	// SABRe airMEMS
+  39:Serial2HID.c  **** #define SABRE_MESSLEN_03 15
+  40:Serial2HID.c  **** 
+  41:Serial2HID.c  **** #define SABRE_MESSLEN_MAX SABRE_MESSLEN_02
+  42:Serial2HID.c  **** 
+  43:Serial2HID.c  **** /* Global variables */
+  44:Serial2HID.c  **** volatile uint8_t do_output;		// Flag to enable USB transmission
+  45:Serial2HID.c  **** volatile uint8_t buffer_counter;	// Buffer counter
+  46:Serial2HID.c  **** volatile uint8_t sync_flag;		// Synchronization flag between UART input and buffer start
+  47:Serial2HID.c  **** uint8_t buffer[64];				// Storage buffer between UART and USB
+  48:Serial2HID.c  **** 
+  49:Serial2HID.c  **** //void init_buffer(void)
+  50:Serial2HID.c  **** //{
+  51:Serial2HID.c  **** 	//static uint8_t i;
+  52:Serial2HID.c  **** 	//for(i = 0; i < 64; i++)
+  53:Serial2HID.c  **** 	//{
+  54:Serial2HID.c  **** 		//buffer[i] = 0;
+  55:Serial2HID.c  **** 	//}
+  56:Serial2HID.c  **** //}
+  57:Serial2HID.c  **** 
+  58:Serial2HID.c  **** 
+  59:Serial2HID.c  **** int main(void)
+  60:Serial2HID.c  **** {
+  16               		.loc 1 60 0
+  17               		.cfi_startproc
+  18               	/* prologue: function */
+  19               	/* frame size = 0 */
+  20               	/* stack size = 0 */
+  21               	.L__stack_usage = 0
+  61:Serial2HID.c  **** 	static uint8_t retVal;
+  62:Serial2HID.c  **** 	static uint8_t timeoutCnt = 0;
+  63:Serial2HID.c  **** 	static uint8_t newValues = 1;
+  64:Serial2HID.c  **** 	
+  65:Serial2HID.c  **** 	// set for 16 MHz clock
+  66:Serial2HID.c  **** 	CPU_PRESCALE(0);
+  22               		.loc 1 66 0
+  23 0000 80E8      		ldi r24,lo8(-128)
+  24 0002 8093 6100 		sts 97,r24
+  25 0006 1092 6100 		sts 97,__zero_reg__
+  67:Serial2HID.c  **** 
+  68:Serial2HID.c  **** 	// Initialize the USB, and then wait for the host to set configuration.
+  69:Serial2HID.c  **** 	// If the Teensy is powered without a PC connected to the USB port,
+  70:Serial2HID.c  **** 	// this will wait forever.
+  71:Serial2HID.c  **** 	usb_init();
+  26               		.loc 1 71 0
+  27 000a 0E94 0000 		call usb_init
+  28               	.LVL0:
+  29               	.L2:
+  72:Serial2HID.c  **** 	while (!usb_configured()) /* wait */ ;
+  30               		.loc 1 72 0 discriminator 1
+  31 000e 0E94 0000 		call usb_configured
+  32               	.LVL1:
+  33 0012 8823      		tst r24
+  34 0014 01F0      		breq .L2
+  73:Serial2HID.c  **** 
+  74:Serial2HID.c  **** 	// Initialize the USART1 for serial data reception @ 230400 bps from receiver
+  75:Serial2HID.c  **** 	/* Must turn off USART before reconfiguring it, otherwise incorrect operation may occur */
+  76:Serial2HID.c  **** 	//UCSR1B = 0;
+  77:Serial2HID.c  **** 	//UCSR1A = 0;
+  78:Serial2HID.c  **** 	//UCSR1C = 0;
+  79:Serial2HID.c  **** 	/* Set the new baud rate before configuring the USART */
+  80:Serial2HID.c  **** 	//UBRR1  = 8;
+  81:Serial2HID.c  **** 	/* Reconfigure the USART in double speed mode for a wider baud rate range at the expense of accura
+  82:Serial2HID.c  **** 	//UCSR1C = ((1 << UCSZ10) | (1 << UCSZ11));
+  83:Serial2HID.c  **** 	//UCSR1A = (1 << U2X1);
+  84:Serial2HID.c  **** 	//UCSR1B = ((1 << RXCIE1) | (1 << RXEN1));
+  85:Serial2HID.c  **** 	
+  86:Serial2HID.c  **** 	/* Initialize the pin PC6 to monitor USART reception and PC7 to show lost synchronization */
+  87:Serial2HID.c  **** 	DDRC |= ((1 << DDC6) | (1 << DDC7));
+  35               		.loc 1 87 0
+  36 0016 87B1      		in r24,0x7
+  37 0018 806C      		ori r24,lo8(-64)
+  38 001a 87B9      		out 0x7,r24
+  88:Serial2HID.c  **** 	
+  89:Serial2HID.c  **** 	do_output = 0;
+  39               		.loc 1 89 0
+  40 001c 1092 0000 		sts do_output,__zero_reg__
+  90:Serial2HID.c  **** 	buffer_counter = 0;
+  41               		.loc 1 90 0
+  42 0020 1092 0000 		sts buffer_counter,__zero_reg__
+  91:Serial2HID.c  **** 	sync_flag = 0;	
+  43               		.loc 1 91 0
+  44 0024 1092 0000 		sts sync_flag,__zero_reg__
+  45               	.LVL2:
+  46               	.LBB5:
+  47               	.LBB6:
+  48               		.file 2 "c:\\program files (x86)\\atmel\\studio\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\in
+   1:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    All rights reserved.
+   5:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+   6:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+   9:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    * Redistributions of source code must retain the above copyright
+  10:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  12:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****      the documentation and/or other materials provided with the
+  15:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****      distribution.
+  16:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  17:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****      contributors may be used to endorse or promote products derived
+  19:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****      from this software without specific prior written permission.
+  20:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  21:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  25:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  33:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** /* $Id$ */
+  34:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  35:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #ifndef _UTIL_DELAY_H_
+  36:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #define _UTIL_DELAY_H_ 1
+  37:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  38:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #ifndef __HAS_DELAY_CYCLES
+  39:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #define __HAS_DELAY_CYCLES 1
+  40:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #endif
+  41:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  42:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #include <inttypes.h>
+  43:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #include <util/delay_basic.h>
+  44:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #include <math.h>
+  45:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  46:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** /** \file */
+  47:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  48:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     \code
+  49:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  50:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     //#define F_CPU 14.7456E6
+  51:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     #include <util/delay.h>
+  52:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     \endcode
+  53:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  54:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     \note As an alternative method, it is possible to pass the
+  55:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  56:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     Obviously, in that case, no \c \#define statement should be
+  57:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     used.
+  58:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  59:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     The functions in this header file are wrappers around the basic
+  60:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  61:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     convenience functions where actual time values can be specified
+  62:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  63:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     that compile-time constant expressions will be eliminated by
+  64:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     compiler optimization so floating-point expressions can be used
+  65:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  66:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     frequency passed by the macro F_CPU.
+  67:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  68:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     \note In order for these functions to work as intended, compiler
+  69:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  70:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     <em>must</em> be an expression that is a known constant at
+  71:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     compile-time.  If these requirements are not met, the resulting
+  72:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     delay will be much longer (and basically unpredictable), and
+  73:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     applications that otherwise do not use floating-point calculations
+  74:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     will experience severe code bloat by the floating-point library
+  75:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     routines linked into the application.
+  76:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  77:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     The functions available allow the specification of microsecond, and
+  78:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     millisecond delays directly, using the application-supplied macro
+  79:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+  80:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  81:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** */
+  82:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  83:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #if !defined(__DOXYGEN__)
+  84:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** static inline void _delay_us(double __us) __attribute__((always_inline));
+  85:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** static inline void _delay_ms(double __ms) __attribute__((always_inline));
+  86:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #endif
+  87:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  88:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #ifndef F_CPU
+  89:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** /* prevent compiler error by supplying a default */
+  90:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  91:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** # define F_CPU 1000000UL
+  92:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #endif
+  93:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  94:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #ifndef __OPTIMIZE__
+  95:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+  96:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #endif
+  97:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+  98:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+  99:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 100:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   __STDC_HOSTED__
+ 101:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #  include <math.h>
+ 102:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #endif
+ 103:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 104:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** /**
+ 105:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    \ingroup util_delay
+ 106:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 107:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 108:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 109:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    The macro F_CPU is supposed to be defined to a
+ 110:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 111:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 112:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 113:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 114:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    When the user request delay which exceed the maximum possible one,
+ 115:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 116:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 117:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 118:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    user will not be informed about decreased resolution.
+ 119:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 120:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles(unsigned long)
+ 121:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+ 122:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    values greater than the maximal possible delay, overflows results in
+ 123:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    no delay i.e., 0ms.
+ 124:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 125:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    Conversion of __us into clock cycles may not always result in integer.
+ 126:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    By default, the clock cycles rounded up to next integer. This ensures that
+ 127:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    the user gets atleast __us microseconds of delay.
+ 128:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 129:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    Alternatively, user can define __DELAY_ROUND_DOWN__ and __DELAY_ROUND_CLOSEST__
+ 130:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    to round down and round to closest integer.
+ 131:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 132:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    Note: The new implementation of _delay_ms(double __ms) with 
+ 133:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****     __builtin_avr_delay_cycles(unsigned long) support is not backward compatible. 
+ 134:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    User can define __DELAY_BACKWARD_COMPATIBLE__ to get a backward compatible delay.
+ 135:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    Also, the backward compatible
+ 136:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    algorithm will be chosen if the code is compiled in a <em>freestanding
+ 137:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    environment</em> (GCC option \c -ffreestanding), as the math functions
+ 138:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****    required for rounding are not available to the compiler then.
+ 139:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 140:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****  */
+ 141:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** void
+ 142:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** _delay_ms(double __ms)
+ 143:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** {
+ 144:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 	double __tmp ; 
+ 145:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 146:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 147:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h ****   __STDC_HOSTED__
+ 148:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 	uint32_t __ticks_dc;
+ 149:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 150:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 151:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 152:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 153:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 154:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 155:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 156:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 157:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 158:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 	#else
+ 159:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 		//round up by default
+ 160:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 161:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 	#endif
+ 162:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 
+ 163:c:\program files (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+  49               		.loc 2 163 0
+  50 0028 2FEF      		ldi r18,lo8(3199999)
+  51 002a 83ED      		ldi r24,hi8(3199999)
+  52 002c 90E3      		ldi r25,hlo8(3199999)
+  53 002e 2150      	1:	subi r18,1
+  54 0030 8040      		sbci r24,0
+  55 0032 9040      		sbci r25,0
+  56 0034 01F4      		brne 1b
+  57 0036 00C0      		rjmp .
+  58 0038 0000      		nop
+  59               	.LBE6:
+  60               	.LBE5:
+  92:Serial2HID.c  **** 	
+  93:Serial2HID.c  **** 	// Wait an extra second for the PC's operating system to load drivers
+  94:Serial2HID.c  **** 	// and do whatever it does to actually be ready for input
+  95:Serial2HID.c  **** 	_delay_ms(1000);
+  96:Serial2HID.c  **** 
+  97:Serial2HID.c  **** 	while (1) {
+  98:Serial2HID.c  **** 		// if time to send output, transmit something interesting
+  99:Serial2HID.c  **** 		if (do_output) {
+ 100:Serial2HID.c  **** 			do_output = 0;
+ 101:Serial2HID.c  **** 			if((retVal = usb_rawhid_send(buffer, 0)) == 0) {
+ 102:Serial2HID.c  **** 				timeoutCnt += 1;
+ 103:Serial2HID.c  **** 			}
+ 104:Serial2HID.c  **** 			else {
+ 105:Serial2HID.c  **** 				//timeoutCnt = 0;
+ 106:Serial2HID.c  **** 				newValues = 1;
+  61               		.loc 1 106 0
+  62 003a D1E0      		ldi r29,lo8(1)
+  63               	.LBB7:
+ 107:Serial2HID.c  **** 			}
+ 108:Serial2HID.c  **** 			////init_buffer();
+ 109:Serial2HID.c  **** 		}
+ 110:Serial2HID.c  **** 
+ 111:Serial2HID.c  **** 		if(newValues) {
+ 112:Serial2HID.c  **** 			static uint8_t i;
+ 113:Serial2HID.c  **** 			for(i = 0; i < 42; i++) {
+ 114:Serial2HID.c  **** 				buffer[i] = (uint8_t)(rand() % 255);
+  64               		.loc 1 114 0
+  65 003c 0FEF      		ldi r16,lo8(-1)
+  66 003e 10E0      		ldi r17,0
+ 115:Serial2HID.c  **** 				//buffer[i] = (uint8_t)(2*i);
+ 116:Serial2HID.c  **** 			}
+ 117:Serial2HID.c  **** 			buffer[0] = 0x41;
+  67               		.loc 1 117 0
+  68 0040 81E4      		ldi r24,lo8(65)
+  69 0042 D82E      		mov r13,r24
+ 118:Serial2HID.c  **** 			buffer[1] = 0xF1;
+  70               		.loc 1 118 0
+  71 0044 91EF      		ldi r25,lo8(-15)
+  72 0046 E92E      		mov r14,r25
+ 119:Serial2HID.c  **** 			buffer[41] = 0x5A;
+  73               		.loc 1 119 0
+  74 0048 2AE5      		ldi r18,lo8(90)
+  75 004a F22E      		mov r15,r18
+  76               	.L5:
+  77               	.LBE7:
+  99:Serial2HID.c  **** 			do_output = 0;
+  78               		.loc 1 99 0
+  79 004c 8091 0000 		lds r24,do_output
+  80 0050 8823      		tst r24
+  81 0052 01F0      		breq .L3
+ 100:Serial2HID.c  **** 			if((retVal = usb_rawhid_send(buffer, 0)) == 0) {
+  82               		.loc 1 100 0
+  83 0054 1092 0000 		sts do_output,__zero_reg__
+ 101:Serial2HID.c  **** 				timeoutCnt += 1;
+  84               		.loc 1 101 0
+  85 0058 60E0      		ldi r22,0
+  86 005a 80E0      		ldi r24,lo8(buffer)
+  87 005c 90E0      		ldi r25,hi8(buffer)
+  88 005e 0E94 0000 		call usb_rawhid_send
+  89               	.LVL3:
+  90 0062 8093 0000 		sts retVal.1936,r24
+  91 0066 8111      		cpse r24,__zero_reg__
+  92 0068 00C0      		rjmp .L4
+ 102:Serial2HID.c  **** 			}
+  93               		.loc 1 102 0
+  94 006a 8091 0000 		lds r24,timeoutCnt.1937
+  95 006e 8F5F      		subi r24,lo8(-(1))
+  96 0070 8093 0000 		sts timeoutCnt.1937,r24
+  97 0074 00C0      		rjmp .L3
+  98               	.L4:
+ 106:Serial2HID.c  **** 			}
+  99               		.loc 1 106 0
+ 100 0076 D093 0000 		sts newValues.1938,r29
+ 101               	.L3:
+ 111:Serial2HID.c  **** 			static uint8_t i;
+ 102               		.loc 1 111 0
+ 103 007a 8091 0000 		lds r24,newValues.1938
+ 104 007e 8823      		tst r24
+ 105 0080 01F0      		breq .L5
+ 106               	.LBB8:
+ 113:Serial2HID.c  **** 				buffer[i] = (uint8_t)(rand() % 255);
+ 107               		.loc 1 113 0
+ 108 0082 1092 0000 		sts i.1942,__zero_reg__
+ 109               	.L6:
+ 113:Serial2HID.c  **** 				buffer[i] = (uint8_t)(rand() % 255);
+ 110               		.loc 1 113 0 is_stmt 0 discriminator 1
+ 111 0086 C091 0000 		lds r28,i.1942
+ 112 008a CA32      		cpi r28,lo8(42)
+ 113 008c 00F4      		brsh .L17
+ 114:Serial2HID.c  **** 				//buffer[i] = (uint8_t)(2*i);
+ 114               		.loc 1 114 0 is_stmt 1 discriminator 3
+ 115 008e 0E94 0000 		call rand
+ 116               	.LVL4:
+ 117 0092 EC2F      		mov r30,r28
+ 118 0094 F0E0      		ldi r31,0
+ 119 0096 E050      		subi r30,lo8(-(buffer))
+ 120 0098 F040      		sbci r31,hi8(-(buffer))
+ 121 009a B801      		movw r22,r16
+ 122 009c 0E94 0000 		call __divmodhi4
+ 123 00a0 8083      		st Z,r24
+ 113:Serial2HID.c  **** 				buffer[i] = (uint8_t)(rand() % 255);
+ 124               		.loc 1 113 0 discriminator 3
+ 125 00a2 8091 0000 		lds r24,i.1942
+ 126 00a6 8F5F      		subi r24,lo8(-(1))
+ 127 00a8 8093 0000 		sts i.1942,r24
+ 128 00ac 00C0      		rjmp .L6
+ 129               	.L17:
+ 117:Serial2HID.c  **** 			buffer[1] = 0xF1;
+ 130               		.loc 1 117 0
+ 131 00ae D092 0000 		sts buffer,r13
+ 118:Serial2HID.c  **** 			buffer[41] = 0x5A;
+ 132               		.loc 1 118 0
+ 133 00b2 E092 0000 		sts buffer+1,r14
+ 134               		.loc 1 119 0
+ 135 00b6 F092 0000 		sts buffer+41,r15
+ 120:Serial2HID.c  **** 			//buffer[63] = timeoutCnt;
+ 121:Serial2HID.c  **** 			timeoutCnt = 0;
+ 136               		.loc 1 121 0
+ 137 00ba 1092 0000 		sts timeoutCnt.1937,__zero_reg__
+ 122:Serial2HID.c  **** 			do_output = 1;
+ 138               		.loc 1 122 0
+ 139 00be D093 0000 		sts do_output,r29
+ 123:Serial2HID.c  **** 			newValues = 0;
+ 140               		.loc 1 123 0
+ 141 00c2 1092 0000 		sts newValues.1938,__zero_reg__
+ 142 00c6 00C0      		rjmp .L5
+ 143               	.LBE8:
+ 144               		.cfi_endproc
+ 145               	.LFE11:
+ 147               		.section	.text.__vector_25,"ax",@progbits
+ 148               	.global	__vector_25
+ 150               	__vector_25:
+ 151               	.LFB12:
+ 124:Serial2HID.c  **** 		}
+ 125:Serial2HID.c  **** 	}
+ 126:Serial2HID.c  **** }
+ 127:Serial2HID.c  **** 
+ 128:Serial2HID.c  **** 
+ 129:Serial2HID.c  **** /** ISR to manage the reception of data from the serial port, placing received bytes into a circula
+ 130:Serial2HID.c  ****  *  for later transmission to the host.
+ 131:Serial2HID.c  ****  */
+ 132:Serial2HID.c  **** ISR(USART1_RX_vect, ISR_BLOCK)
+ 133:Serial2HID.c  **** {
+ 152               		.loc 1 133 0
+ 153               		.cfi_startproc
+ 154 0000 1F92      		push r1
+ 155               	.LCFI0:
+ 156               		.cfi_def_cfa_offset 3
+ 157               		.cfi_offset 1, -2
+ 158 0002 0F92      		push r0
+ 159               	.LCFI1:
+ 160               		.cfi_def_cfa_offset 4
+ 161               		.cfi_offset 0, -3
+ 162 0004 0FB6      		in r0,__SREG__
+ 163 0006 0F92      		push r0
+ 164 0008 1124      		clr __zero_reg__
+ 165 000a 8F93      		push r24
+ 166               	.LCFI2:
+ 167               		.cfi_def_cfa_offset 5
+ 168               		.cfi_offset 24, -4
+ 169 000c EF93      		push r30
+ 170               	.LCFI3:
+ 171               		.cfi_def_cfa_offset 6
+ 172               		.cfi_offset 30, -5
+ 173 000e FF93      		push r31
+ 174               	.LCFI4:
+ 175               		.cfi_def_cfa_offset 7
+ 176               		.cfi_offset 31, -6
+ 177               	/* prologue: Signal */
+ 178               	/* frame size = 0 */
+ 179               	/* stack size = 6 */
+ 180               	.L__stack_usage = 6
+ 134:Serial2HID.c  **** 	cli();
+ 181               		.loc 1 134 0
+ 182               	/* #APP */
+ 183               	 ;  134 "Serial2HID.c" 1
+ 184 0010 F894      		cli
+ 185               	 ;  0 "" 2
+ 135:Serial2HID.c  **** 	buffer[buffer_counter] = UDR1;
+ 186               		.loc 1 135 0
+ 187               	/* #NOAPP */
+ 188 0012 E091 0000 		lds r30,buffer_counter
+ 189 0016 8091 CE00 		lds r24,206
+ 190 001a F0E0      		ldi r31,0
+ 191 001c E050      		subi r30,lo8(-(buffer))
+ 192 001e F040      		sbci r31,hi8(-(buffer))
+ 193 0020 8083      		st Z,r24
+ 136:Serial2HID.c  **** 	
+ 137:Serial2HID.c  **** 	/* If sync between buffer and receiver message lost, wait for start frame and re-sync */
+ 138:Serial2HID.c  **** 	if(sync_flag == 0) {
+ 194               		.loc 1 138 0
+ 195 0022 8091 0000 		lds r24,sync_flag
+ 196 0026 8111      		cpse r24,__zero_reg__
+ 197 0028 00C0      		rjmp .L19
+ 139:Serial2HID.c  **** 		if((buffer_counter == 0) && (buffer[buffer_counter] == 0x41)) {
+ 198               		.loc 1 139 0
+ 199 002a 8091 0000 		lds r24,buffer_counter
+ 200 002e 8111      		cpse r24,__zero_reg__
+ 201 0030 00C0      		rjmp .L20
+ 202               		.loc 1 139 0 is_stmt 0 discriminator 1
+ 203 0032 E091 0000 		lds r30,buffer_counter
+ 204 0036 F0E0      		ldi r31,0
+ 205 0038 E050      		subi r30,lo8(-(buffer))
+ 206 003a F040      		sbci r31,hi8(-(buffer))
+ 207 003c 8081      		ld r24,Z
+ 208 003e 8134      		cpi r24,lo8(65)
+ 209 0040 01F4      		brne .L20
+ 140:Serial2HID.c  **** 			PORTC |= (1 << PORTC7);
+ 210               		.loc 1 140 0 is_stmt 1
+ 211 0042 479A      		sbi 0x8,7
+ 141:Serial2HID.c  **** 			sync_flag = 1;
+ 212               		.loc 1 141 0
+ 213 0044 81E0      		ldi r24,lo8(1)
+ 214 0046 8093 0000 		sts sync_flag,r24
+ 142:Serial2HID.c  **** 			PORTC &= ~(1 << PORTC7);
+ 215               		.loc 1 142 0
+ 216 004a 4798      		cbi 0x8,7
+ 217 004c 00C0      		rjmp .L19
+ 218               	.L20:
+ 143:Serial2HID.c  **** 		}
+ 144:Serial2HID.c  **** 		else {
+ 145:Serial2HID.c  **** 			//PORTC |= (1 << PORTC7);
+ 146:Serial2HID.c  **** 			buffer_counter = 0;
+ 219               		.loc 1 146 0
+ 220 004e 1092 0000 		sts buffer_counter,__zero_reg__
+ 147:Serial2HID.c  **** 			sync_flag = 0;
+ 221               		.loc 1 147 0
+ 222 0052 1092 0000 		sts sync_flag,__zero_reg__
+ 223               	.L19:
+ 148:Serial2HID.c  **** 			//PORTC &= ~(1 << PORTC7);
+ 149:Serial2HID.c  **** 		}
+ 150:Serial2HID.c  **** 	}
+ 151:Serial2HID.c  **** 	
+ 152:Serial2HID.c  **** 	if(sync_flag) {
+ 224               		.loc 1 152 0
+ 225 0056 8091 0000 		lds r24,sync_flag
+ 226 005a 8823      		tst r24
+ 227 005c 01F0      		breq .L21
+ 153:Serial2HID.c  **** 		if(buffer[buffer_counter] == 0x5A) {
+ 228               		.loc 1 153 0
+ 229 005e E091 0000 		lds r30,buffer_counter
+ 230 0062 F0E0      		ldi r31,0
+ 231 0064 E050      		subi r30,lo8(-(buffer))
+ 232 0066 F040      		sbci r31,hi8(-(buffer))
+ 233 0068 8081      		ld r24,Z
+ 234 006a 8A35      		cpi r24,lo8(90)
+ 235 006c 01F4      		brne .L22
+ 154:Serial2HID.c  **** 			if(buffer[0] == 0x41) {
+ 236               		.loc 1 154 0
+ 237 006e 8091 0000 		lds r24,buffer
+ 238 0072 8134      		cpi r24,lo8(65)
+ 239 0074 01F4      		brne .L27
+ 155:Serial2HID.c  **** 				if((buffer[1] == SABRE_ADDRESS_01) && (buffer_counter == (SABRE_MESSLEN_01-1))) {
+ 240               		.loc 1 155 0
+ 241 0076 8091 0000 		lds r24,buffer+1
+ 242 007a 803F      		cpi r24,lo8(-16)
+ 243 007c 01F4      		brne .L24
+ 244               		.loc 1 155 0 is_stmt 0 discriminator 1
+ 245 007e 8091 0000 		lds r24,buffer_counter
+ 246 0082 8631      		cpi r24,lo8(22)
+ 247 0084 01F4      		brne .L27
+ 248 0086 00C0      		rjmp .L31
+ 249               	.L24:
+ 156:Serial2HID.c  **** 					PORTC |= (1 << PORTC6);
+ 157:Serial2HID.c  **** 					do_output = 1;
+ 158:Serial2HID.c  **** 					buffer_counter = 0;
+ 159:Serial2HID.c  **** 					PORTC &= ~(1 << PORTC6);
+ 160:Serial2HID.c  **** 				}
+ 161:Serial2HID.c  **** 				else if((buffer[1] == SABRE_ADDRESS_02) && (buffer_counter == (SABRE_MESSLEN_02-1))) {
+ 250               		.loc 1 161 0 is_stmt 1
+ 251 0088 813F      		cpi r24,lo8(-15)
+ 252 008a 01F4      		brne .L26
+ 253               		.loc 1 161 0 is_stmt 0 discriminator 1
+ 254 008c 8091 0000 		lds r24,buffer_counter
+ 255 0090 8932      		cpi r24,lo8(41)
+ 256 0092 01F4      		brne .L27
+ 257 0094 00C0      		rjmp .L31
+ 258               	.L26:
+ 162:Serial2HID.c  **** 					PORTC |= (1 << PORTC6);
+ 163:Serial2HID.c  **** 					do_output = 1;
+ 164:Serial2HID.c  **** 					buffer_counter = 0;
+ 165:Serial2HID.c  **** 					PORTC &= ~(1 << PORTC6);
+ 166:Serial2HID.c  **** 				}
+ 167:Serial2HID.c  **** 				else if((buffer[1] == SABRE_ADDRESS_03) && (buffer_counter == (SABRE_MESSLEN_03-1))) {
+ 259               		.loc 1 167 0 is_stmt 1
+ 260 0096 823F      		cpi r24,lo8(-14)
+ 261 0098 01F4      		brne .L27
+ 262               		.loc 1 167 0 is_stmt 0 discriminator 1
+ 263 009a 8091 0000 		lds r24,buffer_counter
+ 264 009e 8E30      		cpi r24,lo8(14)
+ 265 00a0 01F4      		brne .L27
+ 266               	.L31:
+ 168:Serial2HID.c  **** 					PORTC |= (1 << PORTC6);
+ 267               		.loc 1 168 0 is_stmt 1
+ 268 00a2 469A      		sbi 0x8,6
+ 169:Serial2HID.c  **** 					do_output = 1;
+ 269               		.loc 1 169 0
+ 270 00a4 81E0      		ldi r24,lo8(1)
+ 271 00a6 8093 0000 		sts do_output,r24
+ 170:Serial2HID.c  **** 					buffer_counter = 0;
+ 272               		.loc 1 170 0
+ 273 00aa 1092 0000 		sts buffer_counter,__zero_reg__
+ 171:Serial2HID.c  **** 					PORTC &= ~(1 << PORTC6);
+ 274               		.loc 1 171 0
+ 275 00ae 4698      		cbi 0x8,6
+ 276 00b0 00C0      		rjmp .L21
+ 277               	.L22:
+ 172:Serial2HID.c  **** 				}
+ 173:Serial2HID.c  **** 				else {
+ 174:Serial2HID.c  **** 					buffer_counter += 1;
+ 175:Serial2HID.c  **** 				}
+ 176:Serial2HID.c  **** 			}
+ 177:Serial2HID.c  **** 			else {
+ 178:Serial2HID.c  **** 				buffer_counter += 1;
+ 179:Serial2HID.c  **** 			}
+ 180:Serial2HID.c  **** 		}
+ 181:Serial2HID.c  **** 		else {
+ 182:Serial2HID.c  **** 			if(buffer_counter >= SABRE_MESSLEN_MAX) {
+ 278               		.loc 1 182 0
+ 279 00b2 8091 0000 		lds r24,buffer_counter
+ 280 00b6 8A32      		cpi r24,lo8(42)
+ 281 00b8 00F0      		brlo .L27
+ 183:Serial2HID.c  **** 				PORTC |= ((1 << PORTC6) || (1 << PORTC7));
+ 282               		.loc 1 183 0
+ 283 00ba 409A      		sbi 0x8,0
+ 184:Serial2HID.c  **** 				sync_flag = 0;
+ 284               		.loc 1 184 0
+ 285 00bc 1092 0000 		sts sync_flag,__zero_reg__
+ 185:Serial2HID.c  **** 				buffer_counter = 0;
+ 286               		.loc 1 185 0
+ 287 00c0 1092 0000 		sts buffer_counter,__zero_reg__
+ 186:Serial2HID.c  **** 				PORTC &= ((1 << PORTC6) || (1 << PORTC7));
+ 288               		.loc 1 186 0
+ 289 00c4 88B1      		in r24,0x8
+ 290 00c6 8170      		andi r24,lo8(1)
+ 291 00c8 88B9      		out 0x8,r24
+ 292 00ca 00C0      		rjmp .L21
+ 293               	.L27:
+ 187:Serial2HID.c  **** 			}
+ 188:Serial2HID.c  **** 			else {
+ 189:Serial2HID.c  **** 				buffer_counter += 1;
+ 294               		.loc 1 189 0
+ 295 00cc 8091 0000 		lds r24,buffer_counter
+ 296 00d0 8F5F      		subi r24,lo8(-(1))
+ 297 00d2 8093 0000 		sts buffer_counter,r24
+ 298               	.L21:
+ 190:Serial2HID.c  **** 			}
+ 191:Serial2HID.c  **** 		}
+ 192:Serial2HID.c  **** 	}
+ 193:Serial2HID.c  **** 	sei();
+ 299               		.loc 1 193 0
+ 300               	/* #APP */
+ 301               	 ;  193 "Serial2HID.c" 1
+ 302 00d6 7894      		sei
+ 303               	 ;  0 "" 2
+ 304               	/* epilogue start */
+ 194:Serial2HID.c  **** }
+ 305               		.loc 1 194 0
+ 306               	/* #NOAPP */
+ 307 00d8 FF91      		pop r31
+ 308 00da EF91      		pop r30
+ 309 00dc 8F91      		pop r24
+ 310 00de 0F90      		pop r0
+ 311 00e0 0FBE      		out __SREG__,r0
+ 312 00e2 0F90      		pop r0
+ 313 00e4 1F90      		pop r1
+ 314 00e6 1895      		reti
+ 315               		.cfi_endproc
+ 316               	.LFE12:
+ 318               		.local	i.1942
+ 319               		.comm	i.1942,1,1
+ 320               		.data
+ 323               	newValues.1938:
+ 324 0000 01        		.byte	1
+ 325               		.local	timeoutCnt.1937
+ 326               		.comm	timeoutCnt.1937,1,1
+ 327               		.local	retVal.1936
+ 328               		.comm	retVal.1936,1,1
+ 329               		.comm	buffer,64,1
+ 330               		.comm	sync_flag,1,1
+ 331               		.comm	buffer_counter,1,1
+ 332               		.comm	do_output,1,1
+ 333               		.text
+ 334               	.Letext0:
+ 335               		.file 3 "c:\\program files (x86)\\atmel\\studio\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\in
+ 336               		.file 4 "usb_rawhid.h"
+ 337               		.file 5 "c:\\program files (x86)\\atmel\\studio\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\in
+DEFINED SYMBOLS
+                            *ABS*:00000000 Serial2HID.c
+C:\Users\SBASTI~1\AppData\Local\Temp\ccIAtVRn.s:2      *ABS*:0000003e __SP_H__
+C:\Users\SBASTI~1\AppData\Local\Temp\ccIAtVRn.s:3      *ABS*:0000003d __SP_L__
+C:\Users\SBASTI~1\AppData\Local\Temp\ccIAtVRn.s:4      *ABS*:0000003f __SREG__
+C:\Users\SBASTI~1\AppData\Local\Temp\ccIAtVRn.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\SBASTI~1\AppData\Local\Temp\ccIAtVRn.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\SBASTI~1\AppData\Local\Temp\ccIAtVRn.s:13     .text.startup.main:00000000 main
+                            *COM*:00000001 do_output
+                            *COM*:00000001 buffer_counter
+                            *COM*:00000001 sync_flag
+                            *COM*:00000040 buffer
+C:\Users\SBASTI~1\AppData\Local\Temp\ccIAtVRn.s:326    .bss:00000002 retVal.1936
+C:\Users\SBASTI~1\AppData\Local\Temp\ccIAtVRn.s:319    .bss:00000001 timeoutCnt.1937
+C:\Users\SBASTI~1\AppData\Local\Temp\ccIAtVRn.s:323    .data:00000000 newValues.1938
+                             .bss:00000000 i.1942
+C:\Users\SBASTI~1\AppData\Local\Temp\ccIAtVRn.s:150    .text.__vector_25:00000000 __vector_25
+
+UNDEFINED SYMBOLS
+usb_init
+usb_configured
+usb_rawhid_send
+rand
+__divmodhi4
+__do_copy_data
+__do_clear_bss

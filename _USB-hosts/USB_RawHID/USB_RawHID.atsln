@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "USB_RawHID", "USB_RawHID\USB_RawHID.cproj", "{85E4BAA4-E029-4365-9C49-5F4707E62EA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85E4BAA4-E029-4365-9C49-5F4707E62EA2}.Debug|AVR.ActiveCfg = Debug|AVR
+		{85E4BAA4-E029-4365-9C49-5F4707E62EA2}.Debug|AVR.Build.0 = Debug|AVR
+		{85E4BAA4-E029-4365-9C49-5F4707E62EA2}.Release|AVR.ActiveCfg = Release|AVR
+		{85E4BAA4-E029-4365-9C49-5F4707E62EA2}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

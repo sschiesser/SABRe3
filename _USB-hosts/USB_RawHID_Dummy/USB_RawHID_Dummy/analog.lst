@@ -1,0 +1,187 @@
+   1               		.file	"analog.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.text
+   8               	.Ltext0:
+   9               		.cfi_sections	.debug_frame
+  10               		.section	.text.analogRead,"ax",@progbits
+  11               	.global	analogRead
+  13               	analogRead:
+  14               	.LFB1:
+  15               		.file 1 "analog.c"
+   1:analog.c      **** // Simple analog to digitial conversion, similar to Wiring/Arduino
+   2:analog.c      **** 
+   3:analog.c      **** #include <avr/io.h>
+   4:analog.c      **** #include <avr/pgmspace.h>
+   5:analog.c      **** 
+   6:analog.c      **** #include "analog.h"
+   7:analog.c      **** 
+   8:analog.c      **** 
+   9:analog.c      **** #if defined(__AVR_ATmega32U4__)
+  10:analog.c      **** 
+  11:analog.c      **** uint8_t analog_reference_config_val = 0x40;
+  12:analog.c      **** 
+  13:analog.c      **** static const uint8_t PROGMEM adc_mapping[] = {
+  14:analog.c      ****         0, 1, 4, 5, 6, 7, 13, 12, 11, 10, 9, 8
+  15:analog.c      **** };
+  16:analog.c      **** 
+  17:analog.c      **** int analogRead(uint8_t pin)
+  18:analog.c      **** {
+  16               		.loc 1 18 0
+  17               		.cfi_startproc
+  18               	.LVL0:
+  19               	/* prologue: function */
+  20               	/* frame size = 0 */
+  21               	/* stack size = 0 */
+  22               	.L__stack_usage = 0
+  19:analog.c      ****         uint8_t low, adc;
+  20:analog.c      **** 
+  21:analog.c      ****         if (pin >= 12) return 0;
+  23               		.loc 1 21 0
+  24 0000 8C30      		cpi r24,lo8(12)
+  25 0002 00F4      		brsh .L6
+  26               	.LVL1:
+  27               	.LBB2:
+  22:analog.c      ****         adc = pgm_read_byte(adc_mapping + pin);
+  28               		.loc 1 22 0
+  29 0004 E82F      		mov r30,r24
+  30 0006 F0E0      		ldi r31,0
+  31 0008 E050      		subi r30,lo8(-(adc_mapping))
+  32 000a F040      		sbci r31,hi8(-(adc_mapping))
+  33               	/* #APP */
+  34               	 ;  22 "analog.c" 1
+  35 000c E491      		lpm r30, Z
+  36               		
+  37               	 ;  0 "" 2
+  38               	.LVL2:
+  39               	/* #NOAPP */
+  40               	.LBE2:
+  23:analog.c      ****         if (adc < 8) {
+  41               		.loc 1 23 0
+  42 000e E830      		cpi r30,lo8(8)
+  43 0010 00F4      		brsh .L3
+  24:analog.c      ****                 DIDR0 |= (1 << adc);
+  44               		.loc 1 24 0
+  45 0012 2091 7E00 		lds r18,126
+  46 0016 81E0      		ldi r24,lo8(1)
+  47 0018 90E0      		ldi r25,0
+  48               	.LVL3:
+  49 001a 0E2E      		mov r0,r30
+  50 001c 00C0      		rjmp 2f
+  51               		1:
+  52 001e 880F      		lsl r24
+  53               		2:
+  54 0020 0A94      		dec r0
+  55 0022 02F4      		brpl 1b
+  56 0024 822B      		or r24,r18
+  57 0026 8093 7E00 		sts 126,r24
+  25:analog.c      ****                 ADCSRB = 0;
+  58               		.loc 1 25 0
+  59 002a 1092 7B00 		sts 123,__zero_reg__
+  60 002e 00C0      		rjmp .L8
+  61               	.LVL4:
+  62               	.L3:
+  26:analog.c      ****                 ADMUX = analog_reference_config_val | adc;
+  27:analog.c      ****         } else {
+  28:analog.c      ****                 adc -= 8;
+  63               		.loc 1 28 0
+  64 0030 E850      		subi r30,lo8(-(-8))
+  65               	.LVL5:
+  29:analog.c      ****                 DIDR2 |= (1 << adc);
+  66               		.loc 1 29 0
+  67 0032 2091 7D00 		lds r18,125
+  68 0036 81E0      		ldi r24,lo8(1)
+  69 0038 90E0      		ldi r25,0
+  70               	.LVL6:
+  71 003a 0E2E      		mov r0,r30
+  72 003c 00C0      		rjmp 2f
+  73               		1:
+  74 003e 880F      		lsl r24
+  75               		2:
+  76 0040 0A94      		dec r0
+  77 0042 02F4      		brpl 1b
+  78 0044 822B      		or r24,r18
+  79 0046 8093 7D00 		sts 125,r24
+  30:analog.c      ****                 ADCSRB = (1<<MUX5);
+  80               		.loc 1 30 0
+  81 004a 80E2      		ldi r24,lo8(32)
+  82 004c 8093 7B00 		sts 123,r24
+  83               	.LVL7:
+  84               	.L8:
+  31:analog.c      ****                 ADMUX = analog_reference_config_val | adc;
+  85               		.loc 1 31 0
+  86 0050 8091 0000 		lds r24,analog_reference_config_val
+  87 0054 E82B      		or r30,r24
+  88               	.LVL8:
+  89 0056 E093 7C00 		sts 124,r30
+  32:analog.c      ****         }
+  33:analog.c      **** 		//ADCSRA = (1<<ADSC)|(1<<ADEN)|(1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0);
+  34:analog.c      **** 		ADCSRA = (1<<ADSC)|(1<<ADEN);
+  90               		.loc 1 34 0
+  91 005a 80EC      		ldi r24,lo8(-64)
+  92 005c 8093 7A00 		sts 122,r24
+  93               	.L5:
+  35:analog.c      ****         while (ADCSRA & (1<<ADSC)) ;
+  94               		.loc 1 35 0 discriminator 1
+  95 0060 8091 7A00 		lds r24,122
+  96 0064 86FD      		sbrc r24,6
+  97 0066 00C0      		rjmp .L5
+  36:analog.c      ****         low = ADCL;
+  98               		.loc 1 36 0
+  99 0068 8091 7800 		lds r24,120
+ 100               	.LVL9:
+  37:analog.c      ****         return (ADCH << 8) | low;
+ 101               		.loc 1 37 0
+ 102 006c 2091 7900 		lds r18,121
+ 103 0070 90E0      		ldi r25,0
+ 104 0072 922B      		or r25,r18
+ 105 0074 0895      		ret
+ 106               	.LVL10:
+ 107               	.L6:
+  21:analog.c      ****         adc = pgm_read_byte(adc_mapping + pin);
+ 108               		.loc 1 21 0
+ 109 0076 80E0      		ldi r24,0
+ 110 0078 90E0      		ldi r25,0
+ 111               	.LVL11:
+  38:analog.c      **** }
+ 112               		.loc 1 38 0
+ 113 007a 0895      		ret
+ 114               		.cfi_endproc
+ 115               	.LFE1:
+ 117               		.section	.progmem.data,"a",@progbits
+ 120               	adc_mapping:
+ 121 0000 00        		.byte	0
+ 122 0001 01        		.byte	1
+ 123 0002 04        		.byte	4
+ 124 0003 05        		.byte	5
+ 125 0004 06        		.byte	6
+ 126 0005 07        		.byte	7
+ 127 0006 0D        		.byte	13
+ 128 0007 0C        		.byte	12
+ 129 0008 0B        		.byte	11
+ 130 0009 0A        		.byte	10
+ 131 000a 09        		.byte	9
+ 132 000b 08        		.byte	8
+ 133               	.global	analog_reference_config_val
+ 134               		.data
+ 137               	analog_reference_config_val:
+ 138 0000 40        		.byte	64
+ 139               		.text
+ 140               	.Letext0:
+ 141               		.file 2 "c:\\program files (x86)\\atmel\\studio\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\in
+DEFINED SYMBOLS
+                            *ABS*:00000000 analog.c
+C:\Users\SBASTI~1\AppData\Local\Temp\cc8TmgzM.s:2      *ABS*:0000003e __SP_H__
+C:\Users\SBASTI~1\AppData\Local\Temp\cc8TmgzM.s:3      *ABS*:0000003d __SP_L__
+C:\Users\SBASTI~1\AppData\Local\Temp\cc8TmgzM.s:4      *ABS*:0000003f __SREG__
+C:\Users\SBASTI~1\AppData\Local\Temp\cc8TmgzM.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\SBASTI~1\AppData\Local\Temp\cc8TmgzM.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\SBASTI~1\AppData\Local\Temp\cc8TmgzM.s:13     .text.analogRead:00000000 analogRead
+C:\Users\SBASTI~1\AppData\Local\Temp\cc8TmgzM.s:120    .progmem.data:00000000 adc_mapping
+C:\Users\SBASTI~1\AppData\Local\Temp\cc8TmgzM.s:137    .data:00000000 analog_reference_config_val
+
+UNDEFINED SYMBOLS
+__do_copy_data
